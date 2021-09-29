@@ -4,10 +4,9 @@ process.env.VUE_APP_FEBUILDTIMEX = new Date()
 process.env.VUE_APP_FEPROJECTNAME = pkg.name
 const feApiLocal = require('./fe-service/fe-api-local/index.js')
 const feApiProxy = require('./vue.config.proxy')
-const webpack = require('webpack')
+// const webpack = require('webpack')
 const path = require('path')
 const AddAssetHtmlPlugin = require('add-asset-html-webpack-plugin')
-
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 const dllPath = './' + pkg.dllPath
 const linkPath = '/' + pkg.dllPath.split('/')[1]
