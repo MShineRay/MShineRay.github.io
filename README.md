@@ -1,36 +1,10 @@
 # 项目名称
+https://mshineray.github.io
 
-## 项目描述
+## desc
 
-## 项目目录结构
-  ```
-  ./
-      ├── .husky/  
-      ├── dist/
-      ├── doc/                   
-      ├── fe-service/                   
-      ├── mock/   
-      ├── public/                   
-      ├── src                       -- 源码目录
-      ├── tests                     -- 测试目录
-      ├── .browserslistrc  
-      ├── .editorconfig  
-      ├── .eslintignore  
-      ├── .eslintrc.js  
-      ├── .gitignore 
-      ├── .huskyrc 
-      ├── .prettierrc 
-      ├── babel.config.js           -- babel配置文件 **不允许**私自修改
-      ├── commitlint.config.js          
-      ├── cypress.json              
-      ├── jest.config.js          
-      ├── jsconfig.js          
-      ├── package.json              
-      ├── package-lock.json         -- 不建议删除
-      ├── README.md
-      └── vue.config.js             -- 配置文件 **不允许**私自修改
-  ```
-## 环境
+## [directoryTree](./directoryTreeDesc.md)
+## env
 - 配置hosts
   ```
   host文件位置：
@@ -77,7 +51,7 @@
   npm run lint
   ```
 
-- 测试环境
+- test env
     - test
         - 测试地址
         - 测试数据
@@ -91,7 +65,7 @@
         - 测试地址
         - 测试数据
 
-- 生产环境
+- production
     - 地址
     - 数据
 
@@ -113,7 +87,7 @@
 - 重要的信息
 
 
-## 相关人员
+## people
 - 前端
 - 后端
 - UI
@@ -124,50 +98,43 @@
     - android
     - ios
 
-## 上线记录
+## log
 发布版本 | 上线功能 | 上线时间 |负责人
 ---|---|---|---
 1.0.1  | 模块、bug、功能描述 | 2021-02-24 | xxx
 1.0.0  | 模块、bug、功能描述 | 2021-02-02 | xxx
 
 ## TODO
-- 将test组建抽离出来，避免被打包
-- 梳理公共库、将相关lib，以node_modules方式发布、引入
-    - feAxios
-    - feTools
-      - 基于 lodash进行扩展，支持 tree-shaking
-      - 支持 配置化打包 参考element-ui
-    - feConfig
-    - feLog
-    - feMockServer
-        - 解析mock
-        - 生成mock文件
-    - feProxy
-    - feDebugger
-        - 基于 vconsole 进行扩展，结合 feLog，将错误信息发送到 node服务，方便排查
-        -
-    - reset.css
-    - base.css
-    - mixins.css
-
-- 梳理相关规范
-    - css
-    - js
-    - git
-    - vue
-    - code review
-- 统一eslint
-- 统一prettier
-- 统一editorconfig
-  - done
-- 整理业务组件库，基于第三方UI库扩张
-- 整理基础组件库，独立封装
-- .gitignore
-  - done
-- .eslintignore
-  - done
-- commitlint
-  - done
+- 1、页面
+  - 首页
+    - 功能：
+      - 搜索
+      - 主要功能入口
+        - 收藏夹
+          - 浏览器入口
+        - 书摘
+      - 访问量展示
+        
+    - 定位：工作台
+  - 搜索结果列表页
+    - pc端参考百度展示
+      - 左侧结果列表
+        - 阅读次数
+        - 点赞次数
+      - 右侧搜索排行榜
+        
+    - 移动端参考Google、百度展示
+      - 上面结果列表
+      - 下面搜索排行榜
+  
+- 2、接口
+  - 搜索接口
+  - 排行榜接口
+  - 埋点统计接口
+    - 阅读量
+  - 点赞接口
+  - 
+    
     
 ## Q&A
 - Q1、问题描述
