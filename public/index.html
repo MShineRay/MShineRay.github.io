@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="febuildtime" content="<%= VUE_APP_FEBUILDTIME %>">
+  <meta name="febuildtimex" content="<%= VUE_APP_FEBUILDTIMEX %>">
+  <meta name="feprojectname" content="<%= VUE_APP_FEPROJECTNAME %>">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <!--cdn引入：html5shiv 是一个针对 IE 浏览器的 HTML5 JavaScript 补丁，目的是让 IE 识别并支持 HTML5 元素。-->
+  <!--<script src="https://cdn.bootcdn.net/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>-->
+  <!--本地引入：-->
+  <!--<script src="html5shiv.min.js"></script>-->
+</head>
+<body>
+<noscript>
+  <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+    Please enable it to continue.</strong>
+</noscript>
+<div id="app"></div>
+<!-- built files will be auto injected -->
+</body>
+</html>

@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "es6",
+    "moduleResolution": "node",
+    "declaration": false,
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "noLib": false,
+    "suppressImplicitAnyIndexErrors": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "baseUrl": "./",
+    "paths": {
+      "@": ["src/"],
+      "@/*": ["src/*"],
+      "@api": ["src/api"],
+      "@api/*": ["src/api/*"],
+      "@common": ["src/common"],
+      "@common/*": ["src/common/*"],
+      "@components": ["src/components"],
+      "@components/*": ["src/components/*"],
+      "@router": ["src/router"],
+      "@router/*": ["src/router/*"],
+      "@store": ["src/store"],
+      "@store/*": ["src/store/*"],
+    },
+  },
+  "include": ["./src"],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

@@ -1,0 +1,54 @@
+.DS_Store
+.svn
+.git
+node_modules/
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# VS Code
+.vscode/
+
+# Next.js build output
+.next
+out
+
+# Optional npm cache directory
+.npm
+
+# Nuxt.js build / generate output
+.nuxt
+
+# vuepress build output
+.vuepress/dist
+
+# yarn v2
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+doc/
+tests/
+dist/
+wwwroot/
+build/
+*.md
+.husky
