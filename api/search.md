@@ -39,7 +39,8 @@
 | -- createTime  | string   | 创建时间 |
 | -- readCount  | string   | 阅读次数 |
 | -- likesCount  | string   | 点赞次数 |
-| -- id  | string   | 标题 |
+| -- id  | string   |  |
+| -- keys  | list   | 关键字 |
 
 ### response demo
 

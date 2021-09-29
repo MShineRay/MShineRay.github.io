@@ -7,16 +7,25 @@ import Home from '../views/Home.vue'
 // VueRouter.prototype.push = function push(location) {
 //   return originalPush.call(this, location).catch(err => err)
 // }
+import Layout from '@/layout'
 
 Vue.use(VueRouter)
 
 const routes = [
-  ...routeTest,
   {
     path: '/',
     name: 'Home',
-    component: Home,
+    component: Layout,
+    children: [
+      {
+        path: '',
+        name: 'home',
+        component: Home,
+        meta: {  }
+      }
+    ]
   },
+  ...routeTest,
   // {
   //   path: "/test",
   //   name: "Test",
