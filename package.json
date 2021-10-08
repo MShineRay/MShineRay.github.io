@@ -7,11 +7,6 @@
   "scripts": {
     "mock": "vue-cli-service serve --host mock.local.fe.cn --port 50010 --open",
     "dev": "vue-cli-service serve --host dev.local.fe.cn --port 50010 --open",
-    "test": "vue-cli-service serve --host test.local.fe.cn --port 50010 --open",
-    "sit": "vue-cli-service serve --host sit.local.fe.cn --port 50010 --open",
-    "uat": "vue-cli-service serve --host uat.local.fe.cn --port 50010 --open",
-    "pre": "vue-cli-service serve --host pre.local.fe.cn --port 50010 --open",
-    "fat": "vue-cli-service serve --host fat.local.fe.cn --port 50010 --open",
     "build": "vue-cli-service build",
     "build:analyse": "cross-env analyse=true  vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
