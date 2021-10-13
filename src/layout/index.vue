@@ -593,12 +593,12 @@ ol ol, ol ul, ul ol, ul ul {
   padding-top: 30px;
   padding-bottom: 30px;
   margin-bottom: 30px;
-  color: inherit;
-  background-color: #eee
+  /*color: inherit;*/
+  /*background-color: #eee*/
 }
 
 .jumbotron .h1, .jumbotron h1 {
-  color: inherit
+  /*color: inherit*/
 }
 
 .jumbotron p {
@@ -608,7 +608,7 @@ ol ol, ol ul, ul ol, ul ul {
 }
 
 .jumbotron > hr {
-  border-top-color: #d5d5d5
+  /*border-top-color: #d5d5d5*/
 }
 
 .container .jumbotron, .container-fluid .jumbotron {
@@ -638,26 +638,26 @@ ol ol, ol ul, ul ol, ul ul {
 }
 
 .thumbnail {
-  display: block;
-  padding: 4px;
-  margin-bottom: 20px;
-  line-height: 1.42857143;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  -webkit-transition: border .2s ease-in-out;
-  -o-transition: border .2s ease-in-out;
-  transition: border .2s ease-in-out
+  /*display: block;*/
+  /*padding: 4px;*/
+  /*margin-bottom: 20px;*/
+  /*line-height: 1.42857143;*/
+  /*background-color: #fff;*/
+  /*border: 1px solid #ddd;*/
+  /*border-radius: 4px;*/
+  /*-webkit-transition: border .2s ease-in-out;*/
+  /*-o-transition: border .2s ease-in-out;*/
+  /*transition: border .2s ease-in-out*/
 }
 
-a.thumbnail.active, a.thumbnail:focus, a.thumbnail:hover {
-  border-color: #337ab7
-}
+/*a.thumbnail.active, a.thumbnail:focus, a.thumbnail:hover {*/
+/*  border-color: #337ab7*/
+/*}*/
 
-.thumbnail .caption {
-  padding: 9px;
-  color: #333
-}
+/*.thumbnail .caption {*/
+/*  !*padding: 9px;*!*/
+/*  color: #333*/
+/*}*/
 
 @-webkit-keyframes progress-bar-stripes {
   from {
@@ -723,19 +723,19 @@ a.thumbnail.active, a.thumbnail:focus, a.thumbnail:hover {
 .jumbotron {
   position: relative;
   padding: 40px 0;
-  color: #fff;
+  /*color: #fff;*/
   text-align: center;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, .4), 0 0 30px rgba(0, 0, 0, .075);
-  background: #020031;
-  background: linear-gradient(45deg, #020031, #6d3353);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020031", endColorstr="#6d3353", GradientType=1);
-  box-shadow: inset 0 3px 7px rgba(0, 0, 0, .2), inset 0 -3px 7px rgba(0, 0, 0, .2)
+  /*text-shadow: 0 1px 3px rgba(0, 0, 0, .4), 0 0 30px rgba(0, 0, 0, .075);*/
+  /*background: #C7EDCC;*/
+  /*background: linear-gradient(45deg, #C7EDCC, #6d3353);*/
+  /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#C7EDCC", endColorstr="#6d3353", GradientType=1);*/
+  /*box-shadow: inset 0 3px 7px rgba(0, 0, 0, .2), inset 0 -3px 7px rgba(0, 0, 0, .2)*/
 }
 
 .jumbotron a {
-  color: #fff;
-  color: hsla(0, 0%, 100%, .5);
-  transition: all .2s ease-in-out
+  /*color: #fff;*/
+  /*color: hsla(0, 0%, 100%, .5);*/
+  /*transition: all .2s ease-in-out*/
 }
 
 .jumbotron .container {
@@ -751,7 +751,7 @@ a.thumbnail.active, a.thumbnail:focus, a.thumbnail:hover {
   right: 0;
   bottom: 0;
   left: 0;
-  opacity: .4
+  /*opacity: .4*/
 }
 
 @media only screen and (-o-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2) {
@@ -819,25 +819,25 @@ a.thumbnail.active, a.thumbnail:focus, a.thumbnail:hover {
   margin-top: 30px
 }
 
-.projects .thumbnail {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  text-align: center;
-  max-width: 310px;
-  margin-bottom: 30px;
-  border-radius: 0
-}
+/*.projects .thumbnail {*/
+  /*display: block;*/
+  /*margin-right: auto;*/
+  /*margin-left: auto;*/
+  /*text-align: center;*/
+  /*max-width: 310px;*/
+  /*margin-bottom: 30px;*/
+  /*border-radius: 0*/
+/*}*/
 
-.projects .thumbnail .caption {
-  height: 200px;
-  overflow-y: hidden;
-  color: #555
-}
+/*.projects .thumbnail .caption {*/
+/*  height: 200px;*/
+/*  overflow-y: hidden;*/
+/*  color: #555*/
+/*}*/
 
-.projects .thumbnail .caption a:focus, .projects .thumbnail .caption a:hover {
-  text-decoration: none
-}
+/*.projects .thumbnail .caption a:focus, .projects .thumbnail .caption a:hover {*/
+/*  text-decoration: none*/
+/*}*/
 
 .projects-header {
   width: 60%;
@@ -859,6 +859,11 @@ a.thumbnail.active, a.thumbnail:focus, a.thumbnail:hover {
 }
 
 .el-main{
-  margin:51px -20px 0
+  margin:31px -20px 0
+}
+@media screen and (min-width: 768px) {
+  .el-main{
+    margin-top:20px
+  }
 }
 </style>
