@@ -96,8 +96,19 @@ module.exports = {
       if (process.env.Analyse) {
         config.plugins.push(new BundleAnalyzerPlugin())
       }
+
+
     }
+
   },
+  chainWebpack: (config) => {
+    config.externals({
+      // 以下是全局使用
+      vue: 'Vue',
+      vuex: 'Vuex',
+      'vue-router': 'VueRouter',
+    })
+  }
   // 第三方插件配置
   // pluginOptions: {},
 }

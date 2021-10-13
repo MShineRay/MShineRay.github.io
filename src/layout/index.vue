@@ -69,66 +69,6 @@ export default {
 };
 </script>
 
-<!--<style lang="scss" scoped>-->
-<!--.gb_Ed {-->
-<!--  height: 48px;-->
-<!--  vertical-align: middle;-->
-<!--  white-space: nowrap;-->
-<!--  -webkit-box-align: center;-->
-<!--  -webkit-align-items: center;-->
-<!--  align-items: center;-->
-<!--  display: -webkit-box;-->
-<!--  display: -webkit-flex;-->
-<!--  display: flex;-->
-<!--  -webkit-user-select: none;-->
-<!--  -webkit-box-sizing: border-box;-->
-<!--  box-sizing: border-box;-->
-<!--  line-height: normal;-->
-<!--  padding: 0 4px;-->
-<!--  padding-left: 30px;-->
-<!--  -webkit-flex: 0 0 auto;-->
-<!--  flex: 0 0 auto;-->
-<!--  -webkit-justify-content: flex-end;-->
-<!--  justify-content: flex-end-->
-<!--}-->
-
-
-<!--a.gb_f, span.gb_f {-->
-<!--  color: rgba(0, 0, 0, 0.87);-->
-<!--  text-decoration: none-->
-<!--}-->
-
-
-<!--a.gb_f:focus {-->
-<!--  outline-offset: 2px-->
-<!--}-->
-
-<!--a.gb_f:hover {-->
-<!--  text-decoration: underline-->
-<!--}-->
-
-<!--.gb_g {-->
-<!--  display: inline-block;-->
-<!--  padding-left: 15px-->
-<!--}-->
-
-<!--.gb_g .gb_f {-->
-<!--  display: inline-block;-->
-<!--  line-height: 24px;-->
-<!--  vertical-align: middle-->
-<!--}-->
-
-<!--.header {-->
-<!--  display: flex;-->
-<!--  align-items: center;-->
-<!--  padding: 6px-->
-<!--}-->
-
-<!--.LX3sZb {-->
-<!--  display: inline-block;-->
-<!--  flex-grow: 1-->
-<!--}-->
-<!--</style>-->
 <style>
 html {
   font-family: sans-serif;
@@ -761,10 +701,6 @@ a.thumbnail.active, a.thumbnail:focus, a.thumbnail:hover {
   font-family: Helvetica Neue, Helvetica, Arial, Hiragino Sans GB, Hiragino Sans GB W3, Microsoft YaHei UI, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif
 }
 
-body {
-  padding-top: 30px
-}
-
 @media (min-width: 768px) {
   .navbar {
     min-height: 40px
@@ -923,6 +859,6 @@ body {
 }
 
 .el-main{
-  margin:21px -20px 0
+  margin:51px -20px 0
 }
 </style>
