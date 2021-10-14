@@ -22,6 +22,11 @@ const routes = [
         name: 'home',
         component: Home,
         meta: {  }
+      },
+      {
+        path: 'read-notes',
+        name: 'read-notes',
+        component: ()=>import('@/views/ReadNotes'),
       }
     ]
   },

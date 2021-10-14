@@ -26,7 +26,7 @@
           <el-card shadow="hover">
             <div class='thumbnail'>
               <a
-                href='https://github.com/mshineray'
+                href='/read-notes'
                 title='Reading Notes'
                 target='_blank'>
                 Reading Notes
