@@ -39,57 +39,57 @@
             </div>
           </el-card>
         </div>
-        <div class='col-sm-6 col-md-4 col-lg-3 '>
-          <el-card shadow="hover">
-            <div class='thumbnail'>
-              <a
-                href='https://github.com/mshineray'
-                title='Share Bar'
-                target='_blank'>
-                Share Bar
-              </a>
-              <div class='caption'>
-                <p>My Share Bar</p>
-                <p>by MShineRay</p>
-                <p>@ 2021-10-09 16:00:00</p>
-              </div>
-            </div>
-          </el-card>
-        </div>
-        <div class='col-sm-6 col-md-4 col-lg-3 '>
-          <el-card shadow="hover">
-            <div class='thumbnail'>
-              <a
-                href='https://github.com/mshineray'
-                title='Work Bar'
-                target='_blank'>
-                Work Bar
-              </a>
-              <div class='caption'>
-                <p>My Work Bar</p>
-                <p>by MShineRay</p>
-                <p>@ 2021-10-09 16:00:00</p>
-              </div>
-            </div>
-          </el-card>
-        </div>
-        <div class='col-sm-6 col-md-4 col-lg-3 '>
-          <el-card shadow="hover">
-            <div class='thumbnail'>
-              <a
-                href='https://github.com/mshineray'
-                title='Creator Bar'
-                target='_blank'>
-                Creator Bar
-              </a>
-              <div class='caption'>
-                <p>Creator Bar</p>
-                <p>by MShineRay</p>
-                <p>@ 2021-10-09 16:00:00</p>
-              </div>
-            </div>
-          </el-card>
-        </div>
+<!--        <div class='col-sm-6 col-md-4 col-lg-3 '>-->
+<!--          <el-card shadow="hover">-->
+<!--            <div class='thumbnail'>-->
+<!--              <a-->
+<!--                href='https://github.com/mshineray'-->
+<!--                title='Share Bar'-->
+<!--                target='_blank'>-->
+<!--                Share Bar-->
+<!--              </a>-->
+<!--              <div class='caption'>-->
+<!--                <p>My Share Bar</p>-->
+<!--                <p>by MShineRay</p>-->
+<!--                <p>@ 2021-10-09 16:00:00</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </el-card>-->
+<!--        </div>-->
+<!--        <div class='col-sm-6 col-md-4 col-lg-3 '>-->
+<!--          <el-card shadow="hover">-->
+<!--            <div class='thumbnail'>-->
+<!--              <a-->
+<!--                href='https://github.com/mshineray'-->
+<!--                title='Work Bar'-->
+<!--                target='_blank'>-->
+<!--                Work Bar-->
+<!--              </a>-->
+<!--              <div class='caption'>-->
+<!--                <p>My Work Bar</p>-->
+<!--                <p>by MShineRay</p>-->
+<!--                <p>@ 2021-10-09 16:00:00</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </el-card>-->
+<!--        </div>-->
+<!--        <div class='col-sm-6 col-md-4 col-lg-3 '>-->
+<!--          <el-card shadow="hover">-->
+<!--            <div class='thumbnail'>-->
+<!--              <a-->
+<!--                href='https://github.com/mshineray'-->
+<!--                title='Creator Bar'-->
+<!--                target='_blank'>-->
+<!--                Creator Bar-->
+<!--              </a>-->
+<!--              <div class='caption'>-->
+<!--                <p>Creator Bar</p>-->
+<!--                <p>by MShineRay</p>-->
+<!--                <p>@ 2021-10-09 16:00:00</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </el-card>-->
+<!--        </div>-->
       </div>
     </div>
   </div>

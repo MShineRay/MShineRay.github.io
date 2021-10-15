@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="container">
     <!--    list + Ranking-->
     <!--    <h1>reading note list</h1>-->
     <!--    <img src="img/pingjunfen/001.jpg" width="300" height="400"/>-->
@@ -36,22 +36,23 @@
     </section>
 
     <footer class="footer">
-      <img src="img/pingjunfen/qr.png" alt="qr">
+      <img src="./img/pingjunfen/qr.png" alt="qr">
+      <p>扫码阅读本书</p>
     </footer>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Home',
+  name: 'ReadNotes',
   components: {
     // HelloWorld,
   },
 }
 </script>
 
-<style lang="scss">
-.home {
+<style lang="scss" scoped>
+.container {
   text-align: left;
   margin: 0 auto;
   max-width: 65%;
@@ -66,6 +67,12 @@ export default {
 
   section + section {
     margin-bottom: 30px;
+  }
+  .footer{
+    margin-top: 30px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    padding-top: 30px;
   }
 }
 </style>
