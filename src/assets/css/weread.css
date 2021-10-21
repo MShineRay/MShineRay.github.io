@@ -5360,18 +5360,13 @@ textarea {
   color: #eef0f4;
   line-height: 24px;
   overflow: hidden;
-  height: 120px;
   display: -webkit-box;
   display: -moz-box;
   text-overflow: ellipsis;
-  -webkit-line-clamp: 5;
-  -moz-line-clamp: 5;
-  line-clamp: 5;
   -webkit-box-orient: vertical;
   -webkit-text-size-adjust: none;
   box-orient: vertical;
   height: auto;
-  max-height: 120px
 }
 
 .wr_whiteTheme .noteItem_content .text {

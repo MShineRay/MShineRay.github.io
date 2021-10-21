@@ -1,174 +1,192 @@
 <template>
   <div class="layout-default">
     <el-container>
-<!--      <el-header>-->
-        <!--        <div class="header">-->
-        <!--          <div class="LX3sZb">-->
-        <!--            <div class="gb_Qd gb_Ed">-->
-        <!--              <div>-->
-        <!--                <div class="gb_g">-->
-        <!--                  <a class="gb_f"-->
-        <!--                     href="https://github.com/mshineray" target="_blank">GitHub-->
-        <!--                  </a>-->
-        <!--                </div>-->
-        <!--              </div>-->
-        <!--            </div>-->
-        <!--          </div>-->
-        <!--        </div>-->
-        <div class='navbar navbar-inverse navbar-fixed-top'>
-          <div class='container'>
-            <div class='navbar-header'>
-              <button class='navbar-toggle collapsed' type='button' data-toggle='collapse'
-                      data-target='.navbar-collapse'>
-                <span class='sr-only'>Toggle navigation</span>
-                <span class='icon-bar'></span>
-                <span class='icon-bar'></span>
-                <span class='icon-bar'></span>
-              </button>
-              <a class='navbar-brand hidden-sm' href='#'>P2PShare</a>
-            </div>
-            <div class='navbar-collapse collapse' role='navigation'>
-              <ul class='nav navbar-nav'>
-<!--                <li>-->
-<!--                  <a href='https://github.com/MShineRay' target='_blank'>Github</a>-->
-<!--                </li>-->
-                <li>
-                  <a href='https://www.npmjs.com/package/@a0znpm/fecli' target='_blank'>fecli</a>
-                </li>
-              </ul>
-              <ul class='nav navbar-nav navbar-right hidden-sm'>
-                <li>
-                  <a href='https://github.com/MShineRay' target='_blank'>Github</a>
-                </li>
-              </ul>
-            </div>
+      <!--      <el-header>-->
+      <!--        <div class="header">-->
+      <!--          <div class="LX3sZb">-->
+      <!--            <div class="gb_Qd gb_Ed">-->
+      <!--              <div>-->
+      <!--                <div class="gb_g">-->
+      <!--                  <a class="gb_f"-->
+      <!--                     href="https://github.com/mshineray" target="_blank">GitHub-->
+      <!--                  </a>-->
+      <!--                </div>-->
+      <!--              </div>-->
+      <!--            </div>-->
+      <!--          </div>-->
+      <!--        </div>-->
+      <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button
+              class="navbar-toggle collapsed"
+              type="button"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand hidden-sm" href="#">P2PShare</a>
+          </div>
+          <div class="navbar-collapse collapse" role="navigation">
+            <ul class="nav navbar-nav">
+              <!--                <li>-->
+              <!--                  <a href='https://github.com/MShineRay' target='_blank'>Github</a>-->
+              <!--                </li>-->
+              <li>
+                <a href="https://www.npmjs.com/package/@a0znpm/fecli" target="_blank">fecli</a>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right hidden-sm">
+              <li>
+                <a href="https://github.com/MShineRay" target="_blank">Github</a>
+              </li>
+            </ul>
           </div>
         </div>
+      </div>
 
-<!--      </el-header>-->
+      <!--      </el-header>-->
       <el-main>
-        <router-view/>
+        <router-view />
       </el-main>
     </el-container>
   </div>
 </template>
 
 <script>
-
 export default {
-  name: "Layout",
+  name: 'Layout',
   components: {},
   mixins: [],
   data() {
-    return {};
+    return {}
   },
   computed: {},
-  mounted() {
-  },
+  mounted() {},
   methods: {},
-};
+}
 </script>
 
 <style>
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%
+  -ms-text-size-adjust: 100%;
 }
 
 body {
-  margin: 0
+  margin: 0;
 }
 
 a {
-  background-color: transparent
+  background-color: transparent;
 }
 
-a:active, a:hover {
-  outline: 0
+a:active,
+a:hover {
+  outline: 0;
 }
 
 h1 {
-  margin: .67em 0;
-  font-size: 2em
+  margin: 0.67em 0;
+  font-size: 2em;
 }
 
-button, input, optgroup, select, textarea {
+button,
+input,
+optgroup,
+select,
+textarea {
   margin: 0;
   font: inherit;
-  color: inherit
+  color: inherit;
 }
 
 button {
-  overflow: visible
+  overflow: visible;
 }
 
-button, select {
-  text-transform: none
+button,
+select {
+  text-transform: none;
 }
 
-button, html input[type=button], input[type=reset], input[type=submit] {
+button,
+html input[type='button'],
+input[type='reset'],
+input[type='submit'] {
   -webkit-appearance: button;
-  cursor: pointer
+  cursor: pointer;
 }
 
-button[disabled], html input[disabled] {
-  cursor: default
+button[disabled],
+html input[disabled] {
+  cursor: default;
 }
 
-button::-moz-focus-inner, input::-moz-focus-inner {
+button::-moz-focus-inner,
+input::-moz-focus-inner {
   padding: 0;
-  border: 0
+  border: 0;
 }
 
 input {
-  line-height: normal
+  line-height: normal;
 }
 
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 
-:after, :before {
+:after,
+:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 
 html {
   font-size: 10px;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
-  background-color: #fff
+  background-color: #fff;
 }
 
-button, input, select, textarea {
+button,
+input,
+select,
+textarea {
   font-family: inherit;
   font-size: inherit;
-  line-height: inherit
+  line-height: inherit;
 }
 
 a {
   color: #337ab7;
-  text-decoration: none
+  text-decoration: none;
 }
 
-a:focus, a:hover {
+a:focus,
+a:hover {
   color: #23527c;
-  text-decoration: underline
+  text-decoration: underline;
 }
 
 a:focus {
   outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px
+  outline-offset: -2px;
 }
 
 .sr-only {
@@ -179,194 +197,304 @@ a:focus {
   margin: -1px;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
-  border: 0
+  border: 0;
 }
 
-[role=button] {
-  cursor: pointer
+[role='button'] {
+  cursor: pointer;
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6,
-h1, h2, h3, h4, h5, h6 {
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
-  color: inherit
+  color: inherit;
 }
 
-
-.h1, .h2, .h3,
-h1, h2, h3 {
+.h1,
+.h2,
+.h3,
+h1,
+h2,
+h3 {
   margin-top: 20px;
-  margin-bottom: 10px
+  margin-bottom: 10px;
 }
 
-
-.h4, .h5, .h6, h4, h5, h6 {
+.h4,
+.h5,
+.h6,
+h4,
+h5,
+h6 {
   margin-top: 10px;
-  margin-bottom: 10px
+  margin-bottom: 10px;
 }
 
-.h1, h1 {
-  font-size: 36px
+.h1,
+h1 {
+  font-size: 36px;
 }
 
-.h2, h2 {
-  font-size: 30px
+.h2,
+h2 {
+  font-size: 30px;
 }
 
-.h3, h3 {
-  font-size: 24px
+.h3,
+h3 {
+  font-size: 24px;
 }
 
-.h4, h4 {
-  font-size: 18px
+.h4,
+h4 {
+  font-size: 18px;
 }
 
-.h5, h5 {
-  font-size: 14px
+.h5,
+h5 {
+  font-size: 14px;
 }
 
-.h6, h6 {
-  font-size: 12px
+.h6,
+h6 {
+  font-size: 12px;
 }
 
 p {
-  margin: 0 0 10px
+  margin: 0 0 10px;
 }
 
 .page-header {
   padding-bottom: 9px;
   margin: 40px 0 20px;
-  border-bottom: 1px solid #eee
+  border-bottom: 1px solid #eee;
 }
 
-ol, ul {
+ol,
+ul {
   margin-top: 0;
-  margin-bottom: 10px
+  margin-bottom: 10px;
 }
 
-ol ol, ol ul, ul ol, ul ul {
-  margin-bottom: 0
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+  margin-bottom: 0;
 }
 
 .container {
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
-  margin-left: auto
+  margin-left: auto;
 }
 
 @media (min-width: 768px) {
   .container {
-    width: 750px
+    width: 750px;
   }
 }
 
 @media (min-width: 992px) {
   .container {
-    width: 970px
+    width: 970px;
   }
 }
 
 @media (min-width: 1200px) {
   .container {
-    width: 1170px
+    width: 1170px;
   }
 }
 
 .row {
   margin-right: -15px;
-  margin-left: -15px
+  margin-left: -15px;
 }
 
-.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+.col-lg-1,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-md-1,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-sm-1,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-xs-1,
+.col-xs-10,
+.col-xs-11,
+.col-xs-12,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9 {
   position: relative;
   min-height: 1px;
   padding-right: 15px;
-  padding-left: 15px
+  padding-left: 15px;
 }
 
-
 @media (min-width: 768px) {
-  .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9 {
-    float: left
+  .col-sm-1,
+  .col-sm-10,
+  .col-sm-11,
+  .col-sm-12,
+  .col-sm-2,
+  .col-sm-3,
+  .col-sm-4,
+  .col-sm-5,
+  .col-sm-6,
+  .col-sm-7,
+  .col-sm-8,
+  .col-sm-9 {
+    float: left;
   }
 
   .col-sm-6 {
-    width: 50%
+    width: 50%;
   }
 }
 
 @media (min-width: 992px) {
-  .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9 {
-    float: left
+  .col-md-1,
+  .col-md-10,
+  .col-md-11,
+  .col-md-12,
+  .col-md-2,
+  .col-md-3,
+  .col-md-4,
+  .col-md-5,
+  .col-md-6,
+  .col-md-7,
+  .col-md-8,
+  .col-md-9 {
+    float: left;
   }
   .col-md-4 {
-    width: 33.33333333%
+    width: 33.33333333%;
   }
 }
 
 @media (min-width: 1200px) {
-  .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9 {
-    float: left
+  .col-lg-1,
+  .col-lg-10,
+  .col-lg-11,
+  .col-lg-12,
+  .col-lg-2,
+  .col-lg-3,
+  .col-lg-4,
+  .col-lg-5,
+  .col-lg-6,
+  .col-lg-7,
+  .col-lg-8,
+  .col-lg-9 {
+    float: left;
   }
 
   .col-lg-3 {
-    width: 25%
+    width: 25%;
   }
 }
 
 .collapse {
-  display: none
+  display: none;
 }
 
 .nav {
   padding-left: 0;
   margin-bottom: 0;
-  list-style: none
+  list-style: none;
 }
 
 .nav > li {
   position: relative;
-  display: block
+  display: block;
 }
 
 .nav > li > a {
   position: relative;
   display: block;
-  padding: 10px 15px
+  padding: 10px 15px;
 }
 
-.nav > li > a:focus, .nav > li > a:hover {
+.nav > li > a:focus,
+.nav > li > a:hover {
   text-decoration: none;
-  background-color: #eee
+  background-color: #eee;
 }
 
 .nav > li.disabled > a {
-  color: #777
+  color: #777;
 }
 
-.nav > li.disabled > a:focus, .nav > li.disabled > a:hover {
+.nav > li.disabled > a:focus,
+.nav > li.disabled > a:hover {
   color: #777;
   text-decoration: none;
   cursor: not-allowed;
-  background-color: transparent
+  background-color: transparent;
 }
 
-.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+.nav .open > a,
+.nav .open > a:focus,
+.nav .open > a:hover {
   background-color: #eee;
-  border-color: #337ab7
+  border-color: #337ab7;
 }
 
 @media (min-width: 768px) {
   .nav-justified > li {
     display: table-cell;
-    width: 1%
+    width: 1%;
   }
 
   .nav-justified > li > a {
-    margin-bottom: 0
+    margin-bottom: 0;
   }
 }
 
@@ -374,18 +502,18 @@ ol ol, ol ul, ul ol, ul ul {
   position: relative;
   min-height: 50px;
   margin-bottom: 20px;
-  border: 1px solid transparent
+  border: 1px solid transparent;
 }
 
 @media (min-width: 768px) {
   .navbar {
-    border-radius: 4px
+    border-radius: 4px;
   }
 }
 
 @media (min-width: 768px) {
   .navbar-header {
-    float: left
+    float: left;
   }
 }
 
@@ -395,8 +523,8 @@ ol ol, ol ul, ul ol, ul ul {
   overflow-x: visible;
   -webkit-overflow-scrolling: touch;
   border-top: 1px solid transparent;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1)
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
 @media (min-width: 768px) {
@@ -404,48 +532,54 @@ ol ol, ol ul, ul ol, ul ul {
     width: auto;
     border-top: 0;
     -webkit-box-shadow: none;
-    box-shadow: none
+    box-shadow: none;
   }
 
   .navbar-collapse.collapse {
     display: block !important;
     height: auto !important;
     padding-bottom: 0;
-    overflow: visible !important
+    overflow: visible !important;
   }
 
-  .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse, .navbar-static-top .navbar-collapse {
+  .navbar-fixed-bottom .navbar-collapse,
+  .navbar-fixed-top .navbar-collapse,
+  .navbar-static-top .navbar-collapse {
     padding-right: 0;
-    padding-left: 0
+    padding-left: 0;
   }
 }
 
-.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
-  max-height: 340px
+.navbar-fixed-bottom .navbar-collapse,
+.navbar-fixed-top .navbar-collapse {
+  max-height: 340px;
 }
 
 @media (max-device-width: 480px) and (orientation: landscape) {
-  .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
-    max-height: 200px
+  .navbar-fixed-bottom .navbar-collapse,
+  .navbar-fixed-top .navbar-collapse {
+    max-height: 200px;
   }
 }
 
-.navbar-fixed-bottom, .navbar-fixed-top {
+.navbar-fixed-bottom,
+.navbar-fixed-top {
   position: fixed;
   right: 0;
   left: 0;
-  z-index: 1030
+  z-index: 1030;
 }
 
 @media (min-width: 768px) {
-  .navbar-fixed-bottom, .navbar-fixed-top {
-    border-radius: 0
+  .navbar-fixed-bottom,
+  .navbar-fixed-top {
+    border-radius: 0;
   }
 }
 
 .navbar-fixed-top {
   top: 0;
-  border-width: 0 0 1px
+  border-width: 0 0 1px;
 }
 
 .navbar-brand {
@@ -453,16 +587,18 @@ ol ol, ol ul, ul ol, ul ul {
   height: 50px;
   padding: 15px 15px;
   font-size: 18px;
-  line-height: 20px
+  line-height: 20px;
 }
 
-.navbar-brand:focus, .navbar-brand:hover {
-  text-decoration: none
+.navbar-brand:focus,
+.navbar-brand:hover {
+  text-decoration: none;
 }
 
 @media (min-width: 768px) {
-  .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
-    margin-left: -15px
+  .navbar > .container .navbar-brand,
+  .navbar > .container-fluid .navbar-brand {
+    margin-left: -15px;
   }
 }
 
@@ -476,117 +612,124 @@ ol ol, ol ul, ul ol, ul ul {
   background-color: transparent;
   background-image: none;
   border: 1px solid transparent;
-  border-radius: 4px
+  border-radius: 4px;
 }
 
 .navbar-toggle:focus {
-  outline: 0
+  outline: 0;
 }
 
 .navbar-toggle .icon-bar {
   display: block;
   width: 22px;
   height: 2px;
-  border-radius: 1px
+  border-radius: 1px;
 }
 
 .navbar-toggle .icon-bar + .icon-bar {
-  margin-top: 4px
+  margin-top: 4px;
 }
 
 @media (min-width: 768px) {
   .navbar-toggle {
-    display: none
+    display: none;
   }
 }
 
 .navbar-nav {
-  margin: 7.5px -15px
+  margin: 7.5px -15px;
 }
 
 .navbar-nav > li > a {
   padding-top: 10px;
   padding-bottom: 10px;
-  line-height: 20px
+  line-height: 20px;
 }
 
 @media (min-width: 768px) {
   .navbar-nav {
     float: left;
-    margin: 0
+    margin: 0;
   }
 
   .navbar-nav > li {
-    float: left
+    float: left;
   }
 
   .navbar-nav > li > a {
     padding-top: 15px;
-    padding-bottom: 15px
+    padding-bottom: 15px;
   }
 }
-
 
 @media (min-width: 768px) {
   .navbar-right {
     float: right !important;
-    margin-right: -15px
+    margin-right: -15px;
   }
 
   .navbar-right ~ .navbar-right {
-    margin-right: 0
+    margin-right: 0;
   }
 }
 
 .navbar-inverse {
   background-color: #222;
-  border-color: #080808
+  border-color: #080808;
 }
 
 .navbar-inverse .navbar-brand {
-  color: #9d9d9d
+  color: #9d9d9d;
 }
 
-.navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-brand:hover {
+.navbar-inverse .navbar-brand:focus,
+.navbar-inverse .navbar-brand:hover {
   color: #fff;
-  background-color: transparent
+  background-color: transparent;
 }
 
 .navbar-inverse .navbar-nav > li > a {
-  color: #9d9d9d
+  color: #9d9d9d;
 }
 
-.navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover {
+.navbar-inverse .navbar-nav > li > a:focus,
+.navbar-inverse .navbar-nav > li > a:hover {
   color: #fff;
-  background-color: transparent
+  background-color: transparent;
 }
 
-.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover {
   color: #fff;
-  background-color: #080808
+  background-color: #080808;
 }
 
-.navbar-inverse .navbar-nav > .disabled > a, .navbar-inverse .navbar-nav > .disabled > a:focus, .navbar-inverse .navbar-nav > .disabled > a:hover {
+.navbar-inverse .navbar-nav > .disabled > a,
+.navbar-inverse .navbar-nav > .disabled > a:focus,
+.navbar-inverse .navbar-nav > .disabled > a:hover {
   color: #444;
-  background-color: transparent
+  background-color: transparent;
 }
 
 .navbar-inverse .navbar-toggle {
-  border-color: #333
+  border-color: #333;
 }
 
-.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
-  background-color: #333
+.navbar-inverse .navbar-toggle:focus,
+.navbar-inverse .navbar-toggle:hover {
+  background-color: #333;
 }
 
 .navbar-inverse .navbar-toggle .icon-bar {
-  background-color: #fff
+  background-color: #fff;
 }
 
-
-.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover {
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:focus,
+.navbar-inverse .navbar-nav > .open > a:hover {
   color: #fff;
-  background-color: #080808
+  background-color: #080808;
 }
 
 .jumbotron {
@@ -597,43 +740,47 @@ ol ol, ol ul, ul ol, ul ul {
   /*background-color: #eee*/
 }
 
-.jumbotron .h1, .jumbotron h1 {
+.jumbotron .h1,
+.jumbotron h1 {
   /*color: inherit*/
 }
 
 .jumbotron p {
   margin-bottom: 15px;
   font-size: 21px;
-  font-weight: 200
+  font-weight: 200;
 }
 
 .jumbotron > hr {
   /*border-top-color: #d5d5d5*/
 }
 
-.container .jumbotron, .container-fluid .jumbotron {
+.container .jumbotron,
+.container-fluid .jumbotron {
   padding-right: 15px;
   padding-left: 15px;
-  border-radius: 6px
+  border-radius: 6px;
 }
 
 .jumbotron .container {
-  max-width: 100%
+  max-width: 100%;
 }
 
 @media screen and (min-width: 768px) {
   .jumbotron {
     padding-top: 48px;
-    padding-bottom: 48px
+    padding-bottom: 48px;
   }
 
-  .container .jumbotron, .container-fluid .jumbotron {
+  .container .jumbotron,
+  .container-fluid .jumbotron {
     padding-right: 60px;
-    padding-left: 60px
+    padding-left: 60px;
   }
 
-  .jumbotron .h1, .jumbotron h1 {
-    font-size: 63px
+  .jumbotron .h1,
+  .jumbotron h1 {
+    font-size: 63px;
   }
 }
 
@@ -661,62 +808,70 @@ ol ol, ol ul, ul ol, ul ul {
 
 @-webkit-keyframes progress-bar-stripes {
   from {
-    background-position: 40px 0
+    background-position: 40px 0;
   }
   to {
-    background-position: 0 0
+    background-position: 0 0;
   }
 }
 
 @-o-keyframes progress-bar-stripes {
   from {
-    background-position: 40px 0
+    background-position: 40px 0;
   }
   to {
-    background-position: 0 0
+    background-position: 0 0;
   }
 }
 
 @keyframes progress-bar-stripes {
   from {
-    background-position: 40px 0
+    background-position: 40px 0;
   }
   to {
-    background-position: 0 0
+    background-position: 0 0;
   }
 }
 
-
 @-ms-viewport {
-  width: device-width
+  width: device-width;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .hidden-sm {
-    display: none !important
+    display: none !important;
   }
 }
 
-.h1, .h2, .h3, .h4, .lead, h1, h2, h3, h4 {
-  font-family: Helvetica Neue, Helvetica, Arial, Hiragino Sans GB, Hiragino Sans GB W3, Microsoft YaHei UI, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif
+.h1,
+.h2,
+.h3,
+.h4,
+.lead,
+h1,
+h2,
+h3,
+h4 {
+  font-family: Helvetica Neue, Helvetica, Arial, Hiragino Sans GB, Hiragino Sans GB W3,
+    Microsoft YaHei UI, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
 }
 
 @media (min-width: 768px) {
   .navbar {
-    min-height: 40px
+    min-height: 40px;
   }
 
   .navbar-nav > li > a {
     font-size: 14px;
     padding-top: 11px;
-    padding-bottom: 11px
+    padding-bottom: 11px;
   }
 
   .navbar-brand {
     padding-top: 0;
     padding-bottom: 0;
     line-height: 42px;
-    height: 42px
+    height: 42px;
   }
 }
 
@@ -740,11 +895,11 @@ ol ol, ol ul, ul ol, ul ul {
 
 .jumbotron .container {
   position: relative;
-  z-index: 2
+  z-index: 2;
 }
 
 .jumbotron:after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   top: 0;
@@ -754,21 +909,23 @@ ol ol, ol ul, ul ol, ul ul {
   /*opacity: .4*/
 }
 
-@media only screen and (-o-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2) {
+@media only screen and (-o-min-device-pixel-ratio: 2),
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2) {
   .jumbotron:after {
-    background-size: 150px 150px
+    background-size: 150px 150px;
   }
 }
 
 .masthead {
   padding: 60px 0 80px;
   margin-bottom: 0;
-  color: #fff
+  color: #fff;
 }
 
 @media screen and (min-width: 768px) {
   .masthead {
-    padding: 90px 0 110px
+    padding: 90px 0 110px;
   }
 }
 
@@ -776,57 +933,57 @@ ol ol, ol ul, ul ol, ul ul {
   font-size: 60px;
   line-height: 1;
   letter-spacing: -2px;
-  font-weight: 700
+  font-weight: 700;
 }
 
 @media screen and (min-width: 768px) {
   .masthead h1 {
-    font-size: 90px
+    font-size: 90px;
   }
 }
 
 @media screen and (min-width: 992px) {
   .masthead h1 {
-    font-size: 100px
+    font-size: 100px;
   }
 }
 
 .masthead h2 {
   font-size: 18px;
   font-weight: 200;
-  line-height: 1.25
+  line-height: 1.25;
 }
 
 @media screen and (min-width: 768px) {
   .masthead h2 {
-    font-size: 24px
+    font-size: 24px;
   }
 }
 
 @media screen and (min-width: 992px) {
   .masthead h2 {
-    font-size: 30px
+    font-size: 30px;
   }
 }
 
 .masthead p {
   font-size: 40px;
   font-weight: 200;
-  line-height: 1.25
+  line-height: 1.25;
 }
 
 .masthead .masthead-button-links {
-  margin-top: 30px
+  margin-top: 30px;
 }
 
 /*.projects .thumbnail {*/
-  /*display: block;*/
-  /*margin-right: auto;*/
-  /*margin-left: auto;*/
-  /*text-align: center;*/
-  /*max-width: 310px;*/
-  /*margin-bottom: 30px;*/
-  /*border-radius: 0*/
+/*display: block;*/
+/*margin-right: auto;*/
+/*margin-left: auto;*/
+/*text-align: center;*/
+/*max-width: 310px;*/
+/*margin-bottom: 30px;*/
+/*border-radius: 0*/
 /*}*/
 
 /*.projects .thumbnail .caption {*/
@@ -844,26 +1001,27 @@ ol ol, ol ul, ul ol, ul ul {
   text-align: center;
   font-weight: 200;
   display: block;
-  margin: 60px auto 40px
+  margin: 60px auto 40px;
 }
 
 .projects-header h2 {
   font-size: 30px;
-  letter-spacing: -1px
+  letter-spacing: -1px;
 }
 
 @media screen and (min-width: 768px) {
   .projects-header h2 {
-    font-size: 42px
+    font-size: 42px;
   }
 }
 
-.el-main{
-  margin:31px -20px 0
+.el-main {
+  margin: 31px 0 0;
+  padding: 20px 0!important;
 }
 @media screen and (min-width: 768px) {
-  .el-main{
-    margin-top:20px
+  .el-main {
+    margin-top: 20px;
   }
 }
 </style>
