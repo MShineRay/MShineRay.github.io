@@ -9,6 +9,23 @@ import Home from '../views/Home.vue'
 // }
 import Layout from '@/layout'
 
+// const files = require.context('@/views', true, /\.vue$/)
+// let pages = {
+//
+// }
+// files.keys().forEach(key => {
+//   pages[key.replace(/(\.\/|\.vue)/g, '')] = files(key).default
+// })
+// let generator = []
+// Object.keys(pages).forEach(item => {
+//   generator.push({
+//     path: `/${pages[item].name.replace(/-/g, '/')}`,
+//     name: pages[item].name,
+//     component: pages[item]
+//   })
+// })
+
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -27,6 +44,16 @@ const routes = [
         path: 'read-notes',
         name: 'read-notes',
         component: ()=>import('@/views/ReadNotes'),
+      },
+      {
+        path: '/read-notes/pingjunfen',
+        name: 'pingjunfen',
+        component: ()=>import('@/views/ReadNotes/pingjunfen'),
+      },
+      {
+        path: '/read-notes/yongjiujilu',
+        name: 'yongjiujilu',
+        component: ()=>import('@/views/ReadNotes/yongjiujilu'),
       }
     ]
   },
@@ -40,11 +67,13 @@ const routes = [
   //   component: () =>
   //     import(/* webpackChunkName: "test" */ "../views-test/Test.vue"),// 异步加载、模块分组打包
   // },
+  // ...generator,
   {
     path: '*',
     redirect: '/test',
   },
 ]
+console.log(routes )
 
 const router = new VueRouter({
   routes,
