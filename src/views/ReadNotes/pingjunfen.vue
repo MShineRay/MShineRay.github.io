@@ -2,7 +2,7 @@
   <div class="container">
     <h1 class="title">平均分</h1>
     <h5 class="author">康辉</h5>
-    <img src="./img/pingjunfen/written.jpg" alt="written">
+<!--    <img src="./img/pingjunfen/written.jpg" alt="written">-->
 
     <div class="wr_macOS wr_Desktop wr_page_reader wr_whiteTheme">
       <div class="sectionListItem">
