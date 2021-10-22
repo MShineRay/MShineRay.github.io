@@ -44,6 +44,24 @@ export default {
           bookName: '永久记录',
           bookUrl: '/read-notes/yongjiujilu',
         },
+        {
+          bookImg: 'renshengyouwo/written.jpg',
+          author: '梅耶.马斯克',
+          bookName: '人生如我',
+          bookUrl: '/read-notes/renshengyouwo',
+        },
+        {
+          bookImg: 'fulankelinzichuan/written.jpg',
+          author: '富兰克林',
+          bookName: '富兰克林自传',
+          bookUrl: '/read-notes/fulankelinzichuan',
+        },
+        {
+          bookImg: 'jiucaideziwoxiuyang/written.jpg',
+          author: '李笑来',
+          bookName: '韭菜的自我修养',
+          bookUrl: '/read-notes/jiucaideziwoxiuyang',
+        }
       ],
     }
   },

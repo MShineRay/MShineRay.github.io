@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 
 import routeTest from './routes/routeTest'
 import Home from '../views/Home.vue'
+import wereadRoutes from './routes/wereadRoutes'
 // const originalPush = VueRouter.prototype.push
 // VueRouter.prototype.push = function push(location) {
 //   return originalPush.call(this, location).catch(err => err)
@@ -45,16 +46,7 @@ const routes = [
         name: 'read-notes',
         component: ()=>import('@/views/ReadNotes'),
       },
-      {
-        path: '/read-notes/pingjunfen',
-        name: 'pingjunfen',
-        component: ()=>import('@/views/ReadNotes/pingjunfen'),
-      },
-      {
-        path: '/read-notes/yongjiujilu',
-        name: 'yongjiujilu',
-        component: ()=>import('@/views/ReadNotes/yongjiujilu'),
-      }
+      ...wereadRoutes
     ]
   },
   ...routeTest,

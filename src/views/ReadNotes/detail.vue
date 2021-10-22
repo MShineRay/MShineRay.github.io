@@ -36,7 +36,7 @@
     </section>
 
     <footer class="footer">
-      <img src="./img/pingjunfen/qr.png" alt="qr">
+      <img src="weread/img/pingjunfen/qr.png" alt="qr">
       <p>扫码阅读本书</p>
     </footer>
   </div>
