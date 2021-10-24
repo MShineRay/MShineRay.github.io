@@ -41,5 +41,8 @@ export default {
 <style lang="scss" scoped>
 .container{
   margin-top: 20px;
+  .el-card{
+    min-height: 120px;
+  }
 }
 </style>
