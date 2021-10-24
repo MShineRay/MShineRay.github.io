@@ -62,7 +62,7 @@ const routes = [
   // ...generator,
   {
     path: '*',
-    redirect: '/test',
+    redirect: '/read-notes',
   },
 ]
 console.log(routes )

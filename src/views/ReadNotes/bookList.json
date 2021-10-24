@@ -30,22 +30,16 @@
     "bookUrl": "/read-notes/jiucaideziwoxiuyang"
   },
   {
-    "bookImg": "daxingwangzhanxingnengyouhuashizhan：congqianduan、wangluo、CDNdaohouduan、dacudequanlianluxingnengyouhuaxiangjritten.jpg",
+    "bookImg": "daxingwangzhanxingnengyouhuashizhan/ritten.jpg",
     "author": "周涛明 张荣华 张新兵",
     "bookName": "大型网站性能优化实战：从前端、网络、CDN到后端、大促的全链路性能优化详解",
-    "bookUrl": "/read-notes/daxingwangzhanxingnengyouhuashizhan：congqianduan、wangluo、CDNdaohouduan、dacudequanlianluxingnenguaxiangjie"
+    "bookUrl": "/read-notes/daxingwangzhanxingnengyouhuashizhan"
   },
   {
-    "bookImg": "baochijike：buduanhuoquxinzhishi，shengjidicengcaozuonengli/written.jpg",
+    "bookImg": "baochijike/written.jpg",
     "author": "Thinkers50",
     "bookName": "保持饥渴：不断获取新知识，升级底层操作能力",
-    "bookUrl": "/read-notes/baochijike：buduanhuoquxinzhishi，shengjidicengcaozuonengli"
-  },
-  {
-    "bookImg": "banxiaoshimanhuakexueshi2/written.jpg",
-    "author": "陈磊·半小时漫画团队",
-    "bookName": "半小时漫画科学史2",
-    "bookUrl": "/read-notes/banxiaoshimanhuakexueshi2"
+    "bookUrl": "/read-notes/baochijike"
   },
   {
     "bookImg": "xiaogouqianqian2/written.jpg",
@@ -54,22 +48,16 @@
     "bookUrl": "/read-notes/xiaogouqianqian2"
   },
   {
-    "bookImg": "sanshisui，yiqieganggangkaishi/written.jpg",
+    "bookImg": "sanshisuiyiqieganggangkaishi/written.jpg",
     "author": "李尚龙",
     "bookName": "三十岁，一切刚刚开始",
-    "bookUrl": "/read-notes/sanshisui，yiqieganggangkaishi"
+    "bookUrl": "/read-notes/sanshisuiyiqieganggangkaishi"
   },
   {
-    "bookImg": "pingjunfen/written.jpg",
-    "author": "康辉",
-    "bookName": "平均分",
-    "bookUrl": "/read-notes/pingjunfen"
-  },
-  {
-    "bookImg": "demian：panghuangshaonianshi/written.jpg",
+    "bookImg": "demianpanghuangshaonianshi/written.jpg",
     "author": "赫尔曼·黑塞",
     "bookName": "德米安：彷徨少年时",
-    "bookUrl": "/read-notes/demian：panghuangshaonianshi"
+    "bookUrl": "/read-notes/demianpanghuangshaonianshi"
   },
   {
     "bookImg": "yingxiangshijiedezhongguozhiwu/written.jpg",
@@ -84,10 +72,10 @@
     "bookUrl": "/read-notes/bihuansiwei"
   },
   {
-    "bookImg": "woshizenmogejiucaide：yigepianzidehuiguoyuzibai/written.jpg",
+    "bookImg": "woshizenmogejiucaide/written.jpg",
     "author": "查尔斯·庞兹",
     "bookName": "我是怎么割韭菜的：一个骗子的悔过与自白",
-    "bookUrl": "/read-notes/woshizenmogejiucaide：yigepianzidehuiguoyuzibai"
+    "bookUrl": "/read-notes/woshizenmogejiucaide"
   },
   {
     "bookImg": "songshisanjiemei/written.jpg",

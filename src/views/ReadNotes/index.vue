@@ -42,7 +42,7 @@ export default {
 .container{
   margin-top: 20px;
   .el-card{
-    min-height: 120px;
+    min-height: 150px;
   }
 }
 </style>
