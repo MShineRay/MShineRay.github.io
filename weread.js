@@ -98,7 +98,7 @@ function rmdir(filePath, callback, delDir = true) {
   })
 }
 
-
+let bookList = []
 /**
  *
  * @param fileOrDirPath {String} 文件或文件夹路径
@@ -216,6 +216,12 @@ export default {
         vueFile = zhToPinyin(vueFile)
         fs.writeFile(wereadConfig.outputDir/*'./dist'*/ + vueFile, newVue, 'utf8', function (err) {
           if (err) return console.log(err);
+          bookList.push({
+            bookImg: bookNamePinyin+'/written.jpg',
+            author: author,
+            bookName: bookName,
+            bookUrl: '/read-notes/'+bookNamePinyin,
+          })
         });
       } else {
         if(fileWhiteList.includes(fileType)){
@@ -246,10 +252,21 @@ export default {
 
 mkdirsSync(wereadConfig.outputDir/*'./dist'*/)
 
-rmdir(wereadConfig.outputDir+'/'/*'./dist/'*/, function () {
-  mkdirsSync(wereadConfig.outputDir+'/img'/*./dist/img*/)
+rmdir(wereadConfig.outputDir+'/'/*'./dist/'*/,  function () {
   console.log('dist删除成功')
+  mkdirsSync(wereadConfig.outputDir+'/img'/*./dist/img*/)
+  console.log('mkdirsSync '+wereadConfig.outputDir+'/img success' )
+
+  console.log('parsing...')
   parse(filePath)
+
 
 })
 
+setTimeout(function(){
+  console.log('bookList:'+JSON.stringify(bookList,' ', 2))
+  const oldBookList = require('./src/views/ReadNotes/bookList.json')
+  let file = `export default = ${JSON.stringify(oldBookList.concat(bookList))}`
+  const data = fs.writeFileSync(__dirname+'/src/views/ReadNotes/bookList.js', file, 'binary')
+
+},3000)

@@ -1,0 +1,11 @@
+{
+  "watch": ["tests/weread-src/"],
+  "ignore": [
+    ".git",
+    "node_modules/**/node_modules",
+    "src",
+    ".idea",
+    "api",
+    "docs"
+  ]
+}
