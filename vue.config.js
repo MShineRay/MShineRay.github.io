@@ -70,10 +70,10 @@ module.exports = {
   },
   // webpack的配置在这个属性里修改configureWebpack
   configureWebpack: config => {
-    if (process.env.NODE_ENV === 'development') {
-      config.devtool = 'source-map'
-      // mutate config for production...
-    } else {
+    // if (process.env.NODE_ENV === 'development') {
+    //   config.devtool = 'source-map'
+    //   // mutate config for production...
+    // } else {
       // config.plugins.push(
       //   new webpack.DllReferencePlugin({
       //     context: process.cwd(),
@@ -96,10 +96,7 @@ module.exports = {
       if (process.env.Analyse) {
         config.plugins.push(new BundleAnalyzerPlugin())
       }
-
-
-    }
-
+    // }
   },
   chainWebpack: (config) => {
     config.externals({
