@@ -82,5 +82,17 @@
     "author": "陈廷一",
     "bookName": "宋氏三姐妹",
     "bookUrl": "/read-notes/songshisanjiemei"
+  },
+  {
+    "bookImg": "haodianzidushitoulaide/written.jpg",
+    "author": "杰夫·戴维森",
+    "bookName": "好点子都是偷来的：史上最感性的60堂创新课",
+    "bookUrl": "/read-notes/haodianzidushitoulaide"
+  },
+  {
+    "bookImg": "wangyongqingquanchuan/written.jpg",
+    "author": "双根编著",
+    "bookName": "王永庆全传",
+    "bookUrl": "/read-notes/wangyongqingquanchuan"
   }
 ]

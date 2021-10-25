@@ -196,10 +196,10 @@ async function parse(fileOrDirPath, {
   <div class="wr_macOS wr_Desktop wr_page_reader wr_whiteTheme">
     ${js_content}
   </div>
-  <footer class="footer">
-    <img src="./img/${bookNamePinyin}/qr.png" alt="qr">
-    <p>扫码阅读本书</p>
-  </footer>
+<!--  <footer class="footer">-->
+<!--    <img src="./img/${bookNamePinyin}/qr.png" alt="qr">-->
+<!--    <p>扫码阅读本书</p>-->
+<!--  </footer>-->
 </div>
 </template>
 <script>
