@@ -468,11 +468,10 @@
         </div>
       </div>
     </div>
-    <footer class='footer'>
+<!--    <footer class='footer'>-->
       <!--    <img src="./img/jiucaideziwoxiuyang/qr.png" alt="qr">-->
-      <p>扫码阅读本书</p>
-      <p>扫码阅读本书</p>
-    </footer>
+<!--      <p>扫码阅读本书</p>-->
+<!--    </footer>-->
   </div>
 </template>
 <script>

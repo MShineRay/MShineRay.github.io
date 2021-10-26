@@ -360,7 +360,8 @@
           <div>
             <div class='text'>趁早把老年和贫穷提防，
               没有整天普照的朝阳，
-            </div></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
