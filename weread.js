@@ -260,13 +260,15 @@ rmdir(wereadConfig.outputDir+'/'/*'./dist/'*/,  function () {
   console.log('parsing...')
   parse(filePath)
 
+  setTimeout(function(){
+    console.log('bookList:'+JSON.stringify(bookList))
+    // const oldBookList = require('./src/views/ReadNotes/bookList.json')
+    // let file = `export default =
+    // ${JSON.stringify(oldBookList.concat(bookList))}`
+    // console.log(file)
+    // const data = fs.writeFileSync(__dirname+'/src/views/ReadNotes/bookList.js', file, 'binary')
+
+  },3000)
 
 })
 
-setTimeout(function(){
-  console.log('bookList:'+JSON.stringify(bookList,' ', 2))
-  const oldBookList = require('./src/views/ReadNotes/bookList.json')
-  let file = `export default = ${JSON.stringify(oldBookList.concat(bookList))}`
-  const data = fs.writeFileSync(__dirname+'/src/views/ReadNotes/bookList.js', file, 'binary')
-
-},3000)
