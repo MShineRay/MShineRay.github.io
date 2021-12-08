@@ -1017,7 +1017,7 @@ h4 {
 
 .el-main {
   margin: 31px 0 0;
-  padding: 20px 0!important;
+  padding: 20px 0 !important;
 }
 @media screen and (min-width: 768px) {
   .el-main {

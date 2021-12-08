@@ -22,7 +22,7 @@ require('events').EventEmitter.defaultMaxListeners = 0
  * deploy/q、master为生产分支，不开启
  */
 // const fs = require('fs')
-let IS_PRODUCTIONSOURCEMAP = true
+// let IS_PRODUCTIONSOURCEMAP = true
 // const isGitDir = fs.statSync('./.git')
 // if (isGitDir) {
 //   let is_branch = fs.readFileSync('./.git/HEAD')
@@ -74,38 +74,38 @@ module.exports = {
     //   config.devtool = 'source-map'
     //   // mutate config for production...
     // } else {
-      // config.plugins.push(
-      //   new webpack.DllReferencePlugin({
-      //     context: process.cwd(),
-      //     manifest: require(dllPath + '/vendor-manifest.json'),
-      //   })
-      // )
-      config.plugins.push(
-        new AddAssetHtmlPlugin({
-          // dll文件位置
-          filepath: path.resolve(__dirname, dllPath + '/*.js'),
-          // dll 引用路径
-          publicPath: linkPath,
-          // dll最终输出的目录
-          outputPath: linkPath,
-        })
-      )
+    // config.plugins.push(
+    //   new webpack.DllReferencePlugin({
+    //     context: process.cwd(),
+    //     manifest: require(dllPath + '/vendor-manifest.json'),
+    //   })
+    // )
+    config.plugins.push(
+      new AddAssetHtmlPlugin({
+        // dll文件位置
+        filepath: path.resolve(__dirname, dllPath + '/*.js'),
+        // dll 引用路径
+        publicPath: linkPath,
+        // dll最终输出的目录
+        outputPath: linkPath,
+      })
+    )
 
-      // chunk文件新增构建信息
-      // config.plugins.push(new webpack.BannerPlugin(makeInfo))
-      if (process.env.Analyse) {
-        config.plugins.push(new BundleAnalyzerPlugin())
-      }
+    // chunk文件新增构建信息
+    // config.plugins.push(new webpack.BannerPlugin(makeInfo))
+    if (process.env.Analyse) {
+      config.plugins.push(new BundleAnalyzerPlugin())
+    }
     // }
   },
-  chainWebpack: (config) => {
+  chainWebpack: config => {
     config.externals({
       // 以下是全局使用
       vue: 'Vue',
       vuex: 'Vuex',
       'vue-router': 'VueRouter',
     })
-  }
+  },
   // 第三方插件配置
   // pluginOptions: {},
 }

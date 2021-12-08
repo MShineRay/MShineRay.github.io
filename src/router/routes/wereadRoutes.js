@@ -1,8 +1,5 @@
-
 const files = require.context('@/views/ReadNotes/weread', true, /\.vue$/)
-let pages = {
-
-}
+let pages = {}
 files.keys().forEach(key => {
   pages[key.replace(/(\.\/|\.vue)/g, '')] = files(key).default
 })
@@ -11,7 +8,7 @@ Object.keys(pages).forEach(item => {
   generator.push({
     path: `/read-notes/${pages[item].name.replace(/-/g, '/')}`,
     name: pages[item].name,
-    component: () => import('@/views/ReadNotes/weread/'+pages[item].name)
+    component: () => import('@/views/ReadNotes/weread/' + pages[item].name),
   })
 })
 
@@ -26,5 +23,5 @@ export default [
   //   name: 'yongjiujilu',
   //   component: () => import('@/views/ReadNotes/weread/yongjiujilu'),
   // }
-  ...generator
+  ...generator,
 ]

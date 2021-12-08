@@ -1,12 +1,12 @@
-const fs = require('fs');
-const path = require('path');
-const cheerio = require('cheerio');
+const fs = require('fs')
+const path = require('path')
+const cheerio = require('cheerio')
 const pinyin = require('pinyin')
 const wereadConfig = require('./weread.config.js')
-function zhToPinyin(zh){
+function zhToPinyin(zh) {
   return pinyin(zh, {
     style: pinyin.STYLE_NORMAL,
-  }).join("")
+  }).join('')
 }
 /**
  * 批量解析微信读书笔记html，并转换成对应的vue文件
@@ -20,11 +20,8 @@ function zhToPinyin(zh){
  * 6、clean 删除 src下已经处理过的源文件及其依赖的资源文件
  * @type {string}
  */
-const filePath = wereadConfig.src//path.resolve(__dirname + '/data/');
-const fileWhiteList = [
-  'html',
-  'jpg'
-]
+const filePath = wereadConfig.src //path.resolve(__dirname + '/data/');
+const fileWhiteList = ['html', 'jpg']
 
 /**
  * 根据文件路径获取文件后缀（文件类型）
@@ -33,7 +30,7 @@ const fileWhiteList = [
  */
 function getFileExt(filePath) {
   //获取最后一个.的位置
-  var index = filePath.lastIndexOf(".");
+  let index = filePath.lastIndexOf('.')
   //获取后缀
   return filePath.substr(index + 1)
 }
@@ -60,11 +57,11 @@ function getFileExt(filePath) {
  */
 function mkdirsSync(dirname) {
   if (fs.existsSync(dirname)) {
-    return true;
+    return true
   } else {
     if (mkdirsSync(path.dirname(dirname))) {
-      fs.mkdirSync(dirname);
-      return true;
+      fs.mkdirSync(dirname)
+      return true
     }
   }
 }
@@ -74,7 +71,7 @@ function mkdirsSync(dirname) {
  * @param filePath
  * @param callback
  */
-function rmdir(filePath, callback, delDir = true) {
+function rmdir(filePath, callback) {
   // 先判断当前filePath的类型(文件还是文件夹,如果是文件直接删除, 如果是文件夹, 去取当前文件夹下的内容, 拿到每一个递归)
   fs.stat(filePath, function (err, stat) {
     if (err) return console.log(err)
@@ -110,21 +107,24 @@ let bookList = []
  * @param dirLevel
  * @param fileType
  */
-async function parse(fileOrDirPath, {
-  fileDir,//文件所在文件夹
-  filename,
-  filePath,//文件绝对路径
-  isDir,
-  isFile,
-  dirLevel = 0,
-  fileType
-} = {}) {
+async function parse(
+  fileOrDirPath,
+  {
+    fileDir, //文件所在文件夹
+    filename,
+    filePath, //文件绝对路径
+    isDir,
+    isFile,
+    dirLevel = 0,
+    fileType,
+  } = {}
+) {
   if (fileOrDirPath) {
-    let isDirDef = isDir;// true || false 判断是不是文件夹
-    let isFileDef = isFile;// true || false 判断是不是文件夹
+    let isDirDef = isDir // true || false 判断是不是文件夹
+    let isFileDef = isFile // true || false 判断是不是文件夹
 
     if (!filePath) {
-      let lstatSync = fs.lstatSync(fileOrDirPath);
+      let lstatSync = fs.lstatSync(fileOrDirPath)
       isDirDef = lstatSync.isDirectory()
       isFileDef = lstatSync.isFile()
     }
@@ -140,12 +140,12 @@ async function parse(fileOrDirPath, {
           dirLevel++
           files.forEach(function (filename) {
             //获取当前文件的绝对路径
-            const filePath = path.join(fileOrDirPath, filename);
-            const stat = fs.lstatSync(filePath);
-            const isDir = stat.isDirectory();// true || false 判断是不是文件夹
-            const isFile = stat.isFile();// true || false 判断是不是文件夹
+            const filePath = path.join(fileOrDirPath, filename)
+            const stat = fs.lstatSync(filePath)
+            const isDir = stat.isDirectory() // true || false 判断是不是文件夹
+            const isFile = stat.isFile() // true || false 判断是不是文件夹
             //获取后缀
-            const fileType = getFileExt(filePath);
+            const fileType = getFileExt(filePath)
             const encoding = 'utf-8'
             const fileInfo = {
               fileDir: fileOrDirPath,
@@ -155,40 +155,40 @@ async function parse(fileOrDirPath, {
               isFile,
               dirLevel,
               fileType,
-              encoding
+              encoding,
             }
-            if (isDir || isFile && (fileWhiteList.includes(fileType) || fileType === filePath)) {
-              parse(filePath, fileInfo);//递归，如果是文件夹，就继续遍历该文件夹下面的文件
+            if (isDir || (isFile && (fileWhiteList.includes(fileType) || fileType === filePath))) {
+              parse(filePath, fileInfo) //递归，如果是文件夹，就继续遍历该文件夹下面的文件
             }
-          });
+          })
         }
-      });
+      })
     } else if (isFileDef) {
-      let fileList = filePath.split(wereadConfig.outRootDirName/*'data'*/)
+      let fileList = filePath.split(wereadConfig.outRootDirName /*'data'*/)
       fileList.splice(0, 1)
-      let fileDistDir = fileList.join(wereadConfig.outRootDirName/*'data'*/)
+      let fileDistDir = fileList.join(wereadConfig.outRootDirName /*'data'*/)
       // mkdirsSync(wereadConfig.outputDir/*'./dist'*/ + fileDistDir.split(filename)[0])
-      console.log('filePath:'+filePath)
-      console.log('fileDistDir:'+fileDistDir)
-      console.log('fileType:'+fileType)
-      var imgName = ''
-      if (fileType === 'html' && dirLevel<2) {
+      console.log('filePath:' + filePath)
+      console.log('fileDistDir:' + fileDistDir)
+      console.log('fileType:' + fileType)
+      let imgName = ''
+      if (fileType === 'html' && dirLevel < 2) {
         let file = fs.readFileSync(filePath, 'utf8')
-        var $ = cheerio.load(file)
-        var imgUrl = $('.wr_bookCover_img').attr('src')
+        let $ = cheerio.load(file)
+        let imgUrl = $('.wr_bookCover_img').attr('src')
         console.log($('.wr_bookCover_img').attr('src'))
-        imgName = imgUrl?imgUrl.split('/').pop():''
-        var js_content = $('.readerNoteList').html()
-        if(!js_content){
+        imgName = imgUrl ? imgUrl.split('/').pop() : ''
+        let js_content = $('.readerNoteList').html()
+        if (!js_content) {
           return false
         }
-        var ary = fileDistDir.split('/')[1].split('.html')[0].split('-')
-        var bookName = ary[0]
-        var author = ary[1]
-        console.log('bookName:'+bookName)
-        console.log('author:'+author)
-        var bookNamePinyin = zhToPinyin(bookName)
-        var newVue = `<template>
+        let ary = fileDistDir.split('/')[1].split('.html')[0].split('-')
+        let bookName = ary[0]
+        let author = ary[1]
+        console.log('bookName:' + bookName)
+        console.log('author:' + author)
+        let bookNamePinyin = zhToPinyin(bookName)
+        let newVue = `<template>
   <div class="container">
   <h1 class="title">${bookName}</h1>
   <h5 class="author">${author}</h5>
@@ -211,37 +211,41 @@ export default {
 @import '~@/assets/css/weread.css';
 @import '~@/assets/scss/readnotes';
 </style>`
-        var vueFile = fileDistDir.replace('.html','.vue').replace('-微信读书', '').replace('-'+author, '')
-        console.log('vueFile:'+vueFile)
+        let vueFile = fileDistDir
+          .replace('.html', '.vue')
+          .replace('-微信读书', '')
+          .replace('-' + author, '')
+        console.log('vueFile:' + vueFile)
         vueFile = zhToPinyin(vueFile)
-        fs.writeFile(wereadConfig.outputDir/*'./dist'*/ + vueFile, newVue, 'utf8', function (err) {
-          if (err) return console.log(err);
+        fs.writeFile(wereadConfig.outputDir /*'./dist'*/ + vueFile, newVue, 'utf8', function (err) {
+          if (err) return console.log(err)
           bookList.push({
-            bookImg: bookNamePinyin+'/written.jpg',
+            bookImg: bookNamePinyin + '/written.jpg',
             author: author,
             bookName: bookName,
-            bookUrl: '/read-notes/'+bookNamePinyin,
+            bookUrl: '/read-notes/' + bookNamePinyin,
           })
-        });
+        })
       } else {
-        if(fileWhiteList.includes(fileType)){
+        if (fileWhiteList.includes(fileType)) {
           let file = fs.readFileSync(filePath, 'binary')
-          console.log('file:'+fileDistDir)
-          var dirName = fileDistDir.split('/')[1]
-          var imgFile = fileDistDir.replace(dirName, 'img')
-          var bookName = dirName.split('-')[0]
-          var bookNamePinyin = zhToPinyin(bookName)
-          console.log('bookNamePinyin:'+bookNamePinyin)
-          console.log('imgFile:'+imgFile)
-          var imgName = imgFile.split('/').pop()
+          console.log('file:' + fileDistDir)
+          let dirName = fileDistDir.split('/')[1]
+          let imgFile = fileDistDir.replace(dirName, 'img')
+          let bookName = dirName.split('-')[0]
+          let bookNamePinyin = zhToPinyin(bookName)
+          console.log('bookNamePinyin:' + bookNamePinyin)
+          console.log('imgFile:' + imgFile)
+          let imgName = imgFile.split('/').pop()
           // await mkdirsSync('./dist/img/'+ bookNamePinyin)
-          console.log('imgName:'+imgName)
-          await mkdirsSync(wereadConfig.outputDir+'/img/'+ bookNamePinyin)
-          try{//同步写入文件
-            var fileSrc = wereadConfig.outputDir+'/img/'+ bookNamePinyin+'/'+ imgName
-            console.log('fileSrc:'+fileSrc)
-            const data = fs.writeFileSync(fileSrc, file, 'binary')
-          }catch (err){
+          console.log('imgName:' + imgName)
+          await mkdirsSync(wereadConfig.outputDir + '/img/' + bookNamePinyin)
+          try {
+            //同步写入文件
+            let fileSrc = wereadConfig.outputDir + '/img/' + bookNamePinyin + '/' + imgName
+            console.log('fileSrc:' + fileSrc)
+            fs.writeFileSync(fileSrc, file, 'binary')
+          } catch (err) {
             console.error(err)
           }
         }
@@ -250,25 +254,22 @@ export default {
   }
 }
 
-mkdirsSync(wereadConfig.outputDir/*'./dist'*/)
+mkdirsSync(wereadConfig.outputDir /*'./dist'*/)
 
-rmdir(wereadConfig.outputDir+'/'/*'./dist/'*/,  function () {
+rmdir(wereadConfig.outputDir + '/' /*'./dist/'*/, function () {
   console.log('dist删除成功')
-  mkdirsSync(wereadConfig.outputDir+'/img'/*./dist/img*/)
-  console.log('mkdirsSync '+wereadConfig.outputDir+'/img success' )
+  mkdirsSync(wereadConfig.outputDir + '/img' /*./dist/img*/)
+  console.log('mkdirsSync ' + wereadConfig.outputDir + '/img success')
 
   console.log('parsing...')
   parse(filePath)
 
-  setTimeout(function(){
-    console.log('bookList:'+JSON.stringify(bookList))
+  setTimeout(function () {
+    console.log('bookList:' + JSON.stringify(bookList))
     // const oldBookList = require('./src/views/ReadNotes/bookList.json')
     // let file = `export default =
     // ${JSON.stringify(oldBookList.concat(bookList))}`
     // console.log(file)
     // const data = fs.writeFileSync(__dirname+'/src/views/ReadNotes/bookList.js', file, 'binary')
-
-  },3000)
-
+  }, 3000)
 })
-

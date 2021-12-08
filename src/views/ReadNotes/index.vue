@@ -1,7 +1,12 @@
 <template>
   <div class="container">
     <div class="row">
-      <div class="col-sm-6 col-md-4 col-lg-3" v-for="(book, index) in bookList" :key="book.name" style="margin-bottom: 20px">
+      <div
+        class="col-sm-6 col-md-4 col-lg-3"
+        v-for="(book, index) in bookList"
+        :key="book.name"
+        style="margin-bottom: 20px"
+      >
         <el-card shadow="hover">
           <div class="thumbnail">
             <a
@@ -39,9 +44,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.container{
+.container {
   margin-top: 20px;
-  .el-card{
+  .el-card {
     min-height: 150px;
   }
 }

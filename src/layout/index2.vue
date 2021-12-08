@@ -7,47 +7,45 @@
             <div class="gb_Qd gb_Ed">
               <div>
                 <div class="gb_2d">
-                  <div class="gb_g ">
-                    <a class="gb_f"
-                       href="https://github.com/mshineray" target="_blank">GitHub
-                    </a>
+                  <div class="gb_g">
+                    <a class="gb_f" href="https://github.com/mshineray" target="_blank">GitHub </a>
                   </div>
                 </div>
               </div>
-<!--              <div class="gb_Me">-->
-<!--                <div class="gb_Nc">-->
-<!--                  <div class="gb_B gb_bd">-->
-<!--                    <div class="gb_tf">-->
-<!--                      <a class="gb_C"-->
-<!--                         href="#"-->
-<!--                      >-->
-<!--                        <svg class="gb_Pe" focusable="false" viewBox="0 0 24 24">-->
-<!--                          <path-->
-<!--                            d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path>-->
-<!--                        </svg>-->
-<!--                      </a>-->
-<!--                    </div>-->
-<!--                  </div>-->
-<!--                </div>-->
-<!--                <div class="gb_Na gb_bd">-->
-<!--                  <div class="gb_tf">-->
-<!--                    <a class="gb_C"-->
-<!--                       href="#"-->
-<!--                    >-->
-<!--                      <img-->
-<!--                        class="gb_Ca "-->
-<!--                        src="https://lh3.googleusercontent.com/ogw/ADea4I6b0IWkT3ebP0q4xfMHaU0PNGu3qDC_u5YTmgX0=s32-c-mo"-->
-<!--                      >-->
-<!--                    </a>-->
-<!--                  </div>-->
-<!--                </div>-->
-<!--              </div>-->
+              <!--              <div class="gb_Me">-->
+              <!--                <div class="gb_Nc">-->
+              <!--                  <div class="gb_B gb_bd">-->
+              <!--                    <div class="gb_tf">-->
+              <!--                      <a class="gb_C"-->
+              <!--                         href="#"-->
+              <!--                      >-->
+              <!--                        <svg class="gb_Pe" focusable="false" viewBox="0 0 24 24">-->
+              <!--                          <path-->
+              <!--                            d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path>-->
+              <!--                        </svg>-->
+              <!--                      </a>-->
+              <!--                    </div>-->
+              <!--                  </div>-->
+              <!--                </div>-->
+              <!--                <div class="gb_Na gb_bd">-->
+              <!--                  <div class="gb_tf">-->
+              <!--                    <a class="gb_C"-->
+              <!--                       href="#"-->
+              <!--                    >-->
+              <!--                      <img-->
+              <!--                        class="gb_Ca "-->
+              <!--                        src="https://lh3.googleusercontent.com/ogw/ADea4I6b0IWkT3ebP0q4xfMHaU0PNGu3qDC_u5YTmgX0=s32-c-mo"-->
+              <!--                      >-->
+              <!--                    </a>-->
+              <!--                  </div>-->
+              <!--                </div>-->
+              <!--              </div>-->
             </div>
           </div>
         </div>
       </el-header>
       <el-main>
-        <router-view/>
+        <router-view />
       </el-main>
       <!--      <el-footer>Footer</el-footer>-->
     </el-container>
@@ -55,26 +53,22 @@
 </template>
 
 <script>
-
 export default {
-  name: "Layout",
+  name: 'Layout',
   components: {},
   mixins: [],
   data() {
-    return {};
+    return {}
   },
   computed: {},
-  mounted() {
-  },
+  mounted() {},
   methods: {},
-};
+}
 </script>
 
 <style lang="scss" scoped>
-
-
 .gb_tf {
-  position: relative
+  position: relative;
 }
 
 .gb_C {
@@ -89,66 +83,88 @@ export default {
   width: 40px;
   color: #000;
   cursor: pointer;
-  text-decoration: none
+  text-decoration: none;
 }
 
 .gb_Me {
-  position: relative
+  position: relative;
 }
-
 
 .gb_C {
   padding: 8px;
-  cursor: pointer
+  cursor: pointer;
 }
 
-
-.gb_Ne button:focus svg, .gb_Ne button:hover svg, .gb_Ne button:active svg, .gb_C:focus, .gb_C:hover, .gb_C:active, .gb_C[aria-expanded=true] {
+.gb_Ne button:focus svg,
+.gb_Ne button:hover svg,
+.gb_Ne button:active svg,
+.gb_C:focus,
+.gb_C:hover,
+.gb_C:active,
+.gb_C[aria-expanded='true'] {
   outline: none;
   -webkit-border-radius: 50%;
-  border-radius: 50%
+  border-radius: 50%;
 }
 
-.gb_vc .gb_Ne.gb_Oe button:focus svg, .gb_vc .gb_Ne.gb_Oe button:focus:hover svg, .gb_Ne button:focus svg, .gb_Ne button:focus:hover svg, .gb_C:focus, .gb_C:focus:hover {
-  background-color: rgba(60, 64, 67, 0.1)
+.gb_vc .gb_Ne.gb_Oe button:focus svg,
+.gb_vc .gb_Ne.gb_Oe button:focus:hover svg,
+.gb_Ne button:focus svg,
+.gb_Ne button:focus:hover svg,
+.gb_C:focus,
+.gb_C:focus:hover {
+  background-color: rgba(60, 64, 67, 0.1);
 }
 
-.gb_vc .gb_Ne.gb_Oe button:active svg, .gb_Ne button:active svg, .gb_C:active {
-  background-color: rgba(60, 64, 67, 0.12)
+.gb_vc .gb_Ne.gb_Oe button:active svg,
+.gb_Ne button:active svg,
+.gb_C:active {
+  background-color: rgba(60, 64, 67, 0.12);
 }
 
-.gb_vc .gb_Ne.gb_Oe button:hover svg, .gb_Ne button:hover svg, .gb_C:hover {
-  background-color: rgba(60, 64, 67, 0.08)
+.gb_vc .gb_Ne.gb_Oe button:hover svg,
+.gb_Ne button:hover svg,
+.gb_C:hover {
+  background-color: rgba(60, 64, 67, 0.08);
 }
 
-.gb_C[aria-expanded=true], .gb_C:hover[aria-expanded=true] {
-  background-color: rgba(95, 99, 104, 0.24)
+.gb_C[aria-expanded='true'],
+.gb_C:hover[aria-expanded='true'] {
+  background-color: rgba(95, 99, 104, 0.24);
 }
 
-.gb_C[aria-expanded=true] .gb_Pe, .gb_C[aria-expanded=true] .gb_Qe {
+.gb_C[aria-expanded='true'] .gb_Pe,
+.gb_C[aria-expanded='true'] .gb_Qe {
   fill: #5f6368;
-  opacity: 1
+  opacity: 1;
 }
 
-.gb_vc .gb_Ne button:hover svg, .gb_vc .gb_C:hover {
-  background-color: rgba(232, 234, 237, 0.08)
+.gb_vc .gb_Ne button:hover svg,
+.gb_vc .gb_C:hover {
+  background-color: rgba(232, 234, 237, 0.08);
 }
 
-.gb_vc .gb_Ne button:focus svg, .gb_vc .gb_Ne button:focus:hover svg, .gb_vc .gb_C:focus, .gb_vc .gb_C:focus:hover {
-  background-color: rgba(232, 234, 237, 0.10)
+.gb_vc .gb_Ne button:focus svg,
+.gb_vc .gb_Ne button:focus:hover svg,
+.gb_vc .gb_C:focus,
+.gb_vc .gb_C:focus:hover {
+  background-color: rgba(232, 234, 237, 0.1);
 }
 
-.gb_vc .gb_Ne button:active svg, .gb_vc .gb_C:active {
-  background-color: rgba(232, 234, 237, 0.12)
+.gb_vc .gb_Ne button:active svg,
+.gb_vc .gb_C:active {
+  background-color: rgba(232, 234, 237, 0.12);
 }
 
-.gb_vc .gb_C[aria-expanded=true], .gb_vc .gb_C:hover[aria-expanded=true] {
-  background-color: rgba(255, 255, 255, 0.12)
+.gb_vc .gb_C[aria-expanded='true'],
+.gb_vc .gb_C:hover[aria-expanded='true'] {
+  background-color: rgba(255, 255, 255, 0.12);
 }
 
-.gb_vc .gb_C[aria-expanded=true] .gb_Pe, .gb_vc .gb_C[aria-expanded=true] .gb_Qe {
+.gb_vc .gb_C[aria-expanded='true'] .gb_Pe,
+.gb_vc .gb_C[aria-expanded='true'] .gb_Qe {
   fill: #ffffff;
-  opacity: 1
+  opacity: 1;
 }
 
 .gb_bd {
@@ -159,23 +175,26 @@ export default {
 
 .gb_E {
   z-index: 991;
-  line-height: normal
+  line-height: normal;
 }
 
 .gb_Se .gb_E {
-  top: 56px
+  top: 56px;
 }
 
-.gb_B .gb_C, .gb_D .gb_B .gb_C {
-  background-position: -64px -29px
+.gb_B .gb_C,
+.gb_D .gb_B .gb_C {
+  background-position: -64px -29px;
 }
 
-.gb_B .gb_C, .gb_B .gb_C:hover, .gb_B .gb_C:focus {
-  opacity: 1
+.gb_B .gb_C,
+.gb_B .gb_C:hover,
+.gb_B .gb_C:focus {
+  opacity: 1;
 }
 
 .gb_Cd {
-  display: none
+  display: none;
 }
 
 .gb_Uc {
@@ -194,12 +213,11 @@ export default {
   top: 2px;
   white-space: nowrap;
   -webkit-flex: 1 1 auto;
-  flex: 1 1 auto
+  flex: 1 1 auto;
 }
 
-
 .gb_Wc.gb_Xc .gb_Uc {
-  padding-left: 4px
+  padding-left: 4px;
 }
 
 .gb_Ed {
@@ -212,19 +230,19 @@ export default {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
-  -webkit-user-select: none
+  -webkit-user-select: none;
 }
 
 .gb_Qd.gb_Nc {
-  padding-left: 4px
+  padding-left: 4px;
 }
 
 .gb_Nc {
-  display: inline
+  display: inline;
 }
 
 .gb_Uc {
-  display: inline-block
+  display: inline-block;
 }
 
 .gb_Qd {
@@ -238,9 +256,8 @@ export default {
   flex: 0 0 auto;
   -webkit-box-pack: flex-end;
   -webkit-justify-content: flex-end;
-  justify-content: flex-end
+  justify-content: flex-end;
 }
-
 
 .gb_Vd {
   font-size: 14px;
@@ -249,58 +266,60 @@ export default {
   padding: 0 12px;
   text-overflow: ellipsis;
   white-space: nowrap;
-  -webkit-user-select: text
+  -webkit-user-select: text;
 }
 
 .gb_Wd {
-  -webkit-transition: background-color .4s;
-  transition: background-color .4s
+  -webkit-transition: background-color 0.4s;
+  transition: background-color 0.4s;
 }
 
 .gb_Xd {
-  color: black
+  color: black;
 }
 
 .gb_vc {
-  color: white
+  color: white;
 }
 
 .gb_s {
-  color: rgba(0, 0, 0, 0.87)
+  color: rgba(0, 0, 0, 0.87);
 }
 
 .gb_2d {
   font-family: arial, sans-serif;
   line-height: normal;
-  padding-right: 15px
+  padding-right: 15px;
 }
 
-a.gb_f, span.gb_f {
+a.gb_f,
+span.gb_f {
   color: rgba(0, 0, 0, 0.87);
-  text-decoration: none
+  text-decoration: none;
 }
 
-.gb_vc a.gb_f, .gb_vc span.gb_f {
-  color: white
+.gb_vc a.gb_f,
+.gb_vc span.gb_f {
+  color: white;
 }
 
 a.gb_f:focus {
-  outline-offset: 2px
+  outline-offset: 2px;
 }
 
 a.gb_f:hover {
-  text-decoration: underline
+  text-decoration: underline;
 }
 
 .gb_g {
   display: inline-block;
-  padding-left: 15px
+  padding-left: 15px;
 }
 
 .gb_g .gb_f {
   display: inline-block;
   line-height: 24px;
-  vertical-align: middle
+  vertical-align: middle;
 }
 
 .gb_Ca {
@@ -314,21 +333,21 @@ a.gb_f:hover {
   position: relative;
   height: 32px;
   width: 32px;
-  z-index: 0
+  z-index: 0;
 }
 
 .gb_Na .gb_C {
-  padding: 4px
+  padding: 4px;
 }
 
 .Ne6nSd {
   display: flex;
   align-items: center;
-  padding: 6px
+  padding: 6px;
 }
 
 .LX3sZb {
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 </style>

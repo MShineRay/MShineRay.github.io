@@ -26,7 +26,6 @@ import Layout from '@/layout'
 //   })
 // })
 
-
 Vue.use(VueRouter)
 
 const routes = [
@@ -39,15 +38,15 @@ const routes = [
         path: '',
         name: 'home',
         component: Home,
-        meta: {  }
+        meta: {},
       },
       {
         path: 'read-notes',
         name: 'read-notes',
-        component: ()=>import('@/views/ReadNotes'),
+        component: () => import('@/views/ReadNotes'),
       },
-      ...wereadRoutes
-    ]
+      ...wereadRoutes,
+    ],
   },
   ...routeTest,
   // {
@@ -65,7 +64,7 @@ const routes = [
     redirect: '/read-notes',
   },
 ]
-console.log(routes )
+console.log(routes)
 
 const router = new VueRouter({
   routes,

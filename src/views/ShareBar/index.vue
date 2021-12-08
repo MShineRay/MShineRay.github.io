@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-<!--    list + Ranking-->
+    <!--    list + Ranking-->
     <h1>Hello, list</h1>
   </div>
 </template>
@@ -14,6 +14,4 @@ export default {
 }
 </script>
 
-<style>
-</style>
-
+<style></style>
