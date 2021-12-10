@@ -96,10 +96,10 @@
     "bookUrl": "/read-notes/wangyongqingquanchuan"
   },
   {
-    "bookImg":"Webquanzhangongchengshideziwoxiuyang/written.jpg",
-    "author":"余果",
-    "bookName":"Web全栈工程师的自我修养",
-    "bookUrl":"/read-notes/Webquanzhangongchengshideziwoxiuyang"
+    "bookImg": "Webquanzhangongchengshideziwoxiuyang/written.jpg",
+    "author": "余果",
+    "bookName": "Web全栈工程师的自我修养",
+    "bookUrl": "/read-notes/Webquanzhangongchengshideziwoxiuyang"
   },
   {
     "bookImg": "xiegeisuoyourendebianchengsiwei/written.jpg",
@@ -120,22 +120,22 @@
     "bookUrl": "/read-notes/daimajingjinzhilucongmanongdaogongjiang"
   },
   {
-    "bookImg":"yiwangwuqianxiaomishizhounian/written.jpg",
-    "author":"雷军",
-    "bookName":"一往无前：小米十周年 雷军公开演讲全文",
-    "bookUrl":"/read-notes/yiwangwuqianxiaomishizhounian"
+    "bookImg": "yiwangwuqianxiaomishizhounian/written.jpg",
+    "author": "雷军",
+    "bookName": "一往无前：小米十周年 雷军公开演讲全文",
+    "bookUrl": "/read-notes/yiwangwuqianxiaomishizhounian"
   },
   {
-    "bookImg":"banxiaoshimanhuazhongguozhexueshi/written.jpg",
-    "author":"陈磊·半小时漫画团队",
-    "bookName":"半小时漫画中国哲学史",
-    "bookUrl":"/read-notes/banxiaoshimanhuazhongguozhexueshi"
+    "bookImg": "banxiaoshimanhuazhongguozhexueshi/written.jpg",
+    "author": "陈磊·半小时漫画团队",
+    "bookName": "半小时漫画中国哲学史",
+    "bookUrl": "/read-notes/banxiaoshimanhuazhongguozhexueshi"
   },
   {
-    "bookImg":"tushuoshijiegeju/written.jpg",
-    "author":"王伟",
-    "bookName":"图说世界格局",
-    "bookUrl":"/read-notes/tushuoshijiegeju"
+    "bookImg": "tushuoshijiegeju/written.jpg",
+    "author": "王伟",
+    "bookName": "图说世界格局",
+    "bookUrl": "/read-notes/tushuoshijiegeju"
   },
   {
     "bookImg": "furendeluojiruhechuangzaocaifu/written.jpg",
@@ -144,81 +144,87 @@
     "bookUrl": "/read-notes/furendeluojiruhechuangzaocaifu"
   },
   {
-    "bookImg":"banxiaoshimanhuajingjixuexilie/written.jpg",
-    "author":"陈磊·半小时漫画团队",
-    "bookName":"半小时漫画经济学系列（共4册）（独家定制版）",
-    "bookUrl":"/read-notes/banxiaoshimanhuajingjixuexilie"
+    "bookImg": "banxiaoshimanhuajingjixuexilie/written.jpg",
+    "author": "陈磊·半小时漫画团队",
+    "bookName": "半小时漫画经济学系列（共4册）（独家定制版）",
+    "bookUrl": "/read-notes/banxiaoshimanhuajingjixuexilie"
   },
   {
-    "bookImg":"wobuyaonisiyuyishiwuchenggeinverde17fenggaobiexin/written.jpg",
-    "author":"法齐娅·kName",
-    "bookName":"我不要你死于一事无成：给女儿的17封告别信",
-    "bookUrl":"/read-notes/wobuyaonisiyuyishiwuchenggeinverde17fenggaobiexin"
+    "bookImg": "wobuyaonisiyuyishiwuchenggeinverde17fenggaobiexin/written.jpg",
+    "author": "法齐娅·kName",
+    "bookName": "我不要你死于一事无成：给女儿的17封告别信",
+    "bookUrl": "/read-notes/wobuyaonisiyuyishiwuchenggeinverde17fenggaobiexin"
   },
   {
-    "bookImg":"kangzhujiushibenshi/written.jpg",
-    "bookName":"扛住就是本事",
-    "author":"冯仑",
-    "bookUrl":"/read-notes/kangzhujiushibenshi"
+    "bookImg": "kangzhujiushibenshi/written.jpg",
+    "bookName": "扛住就是本事",
+    "author": "冯仑",
+    "bookUrl": "/read-notes/kangzhujiushibenshi"
   },
   {
-    "bookImg":"GitHubrumenyushijian/written.jpg",
-    "author":"大塚弘记",
-    "bookName":"GitHub入门与实践",
-    "bookUrl":"/read-notes/gitHubrumenyushijian"
+    "bookImg": "GitHubrumenyushijian/written.jpg",
+    "author": "大塚弘记",
+    "bookName": "GitHub入门与实践",
+    "bookUrl": "/read-notes/gitHubrumenyushijian"
   },
   {
-    "bookImg":"duansheli/written.jpg",
-    "author":"山下英子",
-    "bookName":"断舍离",
-    "bookUrl":"/read-notes/duansheli"
+    "bookImg": "duansheli/written.jpg",
+    "author": "山下英子",
+    "bookName": "断舍离",
+    "bookUrl": "/read-notes/duansheli"
   },
   {
-    "bookImg":"fubaba21shijideshengyi/written.jpg",
-    "author":"罗伯特·清崎 约翰·弗莱明 金·清崎",
-    "bookName":"富爸爸21世纪的生意",
-    "bookUrl":"/read-notes/fubaba21shijideshengyi"
+    "bookImg": "fubaba21shijideshengyi/written.jpg",
+    "author": "罗伯特·清崎 约翰·弗莱明 金·清崎",
+    "bookName": "富爸爸21世纪的生意",
+    "bookUrl": "/read-notes/fubaba21shijideshengyi"
   },
   {
-    "bookImg":"zhinengzhuyiweilaiyushehuidexinshengtai/written.jpg",
-    "author":"周鸿祎",
-    "bookName":"智能主义：未来商业与社会的新生态",
-    "bookUrl":"/read-notes/zhinengzhuyiweilaishangyeyushehuidexinshengtai"
+    "bookImg": "zhinengzhuyiweilaiyushehuidexinshengtai/written.jpg",
+    "author": "周鸿祎",
+    "bookName": "智能主义：未来商业与社会的新生态",
+    "bookUrl": "/read-notes/zhinengzhuyiweilaishangyeyushehuidexinshengtai"
   },
   {
-    "bookImg":"xingfulema/written.jpg",
-    "author":"白岩松",
-    "bookName":"幸福了吗？",
-    "bookUrl":"/read-notes/xingfulema"
+    "bookImg": "xingfulema/written.jpg",
+    "author": "白岩松",
+    "bookName": "幸福了吗？",
+    "bookUrl": "/read-notes/xingfulema"
   },
   {
-    "bookImg":"liuxiedegushi/written.jpg",
-    "author":"南侠",
-    "bookName":"流血的股市",
-    "bookUrl":"/read-notes/liuxiedegushi"
+    "bookImg": "liuxiedegushi/written.jpg",
+    "author": "南侠",
+    "bookName": "流血的股市",
+    "bookUrl": "/read-notes/liuxiedegushi"
   },
   {
-    "bookImg":"zhinenghualangchaozhengzaibaofadedisicigongyegeming/written.jpg",
-    "author":"张江健",
-    "bookName":"智能化浪潮：正在爆发的第四次工业革命",
-    "bookUrl":"/read-notes/zhinenghualangchaozhengzaibaofadedisicigongyegeming"
+    "bookImg": "zhinenghualangchaozhengzaibaofadedisicigongyegeming/written.jpg",
+    "author": "张江健",
+    "bookName": "智能化浪潮：正在爆发的第四次工业革命",
+    "bookUrl": "/read-notes/zhinenghualangchaozhengzaibaofadedisicigongyegeming"
   },
   {
-    "bookImg":"rangshijianpeinimanmanbianfu/written.jpg",
-    "author":"李笑来",
-    "bookName":"让时间陪你慢慢变富",
-    "bookUrl":"/read-notes/rangshijianpeinimanmanbianfu"
+    "bookImg": "rangshijianpeinimanmanbianfu/written.jpg",
+    "author": "李笑来",
+    "bookName": "让时间陪你慢慢变富",
+    "bookUrl": "/read-notes/rangshijianpeinimanmanbianfu"
   },
   {
-    "bookImg":"shuying/written.jpg",
-    "author":"付遥",
-    "bookName":"输赢",
-    "bookUrl":"/read-notes/shuying"
+    "bookImg": "shuying/written.jpg",
+    "author": "付遥",
+    "bookName": "输赢",
+    "bookUrl": "/read-notes/shuying"
   },
   {
-    "bookImg":"gugedegushi/written.jpg",
-    "author":"戴维·怀斯 马克·摩西德",
-    "bookName":"谷歌的故事",
-    "bookUrl":"/read-notes/gugedegushi"
+    "bookImg": "gugedegushi/written.jpg",
+    "author": "戴维·怀斯 马克·摩西德",
+    "bookName": "谷歌的故事",
+    "bookUrl": "/read-notes/gugedegushi"
+  },
+  {
+    "bookImg": "wozichuanyupingguoyiqifengkuang/written.jpg",
+    "author": "史蒂夫·沃兹尼亚克",
+    "bookName": "沃兹传：与苹果一起疯狂",
+    "bookUrl": "/read-notes/wozichuanyupingguoyiqifengkuang"
   }
 ]

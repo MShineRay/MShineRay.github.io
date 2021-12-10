@@ -182,12 +182,14 @@ async function parse(
         if (!js_content) {
           return false
         }
+        js_content = js_content.replace(/<!---->/g, '')
         let ary = fileDistDir.split('/')[1].split('.html')[0].split('-')
         let bookName = ary[0]
         let author = ary[1]
         console.log('bookName:' + bookName)
         console.log('author:' + author)
         let bookNamePinyin = zhToPinyin(bookName)
+        bookNamePinyin = bookNamePinyin.replace(/：/g, '')
         let newVue = `<template>
   <div class="container">
   <h1 class="title">${bookName}</h1>
@@ -215,6 +217,8 @@ export default {
           .replace('.html', '.vue')
           .replace('-微信读书', '')
           .replace('-' + author, '')
+          .replace(/：/g, '')
+
         console.log('vueFile:' + vueFile)
         vueFile = zhToPinyin(vueFile)
         fs.writeFile(wereadConfig.outputDir /*'./dist'*/ + vueFile, newVue, 'utf8', function (err) {
@@ -234,6 +238,7 @@ export default {
           let imgFile = fileDistDir.replace(dirName, 'img')
           let bookName = dirName.split('-')[0]
           let bookNamePinyin = zhToPinyin(bookName)
+          bookNamePinyin = bookNamePinyin.replace(/：/g, '')
           console.log('bookNamePinyin:' + bookNamePinyin)
           console.log('imgFile:' + imgFile)
           let imgName = imgFile.split('/').pop()
@@ -265,7 +270,8 @@ rmdir(wereadConfig.outputDir + '/' /*'./dist/'*/, function () {
   parse(filePath)
 
   setTimeout(function () {
-    console.log('bookList:' + JSON.stringify(bookList))
+    console.log('bookList:')
+    console.log(bookList)
     // const oldBookList = require('./src/views/ReadNotes/bookList.json')
     // let file = `export default =
     // ${JSON.stringify(oldBookList.concat(bookList))}`
