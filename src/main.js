@@ -6,7 +6,7 @@ import ElementUI from 'element-ui'
 import App from './App.vue'
 import router from './router'
 import filters from './filters'
-import store from './store'
+// import store from './store'
 import VuePlugs from './common/vuePlugs'
 
 Vue.use(ElementUI)
@@ -17,6 +17,6 @@ for (const key in filters) {
 }
 new Vue({
   router,
-  store,
+  // store,
   render: h => h(App),
 }).$mount('#app')

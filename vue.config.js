@@ -102,7 +102,7 @@ module.exports = {
     config.externals({
       // 以下是全局使用
       vue: 'Vue',
-      vuex: 'Vuex',
+      // vuex: 'Vuex',
       'vue-router': 'VueRouter',
     })
   },
