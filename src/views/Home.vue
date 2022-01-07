@@ -36,11 +36,11 @@
         <div class="col-sm-6 col-md-4 col-lg-3">
           <el-card shadow="hover">
             <div class="thumbnail">
-              <a href="#sharelink" title="Share Link" target="_blank"> Share Link </a>
+              <a href="#share-image" title="Share Image" target="_blank"> Share Image </a>
               <div class="caption">
-                <p>My Share Link</p>
+                <p>My Share image</p>
                 <p>by MShineRay</p>
-                <p>@ 2021-10-25 11:00:00</p>
+                <p>@ 2022-01-02 15:35:00</p>
               </div>
             </div>
           </el-card>

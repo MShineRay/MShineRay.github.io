@@ -33,6 +33,7 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Layout,
+    redirect: '/read-notes',
     children: [
       {
         path: '',
@@ -46,6 +47,20 @@ const routes = [
         component: () => import('@/views/ReadNotes'),
       },
       ...wereadRoutes,
+      {
+        path: 'share-image',
+        name: 'share-image',
+        component: ()=>import('@/views/ShareImage')
+      },
+      {
+        path: '/share-image/zhiqun/',
+        name: 'share-image',
+        component: ()=>import('@/views/ShareImage/zhiqun/index.vue')
+      },
+      {
+        path: '*',
+        redirect: '/home',
+      }
     ],
   },
   ...routeTest,
@@ -61,7 +76,7 @@ const routes = [
   // ...generator,
   {
     path: '*',
-    redirect: '/read-notes',
+    redirect: '/home',
   },
 ]
 console.log(routes)
