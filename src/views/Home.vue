@@ -26,8 +26,8 @@
             <div class="thumbnail">
               <a href="#read-notes" title="Reading Notes" target="_blank"> Reading Notes </a>
               <div class="caption">
-                <p>My Reading Notes</p>
-                <p>by MShineRay</p>
+<!--                <p>My Reading Notes</p>-->
+<!--                <p>by MShineRay</p>-->
                 <p>@ 2021-10-09 16:00:00</p>
               </div>
             </div>
@@ -38,8 +38,8 @@
             <div class="thumbnail">
               <a href="#share-image" title="Share Image" target="_blank"> Share Image </a>
               <div class="caption">
-                <p>My Share image</p>
-                <p>by MShineRay</p>
+<!--                <p>My Share image</p>-->
+<!--                <p>by MShineRay</p>-->
                 <p>@ 2022-01-02 15:35:00</p>
               </div>
             </div>
@@ -123,5 +123,8 @@ export default {
 }
 .container {
   margin-top: 20px;
+}
+.el-card{
+  margin-bottom: 20px;
 }
 </style>
