@@ -58,6 +58,11 @@ const routes = [
         component: ()=>import('@/views/ShareImage/zhiqun/index.vue')
       },
       {
+        path: '/share-image/zhiqun/detail',
+        name: 'share-image',
+        component: ()=>import('@/views/ShareImage/zhiqun/image.vue')
+      },
+      {
         path: '*',
         redirect: '/home',
       }

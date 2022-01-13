@@ -2,15 +2,27 @@
   <div class="container">
     <div class="row">
       <div
-        class="col-sm-6 col-lg-4"
+        class="col-sm-6 col-md-4 col-lg-3"
         v-for="(book, index) in bookList"
-        :key="book.name"
+        :key="book.pageName"
         style="margin-bottom: 20px"
       >
-        <el-card>
-          <h3>{{book.name}}</h3>
-          <img :src="book.url" width="250px" height="600px" alt="">
+        <el-card shadow="hover">
+          <a
+            :href="'#/share-image/zhiqun/detail?img='+index"
+            title="Reading Notes"
+            style="width: 150px; height: 200px"
+            target="_blank"
+          >
+            <div class="thumbnail">
+              <p>{{ book.pageName }}</p>
+            </div>
+          </a>
         </el-card>
+<!--        <el-card>-->
+<!--          <h3>{{book.name}}</h3>-->
+<!--          <img :src="book.url" width="250px" height="600px" alt="">-->
+<!--        </el-card>-->
       </div>
     </div>
   </div>
@@ -21,9 +33,6 @@ import bookList from './index.json'
 
 export default {
   name: 'Home',
-  components: {
-    // HelloWorld,
-  },
   data() {
     return {
       bookList,
@@ -35,9 +44,5 @@ export default {
 <style lang="scss" scoped>
 .container {
   margin-top: 20px;
-
-  //.el-card {
-    //min-height: 150px;
-  //}
 }
 </style>
