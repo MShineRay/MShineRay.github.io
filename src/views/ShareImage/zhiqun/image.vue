@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="row">
+    <div class="row" >
       <div
         class="col-sm-6 col-lg-4"
         v-for="(book, idx) in bookList[index].imgList"
@@ -36,10 +36,9 @@ export default {
 <style lang="scss" scoped>
 .container {
   margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  //.el-card {
-    //min-height: 150px;
-  //}
+  .row{
+    display: flex;
+    justify-content: center;
+  }
 }
 </style>
