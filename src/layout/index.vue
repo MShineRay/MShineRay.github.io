@@ -29,7 +29,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand hidden-sm" href="#">P2PShare</a>
+            <a class="navbar-brand hidden-sm" href="#/">P2PShare</a>
           </div>
           <div class="navbar-collapse collapse" role="navigation">
             <ul class="nav navbar-nav">

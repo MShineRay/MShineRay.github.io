@@ -30,25 +30,26 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
+    path: '/read-notes',
     name: 'Home',
     component: Layout,
-    redirect: '/read-notes',
     children: [
       {
-        path: '',
-        name: 'home',
-        component: Home,
-        meta: {},
-      },
-      {
-        path: 'read-notes',
+        path: '/',
         name: 'read-notes',
         component: () => import('@/views/ReadNotes'),
       },
       ...wereadRoutes,
+    ]
+  },
+  {
+    path: '/share-image',
+    name: 'Home',
+    component: Layout,
+    redirect: '',
+    children: [
       {
-        path: 'share-image',
+        path: '/',
         name: 'share-image',
         component: ()=>import('@/views/ShareImage')
       },
@@ -61,24 +62,23 @@ const routes = [
         path: '/share-image/zhiqun/detail',
         name: 'share-image',
         component: ()=>import('@/views/ShareImage/zhiqun/image.vue')
-      },
-      {
-        path: '*',
-        redirect: '/home',
       }
     ],
   },
   ...routeTest,
-  // {
-  //   path: "/test",
-  //   name: "Test",
-  //   // route level code-splitting
-  //   // this generates a separate chunk (about.[hash].js) for this route
-  //   // which is lazy-loaded when the route is visited.
-  //   component: () =>
-  //     import(/* webpackChunkName: "test" */ "../views-test/Test.vue"),// 异步加载、模块分组打包
-  // },
-  // ...generator,
+  {
+    path: '/home',
+    name: 'Home',
+    component: Layout,
+    children: [
+      {
+        path: '',
+        name: 'home',
+        component: Home,
+        meta: {},
+      }
+    ],
+  },
   {
     path: '*',
     redirect: '/home',
