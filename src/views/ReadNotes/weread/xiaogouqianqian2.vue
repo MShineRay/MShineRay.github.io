@@ -326,8 +326,12 @@
   </div>
 </template>
 <script>
+import logCreated from "@/mixin/log-created";
+
 export default {
   name: 'xiaogouqianqian2',
+  mixins: [logCreated]
+
 }
 </script>
 <style lang="scss" scoped>

@@ -105,11 +105,15 @@
 // @ is an alias to /src
 // import HelloWorld from "@/components/HelloWorld.vue";
 
+import logCreated from "@/mixin/log-created";
+
 export default {
   name: 'Home',
   components: {
     // HelloWorld,
   },
+  mixins: [logCreated]
+
 }
 </script>
 

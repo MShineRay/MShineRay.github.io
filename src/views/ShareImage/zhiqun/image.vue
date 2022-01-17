@@ -18,12 +18,14 @@
 
 <script>
 import bookList from './index.json'
+import logCreated from "@/mixin/log-created";
 
 export default {
   name: 'Home',
   components: {
     // HelloWorld,
   },
+  mixins: [logCreated],
   data() {
     return {
       index: this.$route.query.img,

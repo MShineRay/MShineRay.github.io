@@ -509,8 +509,12 @@
   </div>
 </template>
 <script>
+import logCreated from "@/mixin/log-created";
+
 export default {
   name: 'fubaba21shijideshengyi',
+  mixins: [logCreated]
+
 }
 </script>
 <style lang="scss" scoped>

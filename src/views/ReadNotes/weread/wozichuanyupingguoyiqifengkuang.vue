@@ -20,8 +20,12 @@
 </div>
 </template>
 <script>
+import logCreated from "@/mixin/log-created";
+
 export default {
-  name: 'wozichuanyupingguoyiqifengkuang'
+  name: 'wozichuanyupingguoyiqifengkuang',
+  mixins: [logCreated]
+
 }
 </script>
 <style lang="scss" scoped>

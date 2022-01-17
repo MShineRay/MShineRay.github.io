@@ -614,8 +614,12 @@
   </div>
 </template>
 <script>
+import logCreated from "@/mixin/log-created";
+
 export default {
   name: 'xingfulema',
+  mixins: [logCreated]
+
 }
 </script>
 <style lang="scss" scoped>

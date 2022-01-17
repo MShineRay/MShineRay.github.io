@@ -1523,8 +1523,12 @@
   </div>
 </template>
 <script>
+import logCreated from "@/mixin/log-created";
+
 export default {
   name: 'baochijike',
+  mixins: [logCreated]
+
 }
 </script>
 <style lang="scss" scoped>

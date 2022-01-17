@@ -26,6 +26,7 @@
 
 <script>
 import bookList from './bookList.json'
+import logCreated from "@/mixin/log-created";
 
 export default {
   name: 'Home',
@@ -37,6 +38,8 @@ export default {
       bookList,
     }
   },
+  mixins: [logCreated]
+
 }
 </script>
 

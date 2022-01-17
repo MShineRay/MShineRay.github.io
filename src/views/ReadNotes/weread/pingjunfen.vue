@@ -369,6 +369,10 @@
 <script>
 export default {
   name: 'pingjunfen',
+  created(){
+    console.log(1)
+    window.gtag_event && window.gtag_event('open-'+this.$route.path, this.$route.query)
+  },
 }
 </script>
 <style lang="scss" scoped>
