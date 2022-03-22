@@ -4,6 +4,12 @@
   "templateName": "template-pc-vue2-elementui",
   "templateVersion": "0.0.1",
   "private": true,
+  "main": "src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./config": "./src/vitepress/config/baseConfig.js",
+    "./highlight": "./src/vitepress/config/highlight.js"
+  },
   "scripts": {
     "dev": "vue-cli-service serve --open",
     "build": "vue-cli-service build",
@@ -15,18 +21,30 @@
     "prepare": "husky install",
     "log": "standard-changelog -f && git add CHANGELOG.md",
     "commit": "commit",
-    "wr": "nodemon weread.js"
+    "wr": "nodemon weread.js",
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build"
   },
   "dependencies": {
     "axios": "^0.21.1",
     "compression-webpack-plugin": "^8.0.1",
     "core-js": "^3.15.2",
     "element-ui": "^2.15.3",
-    "normalize.css": "7.0.0",
-    "vue": "^2.6.14",
     "vue-axios": "^3.2.4",
     "vue-router": "^3.5.2",
-    "vuex": "^3.6.2"
+    "vuex": "^3.6.2",
+    "@docsearch/css": "^3.0.0-alpha.41",
+    "@docsearch/js": "^3.0.0-alpha.41",
+    "@vueuse/core": "^7.3.0",
+    "body-scroll-lock": "^3.1.5",
+    "normalize.css": "^8.0.1",
+    "shiki": "^0.9.15",
+    "@types/body-scroll-lock": "^2.6.1",
+    "@types/estree": "^0.0.48",
+    "prettier": "^2.4.1",
+    "typescript": "~4.3.5",
+    "vitepress": "^0.20.9",
+    "vue": "^3.2.26"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.5.13",
