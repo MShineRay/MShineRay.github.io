@@ -1,38 +1,41 @@
 {
-  "name": "mshineray.github.io",
-  "version": "0.0.1",
-  "templateName": "template-pc-vue2-elementui",
-  "templateVersion": "0.0.1",
-  "private": true,
+  "name": "@vue/theme",
+  "version": "1.0.1",
+  "description": "The design system for Vue.js.",
   "main": "src/index.ts",
   "exports": {
     ".": "./src/index.ts",
     "./config": "./src/vitepress/config/baseConfig.js",
     "./highlight": "./src/vitepress/config/highlight.js"
   },
+  "files": [
+    "src",
+    "types"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vuejs/theme.git"
+  },
+  "keywords": [
+    "vue",
+    "design-system"
+  ],
+  "author": "Evan You",
+  "license": "MIT",
+  "homepage": "https://theme.vuejs.org",
+  "bugs": {
+    "url": "https://github.com/vuejs/theme/issues"
+  },
   "scripts": {
-    "dev": "vue-cli-service serve --open",
-    "build": "vue-cli-service build",
-    "test:unit": "vue-cli-service test:unit",
-    "test:e2e": "vue-cli-service test:e2e",
-    "lint": "vue-cli-service lint",
-    "lint:fix": "vue-cli-service lint --fix",
-    "prettier": "prettier -c --write plop-templates/**/*.js src/**/*.js src/**/*.vue",
-    "prepare": "husky install",
-    "log": "standard-changelog -f && git add CHANGELOG.md",
-    "commit": "commit",
-    "wr": "nodemon weread.js",
-    "docs:dev": "vitepress dev",
-    "docs:build": "vitepress build"
+    "lint": "prettier --check --write --parser typescript \"{__tests__,docs,src,types}/**/*.ts\"",
+    "lint:fail": "prettier --check --parser typescript \"{__tests__,docs,src,types}/**/*.ts\"",
+    "type": "tsc --noEmit",
+    "test": "yarn lint && yarn type",
+    "dev": "vitepress dev demo",
+    "demo-build": "vitepress build demo",
+    "serve": "yarn demo-build && vitepress serve demo"
   },
   "dependencies": {
-    "axios": "^0.21.1",
-    "compression-webpack-plugin": "^8.0.1",
-    "core-js": "^3.15.2",
-    "element-ui": "^2.15.3",
-    "vue-axios": "^3.2.4",
-    "vue-router": "^3.5.2",
-    "vuex": "^3.6.2",
     "@docsearch/css": "^3.0.0-alpha.41",
     "@docsearch/js": "^3.0.0-alpha.41",
     "@vueuse/core": "^7.3.0",
@@ -45,41 +48,5 @@
     "typescript": "~4.3.5",
     "vitepress": "^0.20.9",
     "vue": "^3.2.26"
-  },
-  "devDependencies": {
-    "@vue/cli-plugin-babel": "^4.5.13",
-    "@vue/cli-plugin-e2e-cypress": "^4.5.13",
-    "@vue/cli-plugin-eslint": "^4.5.13",
-    "@vue/cli-plugin-router": "^4.5.13",
-    "@vue/cli-plugin-unit-jest": "^4.5.13",
-    "@vue/cli-plugin-vuex": "^4.5.13",
-    "@vue/cli-service": "^4.5.13",
-    "@vue/eslint-config-prettier": "^6.0.0",
-    "@vue/test-utils": "^1.2.1",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.8.0",
-    "eslint-plugin-prettier": "^3.4.0",
-    "eslint-plugin-vue": "^6.2.2",
-    "node-sass": "4.14.1",
-    "prettier": "^2.3.2",
-    "sass-loader": "^8.0.2",
-    "vue-template-compiler": "^2.6.14",
-    "@commitlint/cli": "^12.1.4",
-    "@commitlint/config-conventional": "^12.1.4",
-    "@commitlint/prompt-cli": "^12.1.4",
-    "husky": "^6.0.0",
-    "lint-staged": "^11.0.0",
-    "add-asset-html-webpack-plugin": "^3.2.0",
-    "babel-plugin-import": "^1.13.3",
-    "vue-loader": "^16.3.0",
-    "@vue/compiler-sfc": "^3.1.4",
-    "cheerio": "^1.0.0-rc.2",
-    "pinyin": "^2.10.2",
-    "request": "^2.83.0",
-    "nodemon": "^2.0.7"
-  },
-  "dllPath": "public/vendor",
-  "engines": {
-    "node": ">=12.6.0 <=14.17.3"
   }
 }
