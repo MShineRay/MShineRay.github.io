@@ -1,1 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0b1a92"],{2196:function(p,n,c){p.exports=c.p+"img/t6_22297344.fc1b85c2.jpg"}}]);

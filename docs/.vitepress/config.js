@@ -2,18 +2,18 @@ const getBase = require('../../src/vitepress/config/baseConfig')
 const path = require('path')
 
 module.exports = (async () => {
-  // const base = await getBase()
+  const base = await getBase()
   return {
-    // ...base,
+    ...base,
 
     vite: {
-      // ...base.vite,
+      ...base.vite,
       build: {
         minify: false
       },
       resolve: {
         alias: {
-          // '@vue/theme': path.join(__dirname, '../../src')
+          '@vue/theme': path.join(__dirname, '../../src')
         }
       }
     },
