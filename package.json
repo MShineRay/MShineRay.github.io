@@ -33,9 +33,10 @@
     "test": "yarn lint && yarn type",
     "dev": "vitepress dev docs",
     "build": "vitepress build docs",
+    "serve": "yarn build && vitepress serve docs",
     "demo-dev": "vitepress dev demo",
     "demo-build": "vitepress build demo",
-    "serve": "yarn demo-build && vitepress serve demo"
+    "demo-serve": "yarn demo-build && vitepress serve demo"
   },
   "dependencies": {
     "@docsearch/css": "^3.0.0-alpha.41",
