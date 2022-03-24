@@ -12,7 +12,7 @@ export interface APIGroup {
     headers: string[]
   }[]
 }
-
+console.error(11)
 // declare resolved data type
 export declare const data: APIGroup[]
 
@@ -21,6 +21,16 @@ export default {
   watch: './*.md',
   // read from fs and generate the data
   load(): APIGroup[] {
+    console.error(1)
+    console.error(
+      sidebar['/api/'].map((group) => ({
+        text: group.text,
+        items: group.items.map((item) => ({
+          ...item,
+          headers: parsePageHeaders(item.link)
+        }))
+      }))
+    )
     return sidebar['/api/'].map((group) => ({
       text: group.text,
       items: group.items.map((item) => ({

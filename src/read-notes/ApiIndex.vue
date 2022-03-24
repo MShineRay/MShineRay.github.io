@@ -158,7 +158,7 @@ h3 {
   transition: color 0.5s;
 }
 
-.dark api-groups a {
+.dark .api-groups a {
   font-weight: 400;
 }
 
