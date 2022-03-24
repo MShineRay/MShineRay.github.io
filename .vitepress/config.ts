@@ -105,13 +105,25 @@ const nav = [
 export const sidebar = {
   '/guide/': [
     {
+      text: 'Share Space',
+      items: [
+        { text: 'Read Notes', link: '/guide/read-notes' },
+        { text: 'Image Notes', link: '/guide/image-notes'},
+        { text: 'WWW Notes', link: '/guide/www-notes'}
+      ]
+    },
+    {
+      text: 'Work Space',
+      items: [
+        { text: 'Read Notes', link: '/guide/read-notes' },
+        { text: 'Image Notes', link: '/guide/image-notes'}
+      ]
+    },
+    {
       text: 'Getting Started',
       items: [
         { text: 'Introduction', link: '/guide/introduction' },
-        {
-          text: 'Quick Start',
-          link: '/guide/quick-start'
-        }
+        { text: 'Quick Start', link: '/guide/quick-start' }
       ]
     },
     {
@@ -611,7 +623,7 @@ export default defineConfigWithTheme<ThemeConfig>({
         text: 'MIT License',
         link: 'https://opensource.org/licenses/MIT'
       },
-      copyright: `Copyright © 2014-${new Date().getFullYear()} Evan You`
+      copyright: `Copyright © 2022-now MShineRay`
     }
   },
 

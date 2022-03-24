@@ -16,7 +16,7 @@ import VueMasteryModal from './VueMasteryModal.vue';
       user interfaces.
     </p>
     <p class="actions">
-      <vue-mastery-modal />
+<!--      <vue-mastery-modal />-->
       <a class="get-started" href="/guide/introduction.html">
         Get Started
         <svg
@@ -31,59 +31,59 @@ import VueMasteryModal from './VueMasteryModal.vue';
           />
         </svg>
       </a>
-      <a class="setup" href="/guide/quick-start.html">Install</a>
+<!--      <a class="setup" href="/guide/quick-start.html">Install</a>-->
     </p>
   </section>
 
   <!-- TODO make dynamic based on data -->
-  <section id="special-sponsor">
-    <span>Special Sponsor</span>
-    <a href="https://www.dcloud.io/hbuilderx.html?hmsr=vue-en&hmpl=&hmcu=&hmkw=&hmci=">
-      <picture>
-        <source type="image/avif" srcset="/images/sponsors/hbuilder.avif" />
-        <img
-          alt="hbuilder logo"
-          width="97"
-          height="36"
-          src="/images/sponsors/hbuilder.png"
-        />
-      </picture>
-    </a>
-    <span>Advanced IDE for Vue</span>
-  </section>
+<!--  <section id="special-sponsor">-->
+<!--    <span>Special Sponsor</span>-->
+<!--    <a href="https://www.dcloud.io/hbuilderx.html?hmsr=vue-en&hmpl=&hmcu=&hmkw=&hmci=">-->
+<!--      <picture>-->
+<!--        <source type="image/avif" srcset="/images/sponsors/hbuilder.avif" />-->
+<!--        <img-->
+<!--          alt="hbuilder logo"-->
+<!--          width="97"-->
+<!--          height="36"-->
+<!--          src="/images/sponsors/hbuilder.png"-->
+<!--        />-->
+<!--      </picture>-->
+<!--    </a>-->
+<!--    <span>Advanced IDE for Vue</span>-->
+<!--  </section>-->
 
-  <section id="highlights" class="vt-box-container">
-    <div class="vt-box">
-      <h2>Approachable</h2>
-      <p>
-        Builds on top of standard HTML, CSS and JavaScript with intuitive
-        API and world-class documentation.
-      </p>
-    </div>
-    <div class="vt-box">
-      <h2>Performant</h2>
-      <p>
-        Truly reactive, compiler-optimized rendering system that rarely
-        requires manual optimization.
-      </p>
-    </div>
-    <div class="vt-box">
-      <h2>Versatile</h2>
-      <p>
-        A rich, incrementally adoptable ecosystem that scales between a
-        library and a full-featured framework.
-      </p>
-    </div>
-  </section>
+<!--  <section id="highlights" class="vt-box-container">-->
+<!--    <div class="vt-box">-->
+<!--      <h2>Approachable</h2>-->
+<!--      <p>-->
+<!--        Builds on top of standard HTML, CSS and JavaScript with intuitive-->
+<!--        API and world-class documentation.-->
+<!--      </p>-->
+<!--    </div>-->
+<!--    <div class="vt-box">-->
+<!--      <h2>Performant</h2>-->
+<!--      <p>-->
+<!--        Truly reactive, compiler-optimized rendering system that rarely-->
+<!--        requires manual optimization.-->
+<!--      </p>-->
+<!--    </div>-->
+<!--    <div class="vt-box">-->
+<!--      <h2>Versatile</h2>-->
+<!--      <p>-->
+<!--        A rich, incrementally adoptable ecosystem that scales between a-->
+<!--        library and a full-featured framework.-->
+<!--      </p>-->
+<!--    </div>-->
+<!--  </section>-->
 
-  <section id="sponsors">
-    <h2>Platinum Sponsors</h2>
-    <SponsorsGroup tier="platinum" placement="landing" />
-    <h2>Gold Sponsors</h2>
-    <SponsorsGroup tier="gold" placement="landing" />
-  </section>
+<!--  <section id="sponsors">-->
+<!--    <h2>Platinum Sponsors</h2>-->
+<!--    <SponsorsGroup tier="platinum" placement="landing" />-->
+<!--    <h2>Gold Sponsors</h2>-->
+<!--    <SponsorsGroup tier="gold" placement="landing" />-->
+<!--  </section>-->
 
-  <NewsLetter />
+<!--  <NewsLetter />-->
 </template>
 
 <style scoped>
