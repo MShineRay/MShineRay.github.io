@@ -1227,70 +1227,87 @@ export const sidebar = {
     }
   ]
 }
-
+console.log(baseConfig)
 export default defineConfigWithTheme<ThemeConfig>({
   extends: baseConfig,
 
   lang: 'en-US',
-  title: 'Vue.js',
-  description: 'Vue.js - The Progressive JavaScript Framework',
+  title: 'ShineRay',
+  description: 'ShineRay',
   srcDir: 'src',
   srcExclude: ['tutorial/**/description.md'],
   scrollOffset: 'header',
 
   head: [
-    ['meta', { name: 'twitter:site', content: '@vuejs' }],
-    ['meta', { name: 'twitter:card', content: 'summary' }],
+    // ['meta', { name: 'twitter:site', content: '@vuejs' }],
+    // ['meta', { name: 'twitter:card', content: 'summary' }],
+    // [
+    //   'meta',
+    //   {
+    //     name: 'twitter:image',
+    //     content: 'https://vuejs.org/images/logo.png'
+    //   }
+    // ],
+    // [
+    //   'link',
+    //   {
+    //     rel: 'preconnect',
+    //     href: 'https://sponsors.vuejs.org'
+    //   }
+    // ],
+    // [
+    //   'script',
+    //   {},
+    //   fs.readFileSync(
+    //     path.resolve(__dirname, './inlined-scripts/restorePreference.js'),
+    //     'utf-8'
+    //   )
+    // ],
+    // [
+    //   'script',
+    //   {
+    //     src: 'https://cdn.usefathom.com/script.js',
+    //     'data-site': 'XNOLWPLB',
+    //     'data-spa': 'auto',
+    //     defer: ''
+    //   }
+    // ],
     [
-      'meta',
+      'script',
       {
-        name: 'twitter:image',
-        content: 'https://vuejs.org/images/logo.png'
-      }
-    ],
-    [
-      'link',
-      {
-        rel: 'preconnect',
-        href: 'https://sponsors.vuejs.org'
+        src: 'https://www.googletagmanager.com/gtag/js?id=G-R31NB6KKBC',
+        // 'data-site': 'XNOLWPLB',
+        // 'data-spa': 'auto',
+        // defer: ''
       }
     ],
     [
       'script',
       {},
       fs.readFileSync(
-        path.resolve(__dirname, './inlined-scripts/restorePreference.js'),
+        path.resolve(__dirname, './inlined-scripts/gtag_event.js'),
         'utf-8'
       )
     ],
-    [
-      'script',
-      {
-        src: 'https://cdn.usefathom.com/script.js',
-        'data-site': 'XNOLWPLB',
-        'data-spa': 'auto',
-        defer: ''
-      }
-    ]
   ],
 
   themeConfig: {
     nav,
     sidebar,
 
-    algolia: {
-      indexName: 'vuejs',
-      appId: 'ML0LEBN7FQ',
-      apiKey: 'f49cbd92a74532cc55cfbffa5e5a7d01',
-      searchParameters: {
-        facetFilters: ['version:v3']
-      }
-    },
+    // algolia: {
+    //   indexName: 'vuejs',
+    //   appId: 'ML0LEBN7FQ',
+    //   apiKey: 'f49cbd92a74532cc55cfbffa5e5a7d01',
+    //   searchParameters: {
+    //     facetFilters: ['version:v3']
+    //   }
+    // },
 
-    carbonAds: {
-      code: 'CEBDT27Y',
-      placement: 'vuejsorg'
-    },
+    // carbonAds: {
+    //   code: 'CEBDT27Y',
+    //   placement: 'vuejsorg'
+    // },
 
     socialLinks: [
       { icon: 'languages', link: '/translations/' },
