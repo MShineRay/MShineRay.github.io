@@ -4,7 +4,7 @@ import { defineConfigWithTheme } from 'vitepress'
 import type { Config as ThemeConfig } from '@vue/theme'
 import baseConfig from '@vue/theme/config'
 import { headerPlugin } from './headerMdPlugin'
-
+import {wxSideBarList} from '../src/read-notes/weread/list'
 const nav = [
   {
     text: 'Space',
@@ -101,7 +101,6 @@ const nav = [
     link: '/sponsor/'
   }
 ]
-
 // TODO 抽取左侧菜单
 export const sidebar = {
   '/read-notes/': [
@@ -110,11 +109,8 @@ export const sidebar = {
       items: [
         {
           text: 'WXRead List', link: '/read-notes/'
-        },
-        {
-          text: 'book xx', link: '/read-notes/weread/banxiaoshimanhuajingjixuexilie'
-        },
-      ]
+        }
+      ].concat(wxSideBarList)
     },
     {
       text: 'Point Notes',
