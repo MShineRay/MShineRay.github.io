@@ -173,6 +173,6 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-//@import '~@/assets/css/weread.css';
-//@import '~@/assets/scss/readnotes';
+@import './css/weread.css';
+@import './css/readnotes';
 </style>
