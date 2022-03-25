@@ -1,5 +1,5 @@
 ---
-title: API Reference
+title: Read Notes
 page: true
 footer: false
 ---

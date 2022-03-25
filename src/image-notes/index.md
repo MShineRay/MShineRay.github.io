@@ -1,5 +1,5 @@
 ---
-title: API Reference
+title: Image Notes
 page: true
 footer: false
 ---
