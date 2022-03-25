@@ -5,7 +5,7 @@ footer: false
 ---
 
 <script setup>
-import ApiIndex from './ApiIndex.vue'
+import ReadNotesIndex from './ReadNotesIndex.vue'
 </script>
 
-<ApiIndex />
+<ReadNotesIndex />
