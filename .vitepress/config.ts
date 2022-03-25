@@ -112,14 +112,15 @@ export const sidebar = {
           text: 'WXRead List', link: '/read-notes/'
         },
         {
-          text: 'read xx', link: '/read-notes/weread/banxiaoshimanhuajingjixuexilie'
+          text: 'book xx', link: '/read-notes/weread/banxiaoshimanhuajingjixuexilie'
         },
       ]
     },
     {
-      text: 'WWW Notes', link: '/read-notes/',
+      text: 'Point Notes',
       items: [
-        { text: 'read xx', link: '/read-notes/xxx',},
+        { text: 'Point List', link: '/read-notes/point/',},
+        { text: 'point xx', link: '/read-notes/point/xx',},
       ]
     },
     // {
