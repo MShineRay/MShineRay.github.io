@@ -7,7 +7,7 @@ import { headerPlugin } from './headerMdPlugin'
 
 const nav = [
   {
-    text: 'space',
+    text: 'Space',
     activeMatch: `^/(image-notes|www-notes|read-notes|guide|style-guide|cookbook|examples)/`,
     items: [
       { text: 'Read Notes', link: '/read-notes/' },
@@ -102,10 +102,22 @@ const nav = [
   }
 ]
 
+// TODO 抽取左侧菜单
 export const sidebar = {
   '/read-notes/': [
     {
-      text: 'Read Notes', link: '/read-notes/',
+      text: 'WXRead Notes',
+      items: [
+        {
+          text: 'WXRead List', link: '/read-notes/'
+        },
+        {
+          text: 'read xx', link: '/read-notes/weread/banxiaoshimanhuajingjixuexilie'
+        },
+      ]
+    },
+    {
+      text: 'WWW Notes', link: '/read-notes/',
       items: [
         { text: 'read xx', link: '/read-notes/xxx',},
       ]

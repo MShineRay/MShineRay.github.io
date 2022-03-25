@@ -4,6 +4,7 @@
 // can also import types for type consistency
 import { data as apiIndex, APIGroup } from './api.data'
 import { ref, computed } from 'vue'
+import bookList from './bookList.json'
 
 const query = ref('')
 const normalize = (s: string) => s.toLowerCase().replace(/-/g, ' ')
@@ -97,6 +98,11 @@ function slugify(text: string): string {
             </li>
           </ul>
         </div>
+      </div>
+    </div>
+    <div class="wxbook-list">
+      <div class="wxbook-item" v-for="(bk, idx) in bookList" :key="bk.bookName">
+        <img :src="bk.bookImg" alt="book img">
       </div>
     </div>
 
