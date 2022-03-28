@@ -1,44 +1,65 @@
+<script setup lang="ts">
+// in .vue components or .md pages:
+// named import "data" is the resolved static data
+// can also import types for type consistency
+function getParam(path) {
+  let url = path || location.search
+  let theRequest = {}
+  if (url.indexOf('?') !== -1) {
+    let str = url.substr(url.indexOf('?')+1)
+    let strs = str.split('&')
+    for(var i = 0; i < strs.length; i ++) {
+      theRequest[strs[i].split('=')[0]]=decodeURIComponent(strs[i].split('=')[1])
+    }
+  }
+  return theRequest
+}
+
+import { ref, computed, createApp } from 'vue'
+let params = getParam()
+console.log(params)
+const title2 = ref(params.title)
+const imgList = ref(JSON.parse(params.imgList||"[]"))
+</script>
+
 <template>
   <div class="container">
+    <h1 class="title">{{title2}}</h1>
     <div class="row" >
       <div
-        class="col-sm-6 col-lg-4"
         v-for="(book, idx) in imgList"
         :key="book.name"
         style="margin-bottom: 20px"
+        class="image-list"
       >
         <div>
-          <h3>{{book.name}}</h3>
-          <img :src="type+book.url" width="250px" height="600px" alt="">
+          <h2 class="sub-title" v-if="imgList.length>1">{{book.name}}</h2>
+          <img :src="book.url" width="250" height="600" alt="">
         </div>
       </div>
     </div>
   </div>
 </template>
 
-<script>
-import logCreated from "@/mixin/log-created";
-
-export default {
-  name: 'Home',
-  mixins: [logCreated],
-  data() {
-    return {
-      title: this.$route.query.title,
-      index: this.$route.query.img,
-      type: this.$route.query.type,
-      imgList: JSON.parse(this.$route.query.imgList||[]),
-    }
-  },
-}
-</script>
 
 <style lang="scss" scoped>
 .container {
   margin-top: 20px;
-  .row{
+  .title{
     display: flex;
     justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  .row,
+  .title,
+  .sub-title{
+    display: flex;
+    justify-content: center;
+  }
+  .image-list + .image-list{
+    margin-left: 30px;
   }
 }
 </style>

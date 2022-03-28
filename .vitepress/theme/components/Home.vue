@@ -17,7 +17,7 @@ import VueMasteryModal from './VueMasteryModal.vue';
     </p>
     <p class="actions">
 <!--      <vue-mastery-modal />-->
-      <a class="get-started" href="/guide/introduction.html">
+      <a class="get-started" href="/read-notes/">
         Get Started
         <svg
           class="icon"

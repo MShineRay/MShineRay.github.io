@@ -67,7 +67,7 @@ function slugify(text: string): string {
 <template>
   <div id="api-index">
     <div class="header">
-      <h1>Read Notes</h1>
+      <h1>Image List</h1>
       <div class="api-filter">
         <label for="api-filter">Filter</label>
         <input
@@ -94,37 +94,18 @@ function slugify(text: string): string {
           <h3>{{ item.text }}</h3>
           <ul>
             <li v-for="h of item.headers" :key="h">
-              <a :href="item.link + '.html#' + h">{{ h }}</a>
+              <a
+                :href="item.link + '.html?title='+item.text+'&imgList='+item.imgList+'#'+h"
+              >
+                {{ h }}
+              </a>
             </li>
           </ul>
         </div>
       </div>
     </div>
-<!--    <div class="container">-->
-<!--      <div class="row">-->
-<!--        <div-->
-<!--          class="col-sm-6 col-md-4 col-lg-3"-->
-<!--          v-for="(book, index) in bookList"-->
-<!--          :key="book.pageName"-->
-<!--          style="margin-bottom: 20px"-->
-<!--        >-->
-<!--          <a-->
-<!--            :href="'/image-notes/zhiqun/detail?img='+index"-->
-<!--            title="Reading Notes"-->
-<!--            style="width: 150px; height: 200px"-->
-<!--            target="_blank"-->
-<!--          >-->
-<!--            <div class="thumbnail">-->
-<!--              <p>{{ book.pageName }}</p>-->
-<!--            </div>-->
-<!--          </a>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
-
-
     <div v-if="!filtered.length" class="no-match">
-      No API matching "{{ query }}" found.
+      No image matching "{{ query }}" found.
     </div>
   </div>
 </template>

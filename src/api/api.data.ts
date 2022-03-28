@@ -21,17 +21,6 @@ export default {
   watch: './*.md',
   // read from fs and generate the data
   load(): APIGroup[] {
-    console.error(1)
-    console.log(JSON.stringify(
-        sidebar['/api/'].map((group) => ({
-          text: group.text,
-          items: group.items.map((item) => ({
-            ...item,
-            headers: parsePageHeaders(item.link)
-          }))
-        }))
-      )
-    )
     return sidebar['/api/'].map((group) => ({
       text: group.text,
       items: group.items.map((item) => ({

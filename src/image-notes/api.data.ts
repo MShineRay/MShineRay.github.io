@@ -8,7 +8,8 @@ export interface APIGroup {
   text: string
   items: {
     text: string
-    link: string
+    link: string,
+    imgList: {}[],
     headers: string[]
   }[]
 }
@@ -27,30 +28,36 @@ export default {
       imgList.push({
         text: group.pageName,
         link: '/image-notes/image',
+        imgList: JSON.stringify(
+          group.imgList.map((item) => ({
+            name: item.name,
+            url: '/image-notes/zhiqun' + item.url
+          }))
+        ),
         headers: group.imgList.map((item) => {
           return item.name
         })
       })
     })
     result = result.concat(
-       [
-         {
-           text: '知群',
-           items: imgList
-         }
-       ]
-     )
+      [
+        {
+          text: '知群',
+          type: '/image-notes/zhiqun/',
+          items: imgList
+        }
+      ]
+    )
+    console.log(JSON.stringify(result))
     return result
   }
 }
 
-const headersCache = new Map<
-  string,
+const headersCache = new Map<string,
   {
     headers: string[]
     timestamp: number
-  }
->()
+  }>()
 
 function parsePageHeaders(link: string) {
   const fullPath = path.join(__dirname, '../', link) + '.md'
