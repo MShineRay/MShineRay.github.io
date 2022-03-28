@@ -100,14 +100,14 @@ function slugify(text: string): string {
         </div>
       </div>
     </div>
-    <div class="wxbook-list">
-      <div class="wxbook-item" v-for="(bk, idx) in bookList" :key="bk.bookName">
-        <img :src="bk.bookImg" alt="book img">
-      </div>
-    </div>
+<!--    <div class="wxbook-list">-->
+<!--      <div class="wxbook-item" v-for="(bk, idx) in bookList" :key="bk.bookName">-->
+<!--        <img :src="bk.bookImg" alt="book img">-->
+<!--      </div>-->
+<!--    </div>-->
 
     <div v-if="!filtered.length" class="no-match">
-      No API matching "{{ query }}" found.
+      No book matching "{{ query }}" found.
     </div>
   </div>
 </template>
