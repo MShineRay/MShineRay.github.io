@@ -1,13 +1,13 @@
 /// <reference types="vitepress/client" />
 /// <reference types="vue/macros-global" />
 
-declare module '@vue/theme/config' {
+declare module '@a0znpm/theme-vue-base/config' {
   import { UserConfig } from 'vitepress'
   const config: () => Promise<UserConfig>
   export default config
 }
 
-declare module '@vue/theme/highlight' {
+declare module '@a0znpm/theme-vue-base/highlight' {
   const createHighlighter: () => Promise<(input: string) => string>
   export default createHighlighter
 }

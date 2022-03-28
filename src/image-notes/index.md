@@ -5,7 +5,7 @@ footer: false
 ---
 
 <script setup>
-import ApiIndex from './ApiIndex.vue'
+import ImageIndex from './ImageIndex.vue'
 </script>
 
-<ApiIndex />
+<ImageIndex />

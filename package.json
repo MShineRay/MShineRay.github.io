@@ -7,13 +7,13 @@
   },
   "dependencies": {
     "@vue/repl": "^1.0.0",
-    "@vue/theme": "^1.0.1",
     "dynamics.js": "^1.1.5",
     "gsap": "^3.9.0",
     "vitepress": "^0.22.2",
     "vue": "^3.2.31"
   },
   "devDependencies": {
+    "@a0znpm/theme-vue-base": "^1.0.2",
     "@types/markdown-it": "^12.2.3",
     "@types/node": "^16.9.1",
     "sass": "^1.49.9"

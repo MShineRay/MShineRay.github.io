@@ -7,22 +7,16 @@
         :key="book.pageName"
         style="margin-bottom: 20px"
       >
-        <el-card shadow="hover">
-          <a
-            :href="'#/share-image/zhiqun/detail?img='+index"
-            title="Reading Notes"
-            style="width: 150px; height: 200px"
-            target="_blank"
-          >
-            <div class="thumbnail">
-              <p>{{ book.pageName }}</p>
-            </div>
-          </a>
-        </el-card>
-<!--        <el-card>-->
-<!--          <h3>{{book.name}}</h3>-->
-<!--          <img :src="book.url" width="250px" height="600px" alt="">-->
-<!--        </el-card>-->
+        <a
+          :href="'#/share-image/zhiqun/detail?img='+index"
+          title="Reading Notes"
+          style="width: 150px; height: 200px"
+          target="_blank"
+        >
+          <div class="thumbnail">
+            <p>{{ book.pageName }}</p>
+          </div>
+        </a>
       </div>
     </div>
   </div>
@@ -30,17 +24,19 @@
 
 <script>
 import bookList from './index.json'
-import logCreated from "@/mixin/log-created";
+import logCreated from "../../mixin/log-created";
 
 export default {
-  name: 'Home',
+  name: 'ImageList',
   data() {
     return {
       bookList,
     }
   },
-  mixins: [logCreated]
-
+  mixins: [logCreated],
+  mounted() {
+    console.error(111)
+  }
 }
 </script>
 

@@ -1,6 +1,6 @@
 import './styles/index.css'
 import { h, App } from 'vue'
-import { VPTheme } from '@vue/theme'
+import { VPTheme } from '@a0znpm/theme-vue-base'
 import VueSchoolLink from './components/VueSchoolLink.vue'
 import {
   preferComposition,
