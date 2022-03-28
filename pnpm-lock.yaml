@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@a0znpm/theme-vue-base': ^1.0.2
+  '@a0znpm/theme-vue-base': ^1.0.3
   '@types/markdown-it': ^12.2.3
   '@types/node': ^16.9.1
   '@vue/repl': ^1.0.0
@@ -19,15 +19,15 @@ dependencies:
   vue: 3.2.31
 
 devDependencies:
-  '@a0znpm/theme-vue-base': 1.0.2_vue@3.2.31
+  '@a0znpm/theme-vue-base': 1.0.3_vue@3.2.31
   '@types/markdown-it': 12.2.3
   '@types/node': 16.11.26
   sass: 1.49.9
 
 packages:
 
-  /@a0znpm/theme-vue-base/1.0.2_vue@3.2.31:
-    resolution: {integrity: sha512-VGvAM0EFu3X7oxL/7b/lGoQGz4o8rEZOWCj5Jv4PxWH/KiRkM7/vLeExLdRsmfjt3Noay5NouYTdDZWPMRPUZg==}
+  /@a0znpm/theme-vue-base/1.0.3_vue@3.2.31:
+    resolution: {integrity: sha512-GZuUkCCFv25ZAhY/PgA17gkrSfr9v/2+enx5hpvZEYgLGnqXDJtqQeJpHIpQceeLyam3k9BrkXWQvTDOSeX6fw==}
     dependencies:
       '@docsearch/css': 3.0.0
       '@docsearch/js': 3.0.0

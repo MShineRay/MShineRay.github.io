@@ -2,7 +2,7 @@
 // a file ending with data.(j|t)s will be evaluated in Node.js
 import fs from 'fs'
 import path from 'path'
-// import { sidebar } from '../../../.vitepress/config'
+import zhiqunJSON from './zhiqun/index.json'
 
 export interface APIGroup {
   text: string
@@ -21,14 +21,26 @@ export default {
   watch: './*.md',
   // read from fs and generate the data
   load(): APIGroup[] {
-    // return sidebar['/guide/read-notes/'].map((group) => ({
-    //   text: group.text,
-    //   items: group.items.map((item) => ({
-    //     ...item,
-    //     headers: parsePageHeaders(item.link)
-    //   }))
-    // }))
-    return []
+    let result = []
+    let imgList = []
+    zhiqunJSON.map((group) => {
+      imgList.push({
+        text: group.pageName,
+        link: '/image-notes/image',
+        headers: group.imgList.map((item) => {
+          return item.name
+        })
+      })
+    })
+    result = result.concat(
+       [
+         {
+           text: '知群',
+           items: imgList
+         }
+       ]
+     )
+    return result
   }
 }
 
