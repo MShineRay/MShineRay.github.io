@@ -16,7 +16,7 @@
     "@a0znpm/theme-vue-base": "^1.0.3",
     "@types/markdown-it": "^12.2.3",
     "@types/node": "^17.0.23",
-    "vitepress": "0.22.3"
+    "vitepress": "^0.22.3"
   },
   "pnpm": {
     "peerDependencyRules": {
