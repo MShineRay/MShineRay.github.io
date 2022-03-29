@@ -94,6 +94,7 @@ section {
 #hero {
   padding: 96px 32px;
   text-align: center;
+  min-height: calc(100vh - 145px);
 }
 
 .tagline {
