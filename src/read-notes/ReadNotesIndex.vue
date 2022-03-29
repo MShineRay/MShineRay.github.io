@@ -4,8 +4,8 @@
 // can also import types for type consistency
 import { data as apiIndex, APIGroup } from './api.data'
 import { ref, computed } from 'vue'
-import bookList from './bookList.json'
-
+import bookListJson from './weread/list.json'
+const bookList = ref(bookListJson)
 const query = ref('')
 const normalize = (s: string) => s.toLowerCase().replace(/-/g, ' ')
 
@@ -25,10 +25,6 @@ const filtered = computed(() => {
         .map((item) => {
           // group title match
           if (matches(item.text)) {
-            return item
-          }
-          // ssr special case
-          if (q.includes('ssr') && item.text.startsWith('Server')) {
             return item
           }
           // filter headers
@@ -53,9 +49,9 @@ function slugify(text: string): string {
       // Replace special characters
       .replace(/[\s~`!@#$%^&*()\-_+=[\]{}|\\;:"'<>,.?/]+/g, '-')
       // Remove continuous separators
-      .replace(/\-{2,}/g, '-')
+      .replace(/-{2,}/g, '-')
       // Remove prefixing and trailing separators
-      .replace(/^\-+|\-+$/g, '')
+      .replace(/^-+|-+$/g, '')
       // ensure it doesn't start with a number (#121)
       .replace(/^(\d)/, '_$1')
       // lowercase
@@ -67,7 +63,7 @@ function slugify(text: string): string {
 <template>
   <div id="api-index">
     <div class="header">
-      <h1>Read Notes</h1>
+      <h1>Image List</h1>
       <div class="api-filter">
         <label for="api-filter">Filter</label>
         <input
@@ -91,23 +87,27 @@ function slugify(text: string): string {
           :key="item.text"
           class="api-group"
         >
-          <h3>{{ item.text }}</h3>
-          <ul>
-            <li v-for="h of item.headers" :key="h">
-              <a :href="item.link + '.html#' + slugify(h)">{{ h }}</a>
-            </li>
-          </ul>
+            <a
+              :href="item.link + '.html'"
+            >
+              <h3>
+                {{ item.text }}
+              </h3>
+            </a>
+<!--          <ul>-->
+<!--            <li v-for="h of item.headers" :key="h">-->
+<!--              <a-->
+<!--                :href="item.link + '.html'"-->
+<!--              >-->
+<!--                {{ h }}-->
+<!--              </a>-->
+<!--            </li>-->
+<!--          </ul>-->
         </div>
       </div>
     </div>
-<!--    <div class="wxbook-list">-->
-<!--      <div class="wxbook-item" v-for="(bk, idx) in bookList" :key="bk.bookName">-->
-<!--        <img :src="bk.bookImg" alt="book img">-->
-<!--      </div>-->
-<!--    </div>-->
-
     <div v-if="!filtered.length" class="no-match">
-      No book matching "{{ query }}" found.
+      No image matching "{{ query }}" found.
     </div>
   </div>
 </template>
