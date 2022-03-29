@@ -29,24 +29,25 @@ const imgList = ref(JSON.parse(params.imgList||"[]"))
 </template>
 
 
-<style lang="scss" scoped>
+<style scoped>
 .container {
   margin-top: 20px;
-  .title{
+}
+.container .title{
     display: flex;
     justify-content: center;
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 30px;
   }
-  .row,
-  .title,
-  .sub-title{
+.container  .row,
+.container  .title,
+.container  .sub-title{
     display: flex;
     justify-content: center;
   }
-  .image-list + .image-list{
+.container  .image-list + .image-list{
     margin-left: 30px;
   }
-}
+
 </style>

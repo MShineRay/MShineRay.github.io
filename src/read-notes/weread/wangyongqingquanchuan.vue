@@ -2113,7 +2113,7 @@ export default {
   mixins: [logCreated]
 }
 </script>
-<style lang="scss" scoped>
+<style scoped>
 @import './css/weread.css';
-@import './css/readnotes';
+@import './css/readnotes.css';
 </style>
