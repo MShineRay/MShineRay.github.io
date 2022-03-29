@@ -76,7 +76,7 @@ export default defineConfigWithTheme<ThemeConfig>({
   srcDir: 'src',
   srcExclude: ['tutorial/**/description.md'],
   scrollOffset: 'header',
-
+  base: '/',
   head: [
     [
       'script',

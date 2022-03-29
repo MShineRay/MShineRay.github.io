@@ -3,7 +3,8 @@
     "dev": "vitepress",
     "build": "vitepress build",
     "serve": "vitepress serve",
-    "preinstall": "npx only-allow pnpm"
+    "preinstall": "npx only-allow pnpm",
+    "deploy": "sh deploy.sh"
   },
   "dependencies": {
     "@vue/repl": "^1.0.0",
