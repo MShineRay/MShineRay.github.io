@@ -33,10 +33,7 @@ export default {
       bookList,
     }
   },
-  mixins: [logCreated],
-  mounted() {
-    console.error(111)
-  }
+  mixins: [logCreated]
 }
 </script>
 

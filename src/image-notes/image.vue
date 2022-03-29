@@ -17,7 +17,6 @@ function getParam(path) {
 
 import { ref, computed, createApp } from 'vue'
 let params = getParam()
-console.log(params)
 const title2 = ref(params.title)
 const imgList = ref(JSON.parse(params.imgList||"[]"))
 </script>

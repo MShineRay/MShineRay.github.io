@@ -367,12 +367,11 @@
   </div>
 </template>
 <script>
+import logCreated from "@/mixin/log-created";
+
 export default {
   name: 'pingjunfen',
-  created(){
-    console.log(1)
-    window.gtag_event && window.gtag_event('open-'+this.$route.path, this.$route.query)
-  },
+  mixins: [logCreated]
 }
 </script>
 <style lang="scss" scoped>
