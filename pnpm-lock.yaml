@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@a0znpm/theme-vue-base': ^1.0.3
+  '@a0znpm/theme-vue-base': ^1.0.5
   '@types/markdown-it': ^12.2.3
   '@types/node': ^17.0.23
   '@vue/repl': ^1.0.0
@@ -17,15 +17,15 @@ dependencies:
   vue: 3.2.31
 
 devDependencies:
-  '@a0znpm/theme-vue-base': 1.0.3_vue@3.2.31
+  '@a0znpm/theme-vue-base': 1.0.5_vue@3.2.31
   '@types/markdown-it': 12.2.3
   '@types/node': 17.0.23
   vitepress: 0.22.3
 
 packages:
 
-  /@a0znpm/theme-vue-base/1.0.3_vue@3.2.31:
-    resolution: {integrity: sha512-GZuUkCCFv25ZAhY/PgA17gkrSfr9v/2+enx5hpvZEYgLGnqXDJtqQeJpHIpQceeLyam3k9BrkXWQvTDOSeX6fw==}
+  /@a0znpm/theme-vue-base/1.0.5_vue@3.2.31:
+    resolution: {integrity: sha512-nCmTUAyv0pv2TCq32tQiJ3PYp3StUFOYTL+8eBYegZ6ylhDK7NohyAUHniAsIY5iMKWTd2vAYz1uC353tNBVNw==}
     dependencies:
       '@docsearch/css': 3.0.0
       '@docsearch/js': 3.0.0

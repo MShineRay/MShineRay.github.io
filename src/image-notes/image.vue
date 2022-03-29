@@ -5,6 +5,20 @@
 
 import { ref, computed, createApp } from 'vue'
 let params = getParam()
+
+function getParam(path) {
+  var url = typeof window!=='undefined' ?window.location.search: ''
+  var theRequest = {}
+  if (url.indexOf('?') !== -1) {
+    var str = url.substr(url.indexOf('?')+1)
+    var strs = str.split('&')
+    for(var i = 0; i < strs.length; i ++) {
+      theRequest[strs[i].split('=')[0]]=decodeURIComponent(strs[i].split('=')[1])
+    }
+  }
+  return theRequest
+}
+
 const title2 = ref(params.title)
 const imgList = ref(JSON.parse(params.imgList||"[]"))
 </script>

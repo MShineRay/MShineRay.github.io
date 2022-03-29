@@ -68,6 +68,8 @@ export const sidebar = {
   ]
 }
 console.log(baseConfig)
+// @ts-ignore
+// @ts-ignore
 export default defineConfigWithTheme<ThemeConfig>({
   // extends: baseConfig,
   lang: 'en-US',
@@ -100,7 +102,9 @@ export default defineConfigWithTheme<ThemeConfig>({
   themeConfig: {
     nav,
     sidebar,
-
+    logo: '/img/logo-share.svg',
+    logoDark: '/img/logo-share-dark.svg',
+    logoText: 'ShineRay',
     // algolia: {
     //   indexName: 'vuejs',
     //   appId: 'ML0LEBN7FQ',
