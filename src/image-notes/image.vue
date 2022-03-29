@@ -2,21 +2,6 @@
 // in .vue components or .md pages:
 // named import "data" is the resolved static data
 // can also import types for type consistency
-function getParam(path) {
-  // if(window){
-  //   let url = window.location.search
-  //   let theRequest = {}
-  //   if (url.indexOf('?') !== -1) {
-  //     let str = url.substr(url.indexOf('?')+1)
-  //     let strs = str.split('&')
-  //     for(var i = 0; i < strs.length; i ++) {
-  //       theRequest[strs[i].split('=')[0]]=decodeURIComponent(strs[i].split('=')[1])
-  //     }
-  //   }
-  //   return theRequest
-  // }
-  return {}
-}
 
 import { ref, computed, createApp } from 'vue'
 let params = getParam()

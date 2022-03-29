@@ -4,7 +4,6 @@
 set -e
 
 rm -rf ./.vitepress/dist/*
-rm -rf ./docs/*
 
 # build
 npm run build
