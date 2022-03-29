@@ -1,72 +1,31 @@
 {
-  "name": "mshineray.github.io",
-  "version": "0.0.1",
-  "templateName": "template-pc-vue2-elementui",
-  "templateVersion": "0.0.1",
-  "private": true,
   "scripts": {
-    "dev": "vue-cli-service serve --open",
-    "build": "vue-cli-service build",
-    "test:unit": "vue-cli-service test:unit",
-    "test:e2e": "vue-cli-service test:e2e",
-    "lint": "vue-cli-service lint",
-    "lint:fix": "vue-cli-service lint --fix",
-    "prettier": "prettier -c --write plop-templates/**/*.js src/**/*.js src/**/*.vue",
-    "prepare": "husky install",
-    "log": "standard-changelog -f && git add CHANGELOG.md",
-    "commit": "commit",
-    "wr": "nodemon weread.js",
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs",
-    "docs:serve": "vuepress serve docs"
+    "dev": "vitepress",
+    "build": "vitepress build",
+    "serve": "vitepress serve",
+    "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {
-    "axios": "^0.21.1",
-    "compression-webpack-plugin": "^8.0.1",
-    "core-js": "^3.15.2",
-    "element-ui": "^2.15.3",
-    "normalize.css": "7.0.0",
-    "vue": "^2.6.14",
-    "vue-axios": "^3.2.4",
-    "vue-router": "^3.5.2",
-    "vuex": "^3.6.2",
-    "vitepress": "^0.22.3"
+    "@vue/repl": "^1.0.0",
+    "dynamics.js": "^1.1.5",
+    "gsap": "^3.9.0",
+    "vitepress": "^0.22.2",
+    "vue": "^3.2.31"
   },
   "devDependencies": {
-    "@commitlint/cli": "^12.1.4",
-    "@commitlint/config-conventional": "^12.1.4",
-    "@commitlint/prompt-cli": "^12.1.4",
-    "@vue/cli-plugin-babel": "^4.5.13",
-    "@vue/cli-plugin-e2e-cypress": "^4.5.13",
-    "@vue/cli-plugin-eslint": "^4.5.13",
-    "@vue/cli-plugin-router": "^4.5.13",
-    "@vue/cli-plugin-unit-jest": "^4.5.13",
-    "@vue/cli-plugin-vuex": "^4.5.13",
-    "@vue/cli-service": "^4.5.13",
-    "@vue/compiler-sfc": "^3.1.4",
-    "@vue/eslint-config-prettier": "^6.0.0",
-    "@vue/test-utils": "^1.2.1",
-    "add-asset-html-webpack-plugin": "^3.2.0",
-    "babel-eslint": "^10.1.0",
-    "babel-plugin-import": "^1.13.3",
-    "cheerio": "^1.0.0-rc.2",
-    "eslint": "^6.8.0",
-    "eslint-plugin-prettier": "^3.4.0",
-    "eslint-plugin-vue": "^6.2.2",
-    "husky": "^6.0.0",
-    "lint-staged": "^11.0.0",
-    "node-sass": "4.14.1",
-    "nodemon": "^2.0.7",
-    "pinyin": "^2.10.2",
-    "prettier": "^2.3.2",
-    "request": "^2.83.0",
-    "sass-loader": "^8.0.2",
-    "vue-loader": "^16.3.0",
-    "vue-template-compiler": "^2.6.14",
-    "vuepress": "^1.9.7"
+    "@a0znpm/theme-vue-base": "^1.0.3",
+    "@types/markdown-it": "^12.2.3",
+    "@types/node": "^16.9.1",
+    "sass": "^1.49.9"
   },
-  "dllPath": "public/vendor",
-  "engines": {
-    "node": ">=12.6.0 <=14.17.3"
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@algolia/client-search",
+        "react",
+        "react-dom",
+        "@types/react"
+      ]
+    }
   }
 }

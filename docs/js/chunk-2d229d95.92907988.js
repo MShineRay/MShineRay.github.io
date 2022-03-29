@@ -1,1 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d229d95"],{deca:function(p,n,o){p.exports=o.p+"img/t6_22615143.e87212a9.jpg"}}]);
