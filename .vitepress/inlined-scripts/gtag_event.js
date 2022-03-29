@@ -9,3 +9,7 @@ function gtag_event(eventName, data) {
   });
   return false;
 }
+window.onload = function (){
+  console.log('onload...')
+  window.gtag_event && window.gtag_event(location.pathname)
+}
