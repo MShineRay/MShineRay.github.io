@@ -1,0 +1,31 @@
+.container {
+  text-align: left;
+  margin: 0 auto;
+}
+
+.container .title{
+  margin-top: 20px;
+}
+
+.container h1 {
+  text-align: center;
+}
+
+.container .author {
+  text-align: right;
+  margin: 30px 0;
+}
+.container .written{
+  display: flex;
+  margin: 0 auto;
+}
+
+.container section + section {
+  margin-bottom: 30px;
+}
+.container .footer{
+  margin-top: 30px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  padding-top: 30px;
+}

@@ -2,6 +2,7 @@ const getBase = require('../../src/vitepress/config/baseConfig')
 import fs from 'fs'
 const path = require('path')
 import {wxSideBarList} from '../read-notes/weread/list'
+import zhiqunReadNotes from '../read-notes/zhiqun/list'
 // import zhiQunImgList from '../image-notes/zhiqun/list'
 
 const nav = [
@@ -49,11 +50,8 @@ const sidebar = {
       ].concat(wxSideBarList)
     },
     {
-      text: 'Point Notes',
-      items: [
-        { text: 'Point List', link: '/read-notes/point/',},
-        { text: 'point xx', link: '/read-notes/point/xx',},
-      ]
+      text: '知群',
+      items: zhiqunReadNotes
     }
   ],
   '/image-notes/': [
