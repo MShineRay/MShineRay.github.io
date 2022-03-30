@@ -2,6 +2,7 @@ const getBase = require('../../src/vitepress/config/baseConfig')
 import fs from 'fs'
 const path = require('path')
 import {wxSideBarList} from '../read-notes/weread/list'
+import zhiQunImgList from '../image-notes/zhiqun/list'
 
 const nav = [
   {
@@ -13,7 +14,6 @@ const nav = [
       { text: 'WWW Notes', link: '/www-notes/' },
     ]
   },
-
   {
     text: 'Vue',
     items: [
@@ -28,14 +28,23 @@ const nav = [
     ]
   }
 ]
+const commonNav = {
+  text: '链接',
+  items: [
+    { text: 'Read Notes', link: '/read-notes/' },
+    { text: 'Image Notes', link: '/image-notes/'},
+    { text: 'WWW Notes', link: '/www-notes/'}
+  ]
+}
+
 // TODO 抽取左侧菜单
 const sidebar = {
   '/read-notes/': [
     {
-      text: 'WXRead Notes',
+      text: 'Read Notes',
       items: [
         {
-          text: 'WXRead List', link: '/read-notes/'
+          text: 'Book List', link: '/read-notes/'
         }
       ].concat(wxSideBarList)
     },
@@ -56,11 +65,9 @@ const sidebar = {
     },
     {
       text: '知群',
-      items: [
-        { text: 'Read Notes', link: '/read-notes/zhiqun/' },
-        { text: 'Image Notes', link: '/guide/image-notes'}
-      ]
-    }
+      items: zhiQunImgList
+    },
+    commonNav
   ]
 }
 
