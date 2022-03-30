@@ -4,8 +4,6 @@
 // can also import types for type consistency
 import { data as apiIndex, APIGroup } from './api.data'
 import { ref, computed } from 'vue'
-import bookListJson from './weread/list.json'
-const bookList = ref(bookListJson)
 const query = ref('')
 const normalize = (s: string) => s.toLowerCase().replace(/-/g, ' ')
 
@@ -27,11 +25,6 @@ const filtered = computed(() => {
           if (matches(item.text)) {
             return item
           }
-          // filter headers
-          const matchedHeaders = item.headers.filter(matches)
-          return matchedHeaders.length
-            ? { text: item.text, link: item.link, headers: matchedHeaders }
-            : null
         })
         .filter((i) => i)
 
@@ -63,7 +56,7 @@ function slugify(text: string): string {
 <template>
   <div id="api-index">
     <div class="header">
-      <h1>Image List</h1>
+      <h1>Book List</h1>
       <div class="api-filter">
         <label for="api-filter">Filter</label>
         <input
