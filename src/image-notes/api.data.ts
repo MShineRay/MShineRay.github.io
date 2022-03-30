@@ -29,7 +29,7 @@ export default {
         imgList: JSON.stringify(
           group.imgList.map((item) => ({
             name: item.name,
-            url: '/image-notes/zhiqun' + item.url
+            url: item.url
           }))
         ),
         headers: group.imgList.map((item) => {
@@ -41,7 +41,7 @@ export default {
       [
         {
           text: '知群',
-          type: '/image-notes/zhiqun/',
+          type: '/',
           items: imgList
         }
       ]

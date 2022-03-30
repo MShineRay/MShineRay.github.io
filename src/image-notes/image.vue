@@ -6,9 +6,12 @@
 import { ref, computed, createApp } from 'vue'
 let params = getParam()
 
-function getParam(path) {
+function getParam() {
   var url = typeof window!=='undefined' ?window.location.search: ''
-  var theRequest = {}
+  var theRequest = {
+    imgList: "",
+    title: ""
+  }
   if (url.indexOf('?') !== -1) {
     var str = url.substr(url.indexOf('?')+1)
     var strs = str.split('&')

@@ -3,13 +3,13 @@
 # abort on errors
 set -e
 
-rm -rf ./.vitepress/dist/*
+rm -rf ./docs/*
 
 # build
 npm run build
 
 # move
-mv -f -n ./.vitepress/dist/* ./docs
+mv -f -n ./src/.vitepress/dist/* ./docs
 
 # navigate into the build output directory
 cd ./docs
