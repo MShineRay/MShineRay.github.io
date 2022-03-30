@@ -87,6 +87,13 @@ module.exports = (async () => {
     scrollOffset: 'header',
     head: [
       [
+        'link',
+        {
+          href: '/favicon.ico',
+          rel: 'icon'
+        }
+      ],
+      [
         'script',
         {
           src: 'https://www.googletagmanager.com/gtag/js?id=G-R31NB6KKBC',
