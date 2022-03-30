@@ -2,15 +2,15 @@
   "name": "mshineray.github.io",
   "version": "1.0.5",
   "description": "https://mshineray.github.io",
-  "main": "src/index.ts",
+  "main": "-src/index.ts",
   "exports": {
     ".": "./src/index.ts",
     "./config": "./src/vitepress/config/baseConfig.js",
     "./highlight": "./src/vitepress/config/highlight.js"
   },
   "files": [
-    "src",
-    "types"
+    "-src",
+    "-types"
   ],
   "repository": {
     "type": "git",
@@ -26,10 +26,10 @@
     "lint:fail": "prettier --check --parser typescript \"{__tests__,docs,src,types}/**/*.ts\"",
     "type": "tsc --noEmit",
     "test": "yarn lint && yarn type",
-    "dev": "vitepress dev src",
-    "build": "vitepress build src",
+    "dev": "vitepress dev -src",
+    "build": "vitepress build -src",
     "deploy": "sh deploy.sh",
-    "serve": "yarn build && vitepress serve src"
+    "serve": "yarn build && vitepress serve -src"
   },
   "dependencies": {
     "@docsearch/css": "^3.0.0-alpha.41",

@@ -1,4 +1,4 @@
-const getBase = require('../../src/vitepress/config/baseConfig')
+const getBase = require('../vitepress/config/baseConfig')
 import fs from 'fs'
 const path = require('path')
 import {wxSideBarList} from '../read-notes/weread/list'
