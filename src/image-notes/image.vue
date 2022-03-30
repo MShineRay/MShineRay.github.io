@@ -3,7 +3,7 @@
 // named import "data" is the resolved static data
 // can also import types for type consistency
 
-import { ref, computed, createApp } from 'vue'
+import { ref } from 'vue'
 let params = getParam()
 
 function getParam() {

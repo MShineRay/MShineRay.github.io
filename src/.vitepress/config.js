@@ -2,7 +2,7 @@ const getBase = require('../../src/vitepress/config/baseConfig')
 import fs from 'fs'
 const path = require('path')
 import {wxSideBarList} from '../read-notes/weread/list'
-import zhiQunImgList from '../image-notes/zhiqun/list'
+// import zhiQunImgList from '../image-notes/zhiqun/list'
 
 const nav = [
   {
@@ -58,15 +58,15 @@ const sidebar = {
   ],
   '/image-notes/': [
     {
-      text: 'Image Notes',
+      text: '知群',
       items: [
         { text: 'Image List', link: '/image-notes/',},
       ]
     },
-    {
-      text: '知群',
-      items: zhiQunImgList
-    },
+    // { // TODO: 如何实现动态加载？
+    //   text: '知群',
+    //   items: zhiQunImgList
+    // },
     commonNav
   ]
 }
