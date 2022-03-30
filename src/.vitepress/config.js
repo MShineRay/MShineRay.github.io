@@ -106,8 +106,8 @@ module.exports = (async () => {
     ],
 
     themeConfig: {
-      logo: '/img/logo-share.svg',
-      logoDark: '/img/logo-share-dark.svg',
+      logo: '/img/logo-share-dark.svg',
+      logoDark: '/img/logo-share.svg',
       logoText: 'ShineRay',
       // algolia: {
       //   indexName: 'vuejs-v3',
