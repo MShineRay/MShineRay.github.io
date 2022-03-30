@@ -27,10 +27,6 @@ const filtered = computed(() => {
           if (matches(item.text)) {
             return item
           }
-          // ssr special case
-          // if (q.includes('ssr') && item.text.startsWith('Server')) {
-          //   return item
-          // }
           // filter headers
           const matchedHeaders = item.headers.filter(matches)
           return matchedHeaders.length

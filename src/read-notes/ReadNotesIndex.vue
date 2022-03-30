@@ -107,7 +107,7 @@ function slugify(text: string): string {
       </div>
     </div>
     <div v-if="!filtered.length" class="no-match">
-      No image matching "{{ query }}" found.
+      No book matching "{{ query }}" found.
     </div>
   </div>
 </template>
