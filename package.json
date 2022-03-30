@@ -28,6 +28,7 @@
     "test": "yarn lint && yarn type",
     "dev": "vitepress dev src",
     "build": "vitepress build src",
+    "deploy": "sh deploy.sh",
     "serve": "yarn build && vitepress serve src"
   },
   "dependencies": {
