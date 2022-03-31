@@ -3,7 +3,7 @@
     <h1 class="title">Web全栈工程师的自我修养</h1>
     <h5 class="author">余果</h5>
     <img
-      src="./img/Webquanzhangongchengshideziwoxiuyang/t6_22653203.jpg"
+      src="/img/weread/Webquanzhangongchengshideziwoxiuyang/t6_22653203.jpg"
       alt="written"
       class="written"
     />
@@ -1854,7 +1854,7 @@
       </div>
     </div>
     <!--  <footer class="footer">-->
-    <!--    <img src="./img/Webquanzhangongchengshideziwoxiuyang/qr.png" alt="qr">-->
+    <!--    <img src="/img/weread/Webquanzhangongchengshideziwoxiuyang/qr.png" alt="qr">-->
     <!--    <p>扫码阅读本书</p>-->
     <!--  </footer>-->
   </div>

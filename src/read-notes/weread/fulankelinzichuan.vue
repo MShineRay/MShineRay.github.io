@@ -2,7 +2,7 @@
   <div class="container">
     <h1 class="title">富兰克林自传</h1>
     <h5 class="author">富兰克林</h5>
-    <img src="./img/fulankelinzichuan/t6_906847.jpg" alt="written" class="written" />
+    <img src="/img/weread/fulankelinzichuan/t6_906847.jpg" alt="written" class="written" />
     <div class="wr_macOS wr_Desktop wr_page_reader wr_whiteTheme">
       <div class="sectionListItem">
         <div class="sectionListItem_title">译者导言</div>
@@ -448,7 +448,7 @@
       </div>
     </div>
     <footer class="footer">
-      <!--    <img src="./img/fulankelinzichuan/qr.png" alt="qr">-->
+      <!--    <img src="/img/weread/fulankelinzichuan/qr.png" alt="qr">-->
       <p>扫码阅读本书</p>
     </footer>
   </div>

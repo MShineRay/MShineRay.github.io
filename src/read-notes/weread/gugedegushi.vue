@@ -2,7 +2,7 @@
   <div class="container">
     <h1 class="title">谷歌的故事</h1>
     <h5 class="author">戴维·怀斯 马克·摩西德</h5>
-    <img src="./img/gugedegushi/t6_29858376.jpg" alt="written" class="written" />
+    <img src="/img/weread/gugedegushi/t6_29858376.jpg" alt="written" class="written" />
     <div class="wr_macOS wr_Desktop wr_page_reader wr_whiteTheme">
       <div class="sectionListItem">
         <div class="sectionListItem_title">前言</div>
@@ -1404,7 +1404,7 @@
       </div>
     </div>
     <footer class="footer">
-      <img src="./img/gugedegushi/qr.jpg" alt="qr" />
+      <img src="/img/weread/gugedegushi/qr.jpg" alt="qr" />
       <p>扫码阅读本书</p>
     </footer>
   </div>

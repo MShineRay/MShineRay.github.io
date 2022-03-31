@@ -3,7 +3,7 @@
     <h1 class="title">智能化浪潮：正在爆发的第四次工业革命</h1>
     <h5 class="author">张江健</h5>
     <img
-      src="./img/zhinenghualangchaozhengzaibaofadedisicigongyegeming/t6_937255.jpg"
+      src="/img/weread/zhinenghualangchaozhengzaibaofadedisicigongyegeming/t6_937255.jpg"
       alt="written"
       class="written"
     />
@@ -97,7 +97,7 @@
       </div>
     </div>
     <!--  <footer class="footer">-->
-    <!--    <img src="./img/zhinenghualangchaozhengzaibaofadedisicigongyegeming/qr.png" alt="qr">-->
+    <!--    <img src="/img/weread/zhinenghualangchaozhengzaibaofadedisicigongyegeming/qr.png" alt="qr">-->
     <!--    <p>扫码阅读本书</p>-->
     <!--  </footer>-->
   </div>

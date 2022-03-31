@@ -3,7 +3,7 @@
     <h1 class="title">前端工程化：体系设计与实践</h1>
     <h5 class="author">周俊鹏</h5>
     <img
-      src="./img/qianduangongchenghuatixishejiyushijian/t6_23914574.jpg"
+      src="/img/weread/qianduangongchenghuatixishejiyushijian/t6_23914574.jpg"
       alt="written"
       class="written"
     />
@@ -1552,7 +1552,7 @@
       </div>
     </div>
     <!--  <footer class="footer">-->
-    <!--    <img src="./img/qianduangongchenghuatixishejiyushijian/qr.png" alt="qr">-->
+    <!--    <img src="/img/weread/qianduangongchenghuatixishejiyushijian/qr.png" alt="qr">-->
     <!--    <p>扫码阅读本书</p>-->
     <!--  </footer>-->
   </div>

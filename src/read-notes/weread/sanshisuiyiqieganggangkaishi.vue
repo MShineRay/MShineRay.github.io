@@ -2,7 +2,7 @@
   <div class="container">
     <h1 class="title">三十岁，一切刚刚开始</h1>
     <h5 class="author">李尚龙</h5>
-    <img src="./img/sanshisuiyiqieganggangkaishi/t6_35138867.jpg" alt="written" class="written" />
+    <img src="/img/weread/sanshisuiyiqieganggangkaishi/t6_35138867.jpg" alt="written" class="written" />
     <div class="wr_macOS wr_Desktop wr_page_reader wr_whiteTheme">
       <div class="sectionListItem">
         <div class="sectionListItem_title">三十岁，真正的人生才刚刚开始</div>
@@ -83,7 +83,7 @@
       </div>
     </div>
     <!--  <footer class="footer">-->
-    <!--    <img src="./img//qr.png" alt="qr">-->
+    <!--    <img src="/img/weread//qr.png" alt="qr">-->
     <!--    <p>扫码阅读本书</p>-->
     <!--  </footer>-->
   </div>

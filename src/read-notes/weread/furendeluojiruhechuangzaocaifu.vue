@@ -2,7 +2,7 @@
   <div class="container">
     <h1 class="title">富人的逻辑：如何创造财富，如何保有财富</h1>
     <h5 class="author">雷纳·齐特尔曼</h5>
-    <img src="./img/furendeluojiruhechuangzaocaifu/t6_22646031.jpg" alt="written" class="written" />
+    <img src="/img/weread/furendeluojiruhechuangzaocaifu/t6_22646031.jpg" alt="written" class="written" />
     <div class="wr_macOS wr_Desktop wr_page_reader wr_whiteTheme">
       <div class="sectionListItem">
         <div class="sectionListItem_title">第一章 金钱能买到幸福吗？</div>
@@ -590,7 +590,7 @@
       </div>
     </div>
     <!--  <footer class="footer">-->
-    <!--    <img src="./img/furendeluojiruhechuangzaocaifu/qr.png" alt="qr">-->
+    <!--    <img src="/img/weread/furendeluojiruhechuangzaocaifu/qr.png" alt="qr">-->
     <!--    <p>扫码阅读本书</p>-->
     <!--  </footer>-->
   </div>

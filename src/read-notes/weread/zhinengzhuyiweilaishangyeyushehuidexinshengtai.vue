@@ -3,7 +3,7 @@
     <h1 class="title">智能主义：未来商业与社会的新生态</h1>
     <h5 class="author">周鸿祎</h5>
     <img
-      src="./img/zhinengzhuyiweilaishangyeyushehuidexinshengtai/t6_855733.jpg"
+      src="/img/weread/zhinengzhuyiweilaishangyeyushehuidexinshengtai/t6_855733.jpg"
       alt="written"
       class="written"
     />
@@ -1100,7 +1100,7 @@
       </div>
     </div>
     <!--  <footer class="footer">-->
-    <!--    <img src="./img/zhinengzhuyiweilaishangyeyushehuidexinshengtai/qr.png" alt="qr">-->
+    <!--    <img src="/img/weread/zhinengzhuyiweilaishangyeyushehuidexinshengtai/qr.png" alt="qr">-->
     <!--    <p>扫码阅读本书</p>-->
     <!--  </footer>-->
   </div>

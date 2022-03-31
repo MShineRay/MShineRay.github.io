@@ -3,7 +3,7 @@
     <h1 class="title">我不要你死于一事无成：给女儿的17封告别信</h1>
     <h5 class="author">法齐娅·库菲</h5>
     <img
-      src="./img/wobuyaonisiyuyishiwuchenggeinverde17fenggaobiexin/t6_914598.jpg"
+      src="/img/weread/wobuyaonisiyuyishiwuchenggeinverde17fenggaobiexin/t6_914598.jpg"
       alt="written"
       class="written"
     />
@@ -203,7 +203,7 @@
       </div>
     </div>
     <!--  <footer class="footer">-->
-    <!--    <img src="./img/wobuyaonisiyuyishiwuchenggeinverde17fenggaobiexin/qr.png" alt="qr">-->
+    <!--    <img src="/img/weread/wobuyaonisiyuyishiwuchenggeinverde17fenggaobiexin/qr.png" alt="qr">-->
     <!--    <p>扫码阅读本书</p>-->
     <!--  </footer>-->
   </div>

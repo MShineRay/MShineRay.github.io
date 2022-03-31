@@ -2,7 +2,7 @@
   <div class="container">
     <h1 class="title">影响世界的中国植物</h1>
     <h5 class="author">《影响世界的中国植物》主创团队</h5>
-    <img src="./img/yingxiangshijiedezhongguozhiwu/t6_26914570.jpg" alt="written" class="written" />
+    <img src="/img/weread/yingxiangshijiedezhongguozhiwu/t6_26914570.jpg" alt="written" class="written" />
     <div class="wr_macOS wr_Desktop wr_page_reader wr_whiteTheme">
       <div class="sectionListItem">
         <div class="sectionListItem_title">宁可食无肉，不可居无竹</div>
@@ -29,7 +29,7 @@
       </div>
     </div>
     <!--  <footer class="footer">-->
-    <!--    <img src="./img/yingxiangshijiedezhongguozhiwu/qr.png" alt="qr">-->
+    <!--    <img src="/img/weread/yingxiangshijiedezhongguozhiwu/qr.png" alt="qr">-->
     <!--    <p>扫码阅读本书</p>-->
     <!--  </footer>-->
   </div>

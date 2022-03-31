@@ -2,7 +2,7 @@
   <div class="container">
     <h1 class="title">Web测试囧事</h1>
     <h5 class="author">黄勇等</h5>
-    <img src="./img/Webceshijiongshi/t6_906917.jpg" alt="written" class="written">
+    <img src="/img/weread/Webceshijiongshi/t6_906917.jpg" alt="written" class="written">
     <div class="wr_macOS wr_Desktop wr_page_reader wr_whiteTheme">
       <div class="sectionListItem">
         <div class="sectionListItem_title">序二</div>
@@ -292,7 +292,7 @@
         <div class="sectionListItem_content noteItem_content clickable"><span class="icon"></span>
           <div>
             <div class="text">
-              ，当大家访问网页时，首先请求的是这些服务器上的资源，如果没有命中，也就是说这些资源不在公司内部的缓存服务器上，这些服务器才向公司外部真实的服务器发送请求，等请求返回后，缓存服务器还需要把这些资源保存在本地，以便于其他用户对同一网页的再次访问，然后才把这些资源发送回最开始发送请求的用户（见图1-19）。    <img src="./img/Webceshijiongshi/service.jpg" alt="written" class="written">
+              ，当大家访问网页时，首先请求的是这些服务器上的资源，如果没有命中，也就是说这些资源不在公司内部的缓存服务器上，这些服务器才向公司外部真实的服务器发送请求，等请求返回后，缓存服务器还需要把这些资源保存在本地，以便于其他用户对同一网页的再次访问，然后才把这些资源发送回最开始发送请求的用户（见图1-19）。    <img src="/img/weread/Webceshijiongshi/service.jpg" alt="written" class="written">
               图1-19
               企业内部缓存服务器
             </div>
@@ -330,7 +330,7 @@
         <div class="sectionListItem_divider leftIndent"></div>
         <div class="sectionListItem_content noteItem_content clickable"><span class="icon"></span>
           <div>
-            <div class="text"> <img src="./img/Webceshijiongshi/curl.jpg" alt="written" class="written">图1-20 Bumblebee误删用户文件夹</div>
+            <div class="text"> <img src="/img/weread/Webceshijiongshi/curl.jpg" alt="written" class="written">图1-20 Bumblebee误删用户文件夹</div>
           </div>
         </div>
       </div>
@@ -679,7 +679,7 @@
         <div class="sectionListItem_content noteItem_content clickable"><span class="icon"></span>
           <div>
             <div class="text">
-              使用Mock服务器进行测试。前后台团队根据定义好的API，各自编写Mock服务器，便于开发人员进行开发，和测试人员测试相对独立的模块，也大大简化了测试环境和测试执行的复杂度。具体来说，就是前台团队根据API的定义，编写Mock服务器来模拟后台数据库和服务器的返回；而后台团队根据API的定义，编写Mock服务器来模拟前台服务器的请求和预期结果，如图3-6所示。 <img src="./img/Webceshijiongshi/mock.jpg" alt="written" class="written">
+              使用Mock服务器进行测试。前后台团队根据定义好的API，各自编写Mock服务器，便于开发人员进行开发，和测试人员测试相对独立的模块，也大大简化了测试环境和测试执行的复杂度。具体来说，就是前台团队根据API的定义，编写Mock服务器来模拟后台数据库和服务器的返回；而后台团队根据API的定义，编写Mock服务器来模拟前台服务器的请求和预期结果，如图3-6所示。 <img src="/img/weread/Webceshijiongshi/mock.jpg" alt="written" class="written">
             </div>
           </div>
         </div>
@@ -697,7 +697,7 @@
         <div class="sectionListItem_content noteItem_content clickable"><span class="icon"></span>
           <div>
             <div class="text">
-              契约测试就是同时对前后台都进行了Mock，使它们随时都使用的是一致的API接口定义，也只需要维护单一的API接口。使用契约测试的工具能快速实现前后台的分离，同时保证它们的一致性，如图3-7所示。 <img src="./img/Webceshijiongshi/契约测试.jpeg" alt="written" class="written">图3-7
+              契约测试就是同时对前后台都进行了Mock，使它们随时都使用的是一致的API接口定义，也只需要维护单一的API接口。使用契约测试的工具能快速实现前后台的分离，同时保证它们的一致性，如图3-7所示。 <img src="/img/weread/Webceshijiongshi/契约测试.jpeg" alt="written" class="written">图3-7
               契约测试时前后台系统的结构
             </div>
           </div>
@@ -857,7 +857,7 @@
         <div class="sectionListItem_divider leftIndent"></div>
         <div class="sectionListItem_content noteItem_content clickable"><span class="icon"></span>
           <div>
-            <div class="text"> <img src="./img/Webceshijiongshi/bug-bash.jpg" alt="written" class="written">图3-13 缺陷大扫除结果分析饼状图</div>
+            <div class="text"> <img src="/img/weread/Webceshijiongshi/bug-bash.jpg" alt="written" class="written">图3-13 缺陷大扫除结果分析饼状图</div>
           </div>
         </div>
       </div>
@@ -1031,7 +1031,7 @@
         <div class="sectionListItem_content noteItem_content clickable"><span class="icon"></span>
           <div>
             <div class="text">表5-1 小蔡分析结果
-              <img src="./img/Webceshijiongshi/inject.jpg" alt="written" class="written"></div>
+              <img src="/img/weread/Webceshijiongshi/inject.jpg" alt="written" class="written"></div>
           </div>
         </div>
       </div>
@@ -1129,7 +1129,7 @@
         <div class="sectionListItem_divider leftIndent"></div>
         <div class="sectionListItem_content noteItem_content clickable"><span class="icon"></span>
           <div>
-            <div class="text"> <img src="./img/Webceshijiongshi/service.jpg" alt="written" class="written">图5-10 错误页面暴露服务器Apache版本、操作系统和端口等信息</div>
+            <div class="text"> <img src="/img/weread/Webceshijiongshi/service.jpg" alt="written" class="written">图5-10 错误页面暴露服务器Apache版本、操作系统和端口等信息</div>
           </div>
         </div>
       </div>
@@ -1138,7 +1138,7 @@
         <div class="sectionListItem_content noteItem_content clickable"><span class="icon"></span>
           <div>
             <div class="text">小蔡在浏览器的开发者工具中还发现在有些页面返回的注释中都有可能包含第三方库的版本（见图5-12），这对攻击者来说也是很有用的信息。
-              <img src="./img/Webceshijiongshi/bootatrap.jpeg" alt="written" class="written">图5-12
+              <img src="/img/weread/Webceshijiongshi/bootatrap.jpeg" alt="written" class="written">图5-12
               页面返回的注释中包含第三方库版本信息
             </div>
           </div>
@@ -1148,7 +1148,7 @@
         <div class="sectionListItem_divider leftIndent"></div>
         <div class="sectionListItem_content noteItem_content clickable"><span class="icon"></span>
           <div>
-            <div class="text"> <img src="./img/Webceshijiongshi/curl.jpg" alt="written" class="written">图5-14 通过curl命令检查页面返回中服务器信息有无泄露</div>
+            <div class="text"> <img src="/img/weread/Webceshijiongshi/curl.jpg" alt="written" class="written">图5-14 通过curl命令检查页面返回中服务器信息有无泄露</div>
           </div>
         </div>
       </div>
@@ -1291,7 +1291,7 @@
           <div>
             <div class="text">
               当用户输入错误的URL参数并进行请求时，不应该由服务器直接处理这条请求，而是应该由“数据验证”模块预先进行数据正确性的校验，只有数据正确的请求才会发送给API进行处理，这样能在一定程度上缓解服务器的压力（见图6-3）。现在数据验证模块并没有进行数据校验，导致携带错误URL参数的请求都被API处理了，服务器压力增大也是自然的。
-              <img src="./img/Webceshijiongshi/request.jpeg" alt="written" class="written">]图6-3
+              <img src="/img/weread/Webceshijiongshi/request.jpeg" alt="written" class="written">]图6-3
               用户发送请求时序图
             </div>
           </div>
@@ -1498,7 +1498,7 @@
         <div class="sectionListItem_divider leftIndent"></div>
         <div class="sectionListItem_content noteItem_content clickable"><span class="icon"></span>
           <div>
-            <div class="text"> <img src="./img/Webceshijiongshi/金字塔.jpg" alt="written" class="written">图7-10 测试金字塔的分层模型</div>
+            <div class="text"> <img src="/img/weread/Webceshijiongshi/金字塔.jpg" alt="written" class="written">图7-10 测试金字塔的分层模型</div>
           </div>
         </div>
       </div>
@@ -1522,7 +1522,7 @@
         <div class="sectionListItem_divider leftIndent"></div>
         <div class="sectionListItem_content noteItem_content clickable"><span class="icon"></span>
           <div>
-            <div class="text"> <img src="./img/Webceshijiongshi/PageObjects.jpg" alt="written" class="written">图7-11 页面对象把页面当作编程对象进行操作</div>
+            <div class="text"> <img src="/img/weread/Webceshijiongshi/PageObjects.jpg" alt="written" class="written">图7-11 页面对象把页面当作编程对象进行操作</div>
           </div>
         </div>
       </div>
@@ -1905,7 +1905,7 @@
         <div class="sectionListItem_divider leftIndent"></div>
         <div class="sectionListItem_content noteItem_content clickable"><span class="icon"></span>
           <div>
-            <div class="text"> <img src="./img/Webceshijiongshi/CI、CD、CP.jpg" alt="written" class="written">图10-5 持续集成，持续交付和持续部署之间的关系</div>
+            <div class="text"> <img src="/img/weread/Webceshijiongshi/CI、CD、CP.jpg" alt="written" class="written">图10-5 持续集成，持续交付和持续部署之间的关系</div>
           </div>
         </div>
       </div>
@@ -1963,7 +1963,7 @@
         <div class="sectionListItem_title">附录A 敏捷测试中的Web测试优秀实践</div>
         <div class="sectionListItem_content noteItem_content clickable"><span class="icon"></span>
           <div>
-            <div class="text"> <img src="./img/Webceshijiongshi/测试.jpg" alt="written" class="written">图A-2 敏捷测试四象限</div>
+            <div class="text"> <img src="/img/weread/Webceshijiongshi/测试.jpg" alt="written" class="written">图A-2 敏捷测试四象限</div>
           </div>
         </div>
       </div>
@@ -1971,7 +1971,7 @@
         <div class="sectionListItem_divider leftIndent"></div>
         <div class="sectionListItem_content noteItem_content clickable"><span class="icon"></span>
           <div>
-            <div class="text"> <img src="./img/Webceshijiongshi/测试迭代.jpg" alt="written" class="written">图A-3 迭代角度中测试人员的实践</div>
+            <div class="text"> <img src="/img/weread/Webceshijiongshi/测试迭代.jpg" alt="written" class="written">图A-3 迭代角度中测试人员的实践</div>
           </div>
         </div>
       </div>
@@ -1999,7 +1999,7 @@
         <div class="sectionListItem_divider leftIndent"></div>
         <div class="sectionListItem_content noteItem_content clickable"><span class="icon"></span>
           <div>
-            <div class="text"> <img src="./img/Webceshijiongshi/故事卡.jpg" alt="written" class="written">图A-4 故事卡角度中测试人员的实践</div>
+            <div class="text"> <img src="/img/weread/Webceshijiongshi/故事卡.jpg" alt="written" class="written">图A-4 故事卡角度中测试人员的实践</div>
           </div>
         </div>
       </div>
@@ -2042,13 +2042,13 @@
         <div class="sectionListItem_divider leftIndent"></div>
         <div class="sectionListItem_content noteItem_content clickable"><span class="icon"></span>
           <div>
-            <div class="text"> <img src="./img/Webceshijiongshi/测试人员类型.jpg" alt="written" class="written">图B-1 测试人员职业发展方向</div>
+            <div class="text"> <img src="/img/weread/Webceshijiongshi/测试人员类型.jpg" alt="written" class="written">图B-1 测试人员职业发展方向</div>
           </div>
         </div>
       </div>
     </div>
     <!--  <footer class="footer">-->
-    <!--    <img src="./img/Webceshijiongshi/qr.png" alt="qr">-->
+    <!--    <img src="/img/weread/Webceshijiongshi/qr.png" alt="qr">-->
     <!--    <p>扫码阅读本书</p>-->
     <!--  </footer>-->
   </div>

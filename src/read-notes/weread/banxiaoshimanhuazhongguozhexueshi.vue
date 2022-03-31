@@ -3,7 +3,7 @@
     <h1 class="title">半小时漫画中国哲学史</h1>
     <h5 class="author">陈磊·半小时漫画团队</h5>
     <img
-      src="./img/banxiaoshimanhuazhongguozhexueshi/t6_33517310.jpg"
+      src="/img/weread/banxiaoshimanhuazhongguozhexueshi/t6_33517310.jpg"
       alt="written"
       class="written"
     />
@@ -54,7 +54,7 @@
       </div>
     </div>
     <!--  <footer class="footer">-->
-    <!--    <img src="./img/banxiaoshimanhuazhongguozhexueshi/qr.png" alt="qr">-->
+    <!--    <img src="/img/weread/banxiaoshimanhuazhongguozhexueshi/qr.png" alt="qr">-->
     <!--    <p>扫码阅读本书</p>-->
     <!--  </footer>-->
   </div>

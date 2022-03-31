@@ -3,7 +3,7 @@
     <h1 class="title">代码精进之路：从码农到工匠</h1>
     <h5 class="author">张建飞</h5>
     <img
-      src="./img/daimajingjinzhilucongmanongdaogongjiang/t6_30179194.jpg"
+      src="/img/weread/daimajingjinzhilucongmanongdaogongjiang/t6_30179194.jpg"
       alt="written"
       class="written"
     />
@@ -1900,7 +1900,7 @@
       </div>
     </div>
     <!--  <footer class="footer">-->
-    <!--    <img src="./img/daimajingjinzhilucongmanongdaogongjiang/qr.png" alt="qr">-->
+    <!--    <img src="/img/weread/daimajingjinzhilucongmanongdaogongjiang/qr.png" alt="qr">-->
     <!--    <p>扫码阅读本书</p>-->
     <!--  </footer>-->
   </div>

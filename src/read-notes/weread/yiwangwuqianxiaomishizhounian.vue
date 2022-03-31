@@ -3,7 +3,7 @@
     <h1 class="title">一往无前：小米十周年 雷军公开演讲全文</h1>
     <h5 class="author">雷军</h5>
     <img
-      src="./img/yiwangwuqianxiaomishizhounian/t6_3200000005.jpg"
+      src="/img/weread/yiwangwuqianxiaomishizhounian/t6_3200000005.jpg"
       alt="written"
       class="written"
     />
@@ -116,7 +116,7 @@
       </div>
     </div>
     <!--  <footer class="footer">-->
-    <!--    <img src="./img/yiwangwuqianxiaomishizhounian/qr.png" alt="qr">-->
+    <!--    <img src="/img/weread/yiwangwuqianxiaomishizhounian/qr.png" alt="qr">-->
     <!--    <p>扫码阅读本书</p>-->
     <!--  </footer>-->
   </div>

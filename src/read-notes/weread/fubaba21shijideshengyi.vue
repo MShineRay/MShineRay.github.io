@@ -2,7 +2,7 @@
   <div class="container">
     <h1 class="title">富爸爸21世纪的生意</h1>
     <h5 class="author">罗伯特·清崎 约翰·弗莱明 金·清崎</h5>
-    <img src="./img/fubaba21shijideshengyi/t6_791725.jpg" alt="written" class="written" />
+    <img src="/img/weread/fubaba21shijideshengyi/t6_791725.jpg" alt="written" class="written" />
     <div class="wr_macOS wr_Desktop wr_page_reader wr_whiteTheme">
       <div class="sectionListItem">
         <div class="sectionListItem_title">第1章 规则已经变了</div>
@@ -503,7 +503,7 @@
       </div>
     </div>
     <!--  <footer class="footer">-->
-    <!--    <img src="./img/fubaba21shijideshengyi/qr.png" alt="qr">-->
+    <!--    <img src="/img/weread/fubaba21shijideshengyi/qr.png" alt="qr">-->
     <!--    <p>扫码阅读本书</p>-->
     <!--  </footer>-->
   </div>

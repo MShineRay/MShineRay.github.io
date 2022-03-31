@@ -2,7 +2,7 @@
   <div class="container">
     <h1 class="title">小狗钱钱2</h1>
     <h5 class="author">博多·舍费尔</h5>
-    <img src="./img/xiaogouqianqian2/t6_806276.jpg" alt="written" class="written" />
+    <img src="/img/weread/xiaogouqianqian2/t6_806276.jpg" alt="written" class="written" />
     <div class="wr_macOS wr_Desktop wr_page_reader wr_whiteTheme">
       <div class="sectionListItem">
         <div class="sectionListItem_title">第二章 白色石头</div>
@@ -320,7 +320,7 @@
       </div>
     </div>
     <!--  <footer class="footer">-->
-    <!--    <img src="./img/xiaogouqianqian2/qr.png" alt="qr">-->
+    <!--    <img src="/img/weread/xiaogouqianqian2/qr.png" alt="qr">-->
     <!--    <p>扫码阅读本书</p>-->
     <!--  </footer>-->
   </div>

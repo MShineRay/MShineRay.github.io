@@ -2,7 +2,7 @@
   <div class="container">
     <h1 class="title">GitHub入门与实践</h1>
     <h5 class="author">大塚弘记</h5>
-    <img src="./img/GitHubrumenyushijian/t6_26211801.jpg" alt="written" class="written" />
+    <img src="/img/weread/GitHubrumenyushijian/t6_26211801.jpg" alt="written" class="written" />
     <div class="wr_macOS wr_Desktop wr_page_reader wr_whiteTheme">
       <div class="sectionListItem">
         <div class="sectionListItem_title">序言</div>
@@ -519,7 +519,7 @@
       </div>
     </div>
     <!--  <footer class="footer">-->
-    <!--    <img src="./img/GitHubrumenyushijian/qr.png" alt="qr">-->
+    <!--    <img src="/img/weread/GitHubrumenyushijian/qr.png" alt="qr">-->
     <!--    <p>扫码阅读本书</p>-->
     <!--  </footer>-->
   </div>

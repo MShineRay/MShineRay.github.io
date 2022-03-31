@@ -2,7 +2,7 @@
   <div class="container">
     <h1 class="title">扛住就是本事</h1>
     <h5 class="author">冯仑</h5>
-    <img src="./img/kangzhujiushibenshi/t6_31531099.jpg" alt="written" class="written" />
+    <img src="/img/weread/kangzhujiushibenshi/t6_31531099.jpg" alt="written" class="written" />
     <div class="wr_macOS wr_Desktop wr_page_reader wr_whiteTheme">
       <div class="sectionListItem">
         <div class="sectionListItem_title">第1章 序言：要有看世界的智慧</div>
@@ -2177,7 +2177,7 @@
       </div>
     </div>
     <!--  <footer class="footer">-->
-    <!--    <img src="./img/kangzhujiushibenshi/qr.png" alt="qr">-->
+    <!--    <img src="/img/weread/kangzhujiushibenshi/qr.png" alt="qr">-->
     <!--    <p>扫码阅读本书</p>-->
     <!--  </footer>-->
   </div>

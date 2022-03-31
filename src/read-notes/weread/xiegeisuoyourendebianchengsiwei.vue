@@ -3,7 +3,7 @@
     <h1 class="title">写给所有人的编程思维</h1>
     <h5 class="author">吉姆·克里斯蒂安</h5>
     <img
-      src="./img/xiegeisuoyourendebianchengsiwei/t6_25850415.jpg"
+      src="/img/weread/xiegeisuoyourendebianchengsiwei/t6_25850415.jpg"
       alt="written"
       class="written"
     />
@@ -217,7 +217,7 @@
       </div>
     </div>
     <!--  <footer class="footer">-->
-    <!--    <img src="./img/xiegeisuoyourendebianchengsiwei/qr.png" alt="qr">-->
+    <!--    <img src="/img/weread/xiegeisuoyourendebianchengsiwei/qr.png" alt="qr">-->
     <!--    <p>扫码阅读本书</p>-->
     <!--  </footer>-->
   </div>

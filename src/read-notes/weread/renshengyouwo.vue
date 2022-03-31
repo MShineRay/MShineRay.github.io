@@ -2,7 +2,7 @@
   <div class="container">
     <h1 class="title">人生由我</h1>
     <h5 class="author">梅耶·马斯克</h5>
-    <img src="./img/renshengyouwo/t6_31934007.jpg" alt="written" class="written" />
+    <img src="/img/weread/renshengyouwo/t6_31934007.jpg" alt="written" class="written" />
     <div class="wr_macOS wr_Desktop wr_page_reader wr_whiteTheme">
       <div class="sectionListItem">
         <div class="sectionListItem_title">推荐序 打碎“人造完美”，原力觉醒</div>
@@ -543,7 +543,7 @@
       </div>
     </div>
     <footer class="footer">
-      <!--    <img src="./img/renshengyouwo/qr.png" alt="qr">-->
+      <!--    <img src="/img/weread/renshengyouwo/qr.png" alt="qr">-->
       <p>扫码阅读本书</p>
     </footer>
   </div>

@@ -2,7 +2,7 @@
   <div class="container">
     <h1 class="title">我是怎么割韭菜的：一个骗子的悔过与自白</h1>
     <h5 class="author">查尔斯·庞兹</h5>
-    <img src="./img/woshizenmogejiucaide/t6_27027591.jpg" alt="written" class="written" />
+    <img src="/img/weread/woshizenmogejiucaide/t6_27027591.jpg" alt="written" class="written" />
     <div class="wr_macOS wr_Desktop wr_page_reader wr_whiteTheme">
       <div class="sectionListItem">
         <div class="sectionListItem_title">前言</div>
@@ -234,7 +234,7 @@
       </div>
     </div>
     <!--  <footer class="footer">-->
-    <!--    <img src="./img/woshizenmogejiucaide/qr.png" alt="qr">-->
+    <!--    <img src="/img/weread/woshizenmogejiucaide/qr.png" alt="qr">-->
     <!--    <p>扫码阅读本书</p>-->
     <!--  </footer>-->
   </div>

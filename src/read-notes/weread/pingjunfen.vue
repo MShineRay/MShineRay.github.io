@@ -2,7 +2,7 @@
   <div class="container">
     <h1 class="title">平均分</h1>
     <h5 class="author">康辉</h5>
-    <img src="./img/pingjunfen/t6_28070306.jpg" alt="written" class="written" />
+    <img src="/img/weread/pingjunfen/t6_28070306.jpg" alt="written" class="written" />
     <div class="wr_macOS wr_Desktop wr_page_reader wr_whiteTheme">
       <div class="sectionListItem">
         <div class="sectionListItem_title">广院断章</div>
@@ -361,7 +361,7 @@
       </div>
     </div>
     <footer class="footer">
-      <img src="./img/pingjunfen/qr.png" alt="qr" />
+      <img src="/img/weread/pingjunfen/qr.png" alt="qr" />
       <p>扫码阅读本书</p>
     </footer>
   </div>

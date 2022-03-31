@@ -2,7 +2,7 @@
   <div class="container">
     <h1 class="title">输赢（全集）</h1>
     <h5 class="author">付遥</h5>
-    <img src="./img/shuying/t6_844458.jpg" alt="written" class="written" />
+    <img src="/img/weread/shuying/t6_844458.jpg" alt="written" class="written" />
     <div class="wr_macOS wr_Desktop wr_page_reader wr_whiteTheme">
       <div class="sectionListItem">
         <div class="sectionListItem_title">附录 摧龙八式</div>
@@ -871,7 +871,7 @@
       </div>
     </div>
     <!--  <footer class="footer">-->
-    <!--    <img src="./img/shuying/qr.png" alt="qr">-->
+    <!--    <img src="/img/weread/shuying/qr.png" alt="qr">-->
     <!--    <p>扫码阅读本书</p>-->
     <!--  </footer>-->
   </div>

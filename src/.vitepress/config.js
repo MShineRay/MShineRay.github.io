@@ -101,10 +101,7 @@ module.exports = (async () => {
       [
         'script',
         {
-          src: 'https://www.googletagmanager.com/gtag/js?id=G-R31NB6KKBC',
-          // 'data-site': 'XNOLWPLB',
-          // 'data-spa': 'auto',
-          // defer: ''
+          src: 'https://www.googletagmanager.com/gtag/js?id=G-R31NB6KKBC'
         }
       ],
       [
@@ -122,9 +119,9 @@ module.exports = (async () => {
       logoDark: '/img/logo-share.svg',
       logoText: 'ShineRay',
       // algolia: {
-      //   indexName: 'vuejs-v3',
-      //   appId: 'BH4D9OD16A',
-      //   apiKey: 'bc6e8acb44ed4179c30d0a45d6140d3f'
+      //   indexName: 'pro_github',
+      //   appId: 'TH7FJEUQK2',
+      //   apiKey: 'd39b6ce586dd2d44bab6ec298b57783d'
       // },
 
       // carbonAds: {

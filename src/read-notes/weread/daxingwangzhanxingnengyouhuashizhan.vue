@@ -3,7 +3,7 @@
     <h1 class="title">大型网站性能优化实战：从前端、网络、CDN到后端、大促的全链路性能优化详解</h1>
     <h5 class="author">周涛明 张荣华 张新兵</h5>
     <img
-      src="./img/daxingwangzhanxingnengyouhuashizhan/t6_25462652.jpg"
+      src="/img/weread/daxingwangzhanxingnengyouhuashizhan/t6_25462652.jpg"
       alt="written"
       class="written"
     />
@@ -1072,7 +1072,7 @@
       </div>
     </div>
     <!--  <footer class="footer">-->
-    <!--    <img src="./img/daxingwangzhanxingnengyouhuashizhan/qr.png" alt="qr">-->
+    <!--    <img src="/img/weread/daxingwangzhanxingnengyouhuashizhan/qr.png" alt="qr">-->
     <!--    <p>扫码阅读本书</p>-->
     <!--  </footer>-->
   </div>

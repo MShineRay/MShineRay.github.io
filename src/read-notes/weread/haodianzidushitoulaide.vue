@@ -2,7 +2,7 @@
   <div class="container">
     <h1 class="title">好点子都是偷来的：史上最感性的60堂创新课</h1>
     <h5 class="author">杰夫·戴维森</h5>
-    <img src="./img/haodianzidushitoulaide/t6_811592.jpg" alt="written" class="written" />
+    <img src="/img/weread/haodianzidushitoulaide/t6_811592.jpg" alt="written" class="written" />
     <div class="wr_macOS wr_Desktop wr_page_reader wr_whiteTheme">
       <div class="sectionListItem">
         <div class="sectionListItem_title">版权信息</div>
@@ -958,7 +958,7 @@
       </div>
     </div>
     <!--  <footer class="footer">-->
-    <!--    <img src="../img/haodianzidushitoulaide/qr.png" alt="qr">-->
+    <!--    <img src="./img/weread/haodianzidushitoulaide/qr.png" alt="qr">-->
     <!--    <p>扫码阅读本书</p>-->
     <!--  </footer>-->
   </div>

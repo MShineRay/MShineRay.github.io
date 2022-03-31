@@ -2,7 +2,7 @@
   <div class="container">
     <h1 class="title">图说世界格局</h1>
     <h5 class="author">王伟</h5>
-    <img src="./img/tushuoshijiegeju/t6_23600574.jpg" alt="written" class="written" />
+    <img src="/img/weread/tushuoshijiegeju/t6_23600574.jpg" alt="written" class="written" />
     <div class="wr_macOS wr_Desktop wr_page_reader wr_whiteTheme">
       <div class="sectionListItem">
         <div class="sectionListItem_title">“石油大棒”与“荷兰病”</div>
@@ -239,7 +239,7 @@
       </div>
     </div>
     <!--  <footer class="footer">-->
-    <!--    <img src="./img/tushuoshijiegeju/qr.png" alt="qr">-->
+    <!--    <img src="/img/weread/tushuoshijiegeju/qr.png" alt="qr">-->
     <!--    <p>扫码阅读本书</p>-->
     <!--  </footer>-->
   </div>
