@@ -9,7 +9,6 @@ export default {
   Layout() {
     return h(VPTheme.Layout, null, {
       // uncomment to test layout slots
-
       // 'sidebar-top': () => h('div', 'hello top'),
       // 'sidebar-bottom': () => h('div', 'hello bottom'),
       // 'content-top': () => h('h1', 'Announcement!'),

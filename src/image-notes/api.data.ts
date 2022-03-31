@@ -6,8 +6,8 @@ export interface APIGroup {
   text: string
   items: {
     text: string
-    link: string,
-    imgList: {}[],
+    link: string
+    imgList: {}[]
     headers: string[]
   }[]
 }
@@ -20,8 +20,8 @@ export default {
   watch: './*.md',
   // read from fs and generate the data
   load(): APIGroup[] {
-    let result: any[] = [];
-    let imgList: any[] = [];
+    let result: any[] = []
+    let imgList: any[] = []
     zhiqunJSON.map((group) => {
       imgList.push({
         text: group.pageName,
@@ -37,15 +37,13 @@ export default {
         })
       })
     })
-    result = result.concat(
-      [
-        {
-          text: '知群',
-          type: '/',
-          items: imgList
-        }
-      ]
-    )
+    result = result.concat([
+      {
+        text: '知群',
+        type: '/',
+        items: imgList
+      }
+    ])
     return result
   }
 }
