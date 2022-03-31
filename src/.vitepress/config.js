@@ -29,14 +29,6 @@ const nav = [
     ]
   }
 ]
-const commonNav = {
-  text: '链接',
-  items: [
-    { text: 'Read Notes', link: '/read-notes/' },
-    { text: 'Image Notes', link: '/image-notes/'},
-    { text: 'WWW Notes', link: '/www-notes/'}
-  ]
-}
 
 // TODO 抽取左侧菜单
 const sidebar = {
@@ -52,6 +44,14 @@ const sidebar = {
     {
       text: '知群',
       items: zhiqunReadNotes
+    },
+    {
+      text: '链接',
+      items: [
+        { text: 'Image Notes', link: '/image-notes/'},
+        { text: 'WWW Notes', link: '/www-notes/'},
+        { text: 'Work Notes', link: '/work-notes/'},
+      ]
     }
   ],
   '/image-notes/': [
@@ -65,8 +65,38 @@ const sidebar = {
     //   text: '知群',
     //   items: zhiQunImgList
     // },
-    commonNav
+    {
+      text: '链接',
+      items: [
+        { text: 'Read Notes', link: '/read-notes/' },
+        { text: 'WWW Notes', link: '/www-notes/'},
+        { text: 'Work Notes', link: '/work-notes/'},
+      ]
+    }
+  ],
+  '/work-notes/': [
+    {
+      text: 'Work Notes',
+      items: [
+        { text: '工作台', link: '/work-notes/',},
+      ]
+    },
+    {
+      text: '埋点',
+      items: [
+        { text: 'Log List', link: '/work-notes/log',},
+      ]
+    },
+    {
+      text: '链接',
+      items: [
+        { text: 'Read Notes', link: '/read-notes/' },
+        { text: 'WWW Notes', link: '/www-notes/'},
+        { text: 'Image Notes', link: '/image-notes/'},
+      ]
+    }
   ]
+
 }
 
 module.exports = (async () => {

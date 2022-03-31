@@ -12,6 +12,7 @@ import VueMasteryModal from './VueMasteryModal.vue';
 <!--      <br />JavaScript Framework-->
     </h1>
     <p class="description">
+      learn & share
 <!--      An approachable, performant and versatile framework for building web-->
 <!--      user interfaces.-->
     </p>
@@ -31,7 +32,8 @@ import VueMasteryModal from './VueMasteryModal.vue';
           />
         </svg>
       </a>
-<!--      <a class="setup" href="/guide/quick-start.html">Install</a>-->
+      <a class="setup" href="/image-notes/">Image Notes</a>
+      <a class="setup" href="/work-notes/">Work Notes</a>
     </p>
   </section>
 
@@ -134,6 +136,11 @@ html:not(.dark) .accent,
 }
 
 .actions .get-started {
+  margin-right: 18px;
+  background: #42d392;
+}
+
+.actions .setup{
   margin-right: 18px;
 }
 
