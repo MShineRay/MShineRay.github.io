@@ -36,24 +36,27 @@
         "link": "https://analytics.google.com/analytics/",
         "label": "前端",
         "labelEN": "fe"
-      },
+      }
+    ]
+  },
+  {
+    "text": "github相关",
+    "items": [
       {
-        "text": "vant-ui 4.0 中文",
-        "link": "https://youzan.github.io/vant/v4/#/zh-CN",
+        "text": "vuejs",
+        "link": "https://github.com/vuejs/",
         "label": "前端",
         "labelEN": "fe"
       },
       {
-        "text": "element plus 中文",
-        "link": "https://element-plus.gitee.io/zh-CN/component/button.html",
+        "text": "element-plus",
+        "link": "https://github.com/element-plus/element-plus",
         "label": "前端",
         "labelEN": "fe"
       },
       {
-        "text": "element ui 2.0 中文",
-        "link": "https://element.eleme.cn/#/zh-CN/component/installation",
-        "label": "前端",
-        "labelEN": "fe"
+        "text": "element 2x",
+        "link": "https://github.com/ElemeFE/element"
       }
     ]
   }

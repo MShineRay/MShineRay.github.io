@@ -90,7 +90,7 @@ function slugify(text: string): string {
           <ul>
             <li>
               <a
-                :href="item.link + '.html'"
+                :href="item.link"
               >
                 {{ item.text }}
               </a>

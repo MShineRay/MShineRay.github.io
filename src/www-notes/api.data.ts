@@ -16,21 +16,6 @@ export declare const data: APIGroup[]
 export default {
   // read from fs and generate the data
   load(): APIGroup[] {
-    // let result: any[] = []
-    // let imgList: any[] = []
-    // wereadJSON.map((group) => {
-    //   imgList.push({
-    //     text: group.bookName,
-    //     link: '/read-notes' + group.bookUrl
-    //   })
-    // })
-    // result = result
-    //   .concat([
-    //     {
-    //       text: '前端',
-    //       items: imgList
-    //     }
-    //   ])
     return wwwJSON
   }
 }
