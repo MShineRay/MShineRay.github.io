@@ -1,11 +1,10 @@
 ---
-title: API Reference
 page: true
 footer: false
 ---
 
 <script setup>
-import ApiIndex from './ApiIndex.vue'
+import WorkNotesIndex from './index.vue'
 </script>
 
-<ApiIndex />
+<WorkNotesIndex />

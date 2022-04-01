@@ -1,5 +1,5 @@
 ---
-title: Read Notes
+title: Work Notes
 page: true
 footer: false
 ---

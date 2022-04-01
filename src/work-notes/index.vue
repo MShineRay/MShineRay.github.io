@@ -56,7 +56,7 @@ function slugify(text: string): string {
 <template>
   <div id="api-index">
     <div class="header">
-      <h1>Book List</h1>
+      <h1>Work List</h1>
       <div class="api-filter">
         <label for="api-filter">Filter</label>
         <input

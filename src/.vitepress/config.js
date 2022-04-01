@@ -12,6 +12,7 @@ const nav = [
     items: [
       { text: 'Read Notes', link: '/read-notes/' },
       { text: 'Image Notes', link: '/image-notes/' },
+      { text: 'Work Notes', link: '/work-notes/' },
       { text: 'WWW Notes', link: '/www-notes/' },
     ]
   },
@@ -95,6 +96,22 @@ const sidebar = {
         { text: 'Image Notes', link: '/image-notes/'},
       ]
     }
+  ],
+  '/www-notes/': [
+    {
+      text: 'WWW Notes',
+      items: [
+        { text: 'www list', link: '/www-notes/',},
+      ]
+    },
+    {
+      text: '链接',
+      items: [
+        { text: 'Read Notes', link: '/read-notes/' },
+        { text: 'Work Notes', link: '/work-notes/'},
+        { text: 'Image Notes', link: '/image-notes/'},
+      ]
+    }
   ]
 
 }
@@ -129,9 +146,17 @@ module.exports = (async () => {
         }
       ],
       [
+        'meta',
+        {
+          name: 'app-build-time',
+          value: new Date().getTime()
+        }
+      ],
+      [
         'script',
         {
-          src: 'https://www.googletagmanager.com/gtag/js?id=G-R31NB6KKBC'
+          src: 'https://www.googletagmanager.com/gtag/js?id=G-R31NB6KKBC',
+          async: "async"
         }
       ],
       [
