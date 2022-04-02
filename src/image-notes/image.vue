@@ -3,7 +3,7 @@
 // named import "data" is the resolved static data
 // can also import types for type consistency
 
-import { ref } from 'vue'
+import { ref} from 'vue'
 let params = getParam()
 
 function getParam() {
@@ -24,6 +24,11 @@ function getParam() {
 
 const title2 = ref(params.title)
 const imgList = ref(JSON.parse(params.imgList||"[]"))
+if(typeof initGitalk !== 'undefined'){
+  setTimeout(function (){
+    initGitalk()
+  }, 3000)
+}
 </script>
 
 <template>
@@ -42,6 +47,7 @@ const imgList = ref(JSON.parse(params.imgList||"[]"))
         </div>
       </div>
     </div>
+    <div id="gitalk-container"></div>
   </div>
 </template>
 

@@ -58,6 +58,13 @@ function slugify(text: string): string {
       .toLowerCase()
   )
 }
+
+
+if(typeof initGitalk !== 'undefined'){
+  setTimeout(function (){
+    initGitalk()
+  }, 3000)
+}
 </script>
 
 <template>
@@ -103,6 +110,7 @@ function slugify(text: string): string {
     <div v-if="!filtered.length" class="no-match">
       No image matching "{{ query }}" found.
     </div>
+    <div id="gitalk-container"></div>
   </div>
 </template>
 

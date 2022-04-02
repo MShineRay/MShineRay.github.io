@@ -160,10 +160,32 @@ module.exports = (async () => {
         }
       ],
       [
+        'link',
+        {
+          href: '//cdn.bootcss.com/gitalk/1.5.0/gitalk.min.css',
+          rel: "stylesheet"
+        }
+      ],
+      [
+        'script',
+        {
+          src: '//cdn.bootcss.com/gitalk/1.5.0/gitalk.min.js',
+          async: "async"
+        }
+      ],
+      [
         'script',
         {},
         fs.readFileSync(
           path.resolve(__dirname, './inlined-scripts/gtag_event.js'),
+          'utf-8'
+        )
+      ],
+      [
+        'script',
+        {},
+        fs.readFileSync(
+          path.resolve(__dirname, './inlined-scripts/gitalk.js'),
           'utf-8'
         )
       ],
