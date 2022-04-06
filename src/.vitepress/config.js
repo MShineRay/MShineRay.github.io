@@ -169,7 +169,7 @@ module.exports = (async () => {
       [
         'script',
         {
-          src: '//cdn.bootcss.com/gitalk/1.5.0/gitalk.min.js',
+          src: '//cdn.bootcss.com/gitalk/1.7.2/gitalk.min.js',
           async: "async"
         }
       ],

@@ -63,7 +63,7 @@ function slugify(text: string): string {
 if(typeof initGitalk !== 'undefined'){
   setTimeout(function (){
     initGitalk()
-  }, 3000)
+  }, 300)
 }
 </script>
 
