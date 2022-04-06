@@ -51,6 +51,12 @@ function slugify(text: string): string {
       .toLowerCase()
   )
 }
+
+if(typeof initGitalk !== 'undefined'){
+  setTimeout(function (){
+    initGitalk("读书笔记")
+  }, 300)
+}
 </script>
 
 <template>
@@ -102,6 +108,8 @@ function slugify(text: string): string {
     <div v-if="!filtered.length" class="no-match">
       No book matching "{{ query }}" found.
     </div>
+    <div id="gitalk-container"></div>
+
   </div>
 </template>
 

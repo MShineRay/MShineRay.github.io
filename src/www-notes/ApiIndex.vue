@@ -61,6 +61,7 @@ function slugify(text: string): string {
       .toLowerCase()
   )
 }
+
 </script>
 
 <template>

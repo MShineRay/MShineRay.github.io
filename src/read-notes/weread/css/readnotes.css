@@ -29,3 +29,7 @@
   border-top: 1px solid #ddd;
   padding-top: 30px;
 }
+
+.container .footer img{
+  margin: 0 auto;
+}
