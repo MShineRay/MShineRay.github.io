@@ -16,5 +16,5 @@ fs.readdir(filePath, function (err, data) {
       ]
     })
   }
-  fs.writeFileSync(__dirname+'/src/image-notes/zhiqun/index2.json', JSON.stringify(dataList,null, ' '), 'utf8')
+  fs.writeFileSync(__dirname+'/src/image-notes/zhiqun/index.json', JSON.stringify(dataList,null, ' '), 'utf8')
 })
