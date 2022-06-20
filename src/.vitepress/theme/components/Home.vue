@@ -7,18 +7,13 @@ import VueMasteryModal from './VueMasteryModal.vue';
 <template>
   <section id="hero">
     <h1 class="tagline">
-<!--      The-->
-      <span class="accent">ShineRay</span>
-<!--      <br />JavaScript Framework-->
+      <span class="accent">FE</span>
     </h1>
     <p class="description">
-      learn & share
-<!--      An approachable, performant and versatile framework for building web-->
-<!--      user interfaces.-->
+      The Front-End team
     </p>
     <p class="actions">
-<!--      <vue-mastery-modal />-->
-      <a class="get-started" href="/read-notes/">
+      <a class="get-started" href="/link/">
         Get Started
         <svg
           class="icon"
@@ -32,60 +27,10 @@ import VueMasteryModal from './VueMasteryModal.vue';
           />
         </svg>
       </a>
-      <a class="setup" href="/image-notes/">Image Notes</a>
-      <a class="setup" href="/work-notes/">Work Notes</a>
+      <a class="setup" href="/mock/">Mock</a>
+      <a class="setup" href="/log/">Log</a>
     </p>
   </section>
-
-  <!-- TODO make dynamic based on data -->
-<!--  <section id="special-sponsor">-->
-<!--    <span>Special Sponsor</span>-->
-<!--    <a href="https://www.dcloud.io/hbuilderx.html?hmsr=vue-en&hmpl=&hmcu=&hmkw=&hmci=">-->
-<!--      <picture>-->
-<!--        <source type="image/avif" srcset="/images/sponsors/hbuilder.avif" />-->
-<!--        <img-->
-<!--          alt="hbuilder logo"-->
-<!--          width="97"-->
-<!--          height="36"-->
-<!--          src="/images/sponsors/hbuilder.png"-->
-<!--        />-->
-<!--      </picture>-->
-<!--    </a>-->
-<!--    <span>Advanced IDE for Vue</span>-->
-<!--  </section>-->
-
-<!--  <section id="highlights" class="vt-box-container">-->
-<!--    <div class="vt-box">-->
-<!--      <h2>Approachable</h2>-->
-<!--      <p>-->
-<!--        Builds on top of standard HTML, CSS and JavaScript with intuitive-->
-<!--        API and world-class documentation.-->
-<!--      </p>-->
-<!--    </div>-->
-<!--    <div class="vt-box">-->
-<!--      <h2>Performant</h2>-->
-<!--      <p>-->
-<!--        Truly reactive, compiler-optimized rendering system that rarely-->
-<!--        requires manual optimization.-->
-<!--      </p>-->
-<!--    </div>-->
-<!--    <div class="vt-box">-->
-<!--      <h2>Versatile</h2>-->
-<!--      <p>-->
-<!--        A rich, incrementally adoptable ecosystem that scales between a-->
-<!--        library and a full-featured framework.-->
-<!--      </p>-->
-<!--    </div>-->
-<!--  </section>-->
-
-<!--  <section id="sponsors">-->
-<!--    <h2>Platinum Sponsors</h2>-->
-<!--    <SponsorsGroup tier="platinum" placement="landing" />-->
-<!--    <h2>Gold Sponsors</h2>-->
-<!--    <SponsorsGroup tier="gold" placement="landing" />-->
-<!--  </section>-->
-
-<!--  <NewsLetter />-->
 </template>
 
 <style scoped>

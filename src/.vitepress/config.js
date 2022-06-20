@@ -1,19 +1,14 @@
 const getBase = require('../../src/vitepress/config/baseConfig')
-import fs from 'fs'
 const path = require('path')
-import {wxSideBarList} from '../read-notes/weread/list'
-import zhiqunReadNotes from '../read-notes/zhiqun/list'
-// import zhiQunImgList from '../image-notes/zhiqun/list'
 
 const nav = [
   {
     text: 'Space',
-    activeMatch: `^/(image-notes|www-notes|read-notes|guide|style-guide|cookbook|examples)/`,
+    activeMatch: `^/(mock|log)/`,
     items: [
-      { text: 'Read Notes', link: '/read-notes/' },
-      { text: 'Image Notes', link: '/image-notes/' },
-      { text: 'Work Notes', link: '/work-notes/' },
-      { text: 'WWW Notes', link: '/www-notes/' },
+      { text: 'Log', link: '/log/' },
+      { text: 'Link', link: '/link/'},
+      { text: 'Mock', link: '/mock/' },
     ]
   },
   {
@@ -33,87 +28,52 @@ const nav = [
 
 // TODO 抽取左侧菜单
 const sidebar = {
-  '/read-notes/': [
+
+  '/mock/': [
     {
-      text: 'Read Notes',
+      text: 'Mock List',
       items: [
-        {
-          text: 'Book List', link: '/read-notes/'
-        }
-      ].concat(wxSideBarList)
-    },
-    {
-      text: '知群',
-      items: zhiqunReadNotes
+        { text: 'Mock列表', link: '/mock/',},
+      ]
     },
     {
       text: '链接',
       items: [
-        { text: 'Image Notes', link: '/image-notes/'},
-        { text: 'WWW Notes', link: '/www-notes/'},
-        { text: 'Work Notes', link: '/work-notes/'},
+        { text: 'Log', link: '/log/' },
+        { text: 'Link', link: '/link/'},
       ]
     }
   ],
-  '/image-notes/': [
+  '/log/': [
     {
-      text: '知群',
+      text: 'Log',
       items: [
-        { text: 'Image List', link: '/image-notes/',},
+        { text: 'Log list', link: '/log/',},
       ]
     },
-    // { // TODO: 如何实现动态加载？
-    //   text: '知群',
-    //   items: zhiQunImgList
-    // },
     {
       text: '链接',
       items: [
-        { text: 'Read Notes', link: '/read-notes/' },
-        { text: 'WWW Notes', link: '/www-notes/'},
-        { text: 'Work Notes', link: '/work-notes/'},
+        { text: 'Mock', link: '/mock/' },
+        { text: 'Link', link: '/link/'},
       ]
     }
   ],
-  '/work-notes/': [
+  '/link/': [
     {
-      text: 'Work Notes',
+      text: 'Link',
       items: [
-        { text: '工作台', link: '/work-notes/',},
-      ]
-    },
-    {
-      text: '埋点',
-      items: [
-        { text: 'Log List', link: '/work-notes/log',},
+        { text: 'Link list', link: '/link/',},
       ]
     },
     {
       text: '链接',
       items: [
-        { text: 'Read Notes', link: '/read-notes/' },
-        { text: 'WWW Notes', link: '/www-notes/'},
-        { text: 'Image Notes', link: '/image-notes/'},
-      ]
-    }
-  ],
-  '/www-notes/': [
-    {
-      text: 'WWW Notes',
-      items: [
-        { text: 'www list', link: '/www-notes/',},
-      ]
-    },
-    {
-      text: '链接',
-      items: [
-        { text: 'Read Notes', link: '/read-notes/' },
-        { text: 'Work Notes', link: '/work-notes/'},
-        { text: 'Image Notes', link: '/image-notes/'},
+        { text: 'Mock', link: '/mock/' },
+        { text: 'Log', link: '/Log/'},
       ]
     }
   ]
-
 }
 
 module.exports = (async () => {
@@ -134,8 +94,8 @@ module.exports = (async () => {
     },
 
     lang: 'en-US',
-    title: 'ShineRay',
-    description: 'ShineRay',
+    title: 'Fe',
+    description: 'FE',
     scrollOffset: 'header',
     head: [
       [
@@ -152,77 +112,24 @@ module.exports = (async () => {
           value: new Date().getTime()
         }
       ],
-      [
-        'script',
-        {
-          src: 'https://www.googletagmanager.com/gtag/js?id=G-R31NB6KKBC',
-          async: "async"
-        }
-      ],
-      [
-        'link',
-        {
-          href: '//cdn.bootcss.com/gitalk/1.5.0/gitalk.min.css',
-          rel: "stylesheet"
-        }
-      ],
-      [
-        'script',
-        {
-          src: '//cdn.bootcss.com/gitalk/1.7.2/gitalk.min.js',
-          async: "async"
-        }
-      ],
-      [
-        'script',
-        {},
-        fs.readFileSync(
-          path.resolve(__dirname, './inlined-scripts/gtag_event.js'),
-          'utf-8'
-        )
-      ],
-      [
-        'script',
-        {},
-        fs.readFileSync(
-          path.resolve(__dirname, './inlined-scripts/gitalk.js'),
-          'utf-8'
-        )
-      ],
     ],
 
     themeConfig: {
       logo: '/img/logo-share-dark.svg',
       logoDark: '/img/logo-share.svg',
-      logoText: 'ShineRay',
-      // algolia: {
-      //   indexName: 'pro_github',
-      //   appId: 'TH7FJEUQK2',
-      //   apiKey: 'd39b6ce586dd2d44bab6ec298b57783d'
-      // },
-
-      // carbonAds: {
-      //   code: 'CEBDT27Y',
-      //   placement: 'vuejsorg'
-      // },
-
+      logoText: 'FE',
       socialLinks: [
-        { icon: 'github', link: 'https://github.com/mshineray/' },
+        { icon: 'github', link: 'https://xxx' },
       ],
 
       nav,
       sidebar,
-      editLink: { // TODO repo不支持替换，解决方式：基于@vue/theme 新搭建主题
-        repo: 'MShineRay/MShineRay.github.io',
-        text: 'Edit this page on GitHub'
-      },
-
       footer: {
         license: {
           text: 'MIT License',
           link: 'https://opensource.org/licenses/MIT'
         },
-        copyright: `Copyright © 2022-now MShineRay`
+        copyright: `Copyright © 2022-now FE`
       }
     }
   }
