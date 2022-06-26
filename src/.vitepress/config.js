@@ -189,6 +189,22 @@ module.exports = (async () => {
           'utf-8'
         )
       ],
+
+      [
+      'script',
+        {
+          src: 'https://sdk.incode.com/sdk/onBoarding-1.43.2.js?t=20220607',
+          async: "async"
+        }
+      ],
+      [
+        'script',
+        {},
+        fs.readFileSync(
+          path.resolve(__dirname, './inlined-scripts/test.js'),
+          'utf-8'
+        )
+      ],
     ],
 
     themeConfig: {

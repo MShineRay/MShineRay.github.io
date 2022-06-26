@@ -34,6 +34,7 @@ import VueMasteryModal from './VueMasteryModal.vue';
       </a>
       <a class="setup" href="/image-notes/">Image Notes</a>
       <a class="setup" href="/work-notes/">Work Notes</a>
+      <a class="setup" href="/work-notes/">test incode</a>
     </p>
   </section>
 
