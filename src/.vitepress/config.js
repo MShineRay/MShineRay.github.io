@@ -190,13 +190,13 @@ module.exports = (async () => {
         )
       ],
 
-      [
-      'script',
-        {
-          src: 'https://h.online-metrix.net/fp/tags.js?org_id=1snn5n9w&session_id=opayegyptorder_id',
-          async: "async"
-        }
-      ],
+      // [
+      // 'script',
+      //   {
+      //     src: 'https://h.online-metrix.net/fp/tags.js?org_id=1snn5n9w&session_id=opayegyptorder_id',
+      //     async: "async"
+      //   }
+      // ],
       // [
       //   'script',
       //   {},
