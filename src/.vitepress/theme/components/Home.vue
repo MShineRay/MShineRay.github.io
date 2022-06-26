@@ -34,6 +34,7 @@ import VueMasteryModal from './VueMasteryModal.vue';
       </a>
       <a class="setup" href="/image-notes/">Image Notes</a>
       <a class="setup" href="/work-notes/">Work Notes</a>
+      <a class="setup" href="/work-notes/">Test</a>
     </p>
   </section>
 
@@ -138,6 +139,7 @@ html:not(.dark) .accent,
 .actions .get-started {
   margin-right: 18px;
   background: #42d392;
+  color: #fff;
 }
 
 .actions .setup{
