@@ -12,8 +12,9 @@ const nav = [
     items: [
       { text: 'Read Notes', link: '/read-notes/' },
       { text: 'Image Notes', link: '/image-notes/' },
-      { text: 'Work Notes', link: '/work-notes/' },
       { text: 'WWW Notes', link: '/www-notes/' },
+      { text: 'fecli', link: 'https://www.npmjs.com/package/@a0znpm/fecli' },
+      { text: 'Work Notes', link: '/work-notes/' },
     ]
   },
   {

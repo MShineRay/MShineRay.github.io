@@ -18,8 +18,8 @@ import VueMasteryModal from './VueMasteryModal.vue';
     </p>
     <p class="actions">
 <!--      <vue-mastery-modal />-->
-      <a class="get-started" href="/read-notes/">
-        Get Started
+      <a class="setup" href="/read-notes/">
+        Read Notes
         <svg
           class="icon"
           xmlns="http://www.w3.org/2000/svg"
@@ -33,7 +33,8 @@ import VueMasteryModal from './VueMasteryModal.vue';
         </svg>
       </a>
       <a class="setup" href="/image-notes/">Image Notes</a>
-      <a class="setup" href="/work-notes/">Work Notes</a>
+      <a class="setup" href="https://www.npmjs.com/package/@a0znpm/fecli">fecli</a>
+      <a class="setup" href="/www-notes/">WWW Notes</a>
     </p>
   </section>
 
