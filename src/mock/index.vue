@@ -2,6 +2,7 @@
 import { data as apiIndex, APIGroup } from './api.data'
 import { ref, computed } from 'vue'
 const query = ref('')
+
 const normalize = (s: string) => s.toLowerCase().replace(/-/g, ' ')
 
 const filtered = computed(() => {

@@ -1,6 +1,6 @@
 const getBase = require('../../src/vitepress/config/baseConfig')
 const path = require('path')
-
+const fs = require('fs')
 const nav = [
   {
     text: 'Space',
@@ -111,6 +111,15 @@ module.exports = (async () => {
           name: 'app-build-time',
           value: new Date().getTime()
         }
+      ],
+      [
+        'script',
+        {
+        },
+        fs.readFileSync(
+          path.resolve(__dirname, './inlined-scripts/felogsdk.iife.min.js'),
+          'utf-8'
+        )
       ],
     ],
 
