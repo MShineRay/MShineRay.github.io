@@ -191,11 +191,10 @@ module.exports = (async () => {
       ],
       [
         'script',
-        {},
-        fs.readFileSync(
-          path.resolve(__dirname, './inlined-scripts/felogsdk.iife.min.js'),
-          'utf-8'
-        )
+        {
+          src: '/scripts/felogsdk.iife.min.js',
+          async: "async"
+        }
       ],
       // [
       // 'script',
