@@ -245,7 +245,8 @@ module.exports = (async () => {
           link: 'https://opensource.org/licenses/MIT'
         },
         copyright: `Copyright © 2022-now MShineRay`
-      }
+      },
+      appearance: false // 屏蔽黑白主题切换
     }
   }
 })()
