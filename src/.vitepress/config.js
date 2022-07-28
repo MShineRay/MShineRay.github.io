@@ -16,19 +16,19 @@ const nav = [
       { text: 'WWW Notes', link: '/www-notes/' },
     ]
   },
-  {
-    text: 'Vue',
-    items: [
-      { text: 'Playground', link: 'https://sfc.vuejs.org'},
-      { text: 'API', link: 'https://vuejs.org/api/'},
-      { text: 'introduction', link: 'https://vuejs.org/guide/introduction' },
-      { text: 'tutorial', link: 'https://vuejs.org/tutorial/' },
-      { text: 'examples', link: 'https://vuejs.org/examples/' },
-      { text: 'Quick Start', link: 'https://vuejs.org/guide/quick-start' },
-      { text: 'Style Guide', link: 'https://vuejs.org/style-guide/' },
-      // {text: 'Migration from Vue 2', link: 'https://v3-migration.vuejs.org/'}
-    ]
-  }
+  // {
+  //   text: 'Vue',
+  //   items: [
+  //     { text: 'Playground', link: 'https://sfc.vuejs.org'},
+  //     { text: 'API', link: 'https://vuejs.org/api/'},
+  //     { text: 'introduction', link: 'https://vuejs.org/guide/introduction' },
+  //     { text: 'tutorial', link: 'https://vuejs.org/tutorial/' },
+  //     { text: 'examples', link: 'https://vuejs.org/examples/' },
+  //     { text: 'Quick Start', link: 'https://vuejs.org/guide/quick-start' },
+  //     { text: 'Style Guide', link: 'https://vuejs.org/style-guide/' },
+  //     // {text: 'Migration from Vue 2', link: 'https://v3-migration.vuejs.org/'}
+  //   ]
+  // }
 ]
 
 // TODO 抽取左侧菜单
@@ -189,21 +189,22 @@ module.exports = (async () => {
           'utf-8'
         )
       ],
-
-      // [
-      // 'script',
-      //   {
-      //     src: 'https://h.online-metrix.net/fp/tags.js?org_id=1snn5n9w&session_id=opayegyptorder_id',
-      //   }
-      // ],
-      // [
-      //   'script',
-      //   {},
-      //   fs.readFileSync(
-      //     path.resolve(__dirname, './inlined-scripts/test.js'),
-      //     'utf-8'
-      //   )
-      // ],
+      [
+        'script',
+        {},
+        fs.readFileSync(
+          path.resolve(__dirname, './inlined-scripts/felogsdk.iife.min.js'),
+          'utf-8'
+        )
+      ],
+      [
+        'script',
+        {},
+        fs.readFileSync(
+          path.resolve(__dirname, './inlined-scripts/felogsdk.init.js'),
+          'utf-8'
+        )
+      ]
     ],
 
     themeConfig: {
@@ -238,7 +239,8 @@ module.exports = (async () => {
           link: 'https://opensource.org/licenses/MIT'
         },
         copyright: `Copyright © 2022-now MShineRay`
-      }
+      },
+      appearance: false
     }
   }
 })()
