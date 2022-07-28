@@ -12,8 +12,9 @@ const nav = [
     items: [
       { text: 'Read Notes', link: '/read-notes/' },
       { text: 'Image Notes', link: '/image-notes/' },
-      { text: 'Work Notes', link: '/work-notes/' },
       { text: 'WWW Notes', link: '/www-notes/' },
+      { text: 'fecli', link: 'https://www.npmjs.com/package/@a0znpm/fecli' },
+      { text: 'Work Notes', link: '/work-notes/' },
     ]
   },
   // {
@@ -191,20 +192,16 @@ module.exports = (async () => {
       ],
       [
         'script',
-        {},
-        fs.readFileSync(
-          path.resolve(__dirname, './inlined-scripts/felogsdk.iife.min.js'),
-          'utf-8'
-        )
+        {
+          src: '/scripts/felogsdk.iife.min.js',
+        }
       ],
       [
         'script',
-        {},
-        fs.readFileSync(
-          path.resolve(__dirname, './inlined-scripts/felogsdk.init.js'),
-          'utf-8'
-        )
-      ]
+        {
+          src: '/scripts/felogsdk.init.js',
+        }
+      ],
     ],
 
     themeConfig: {
@@ -240,7 +237,7 @@ module.exports = (async () => {
         },
         copyright: `Copyright © 2022-now MShineRay`
       },
-      appearance: false
+      appearance: false // 屏蔽黑白主题切换
     }
   }
 })()

@@ -1,34 +1,92 @@
 <script setup lang="ts">
+import NewsLetter from './NewsLetter.vue'
+import SponsorsGroup from './SponsorsGroup.vue';
+import VueMasteryModal from './VueMasteryModal.vue';
 </script>
 
 <template>
   <section id="hero">
     <h1 class="tagline">
+<!--      The-->
       <span class="accent">ShineRay</span>
+<!--      <br />JavaScript Framework-->
     </h1>
     <p class="description">
       learn & share
+<!--      An approachable, performant and versatile framework for building web-->
+<!--      user interfaces.-->
     </p>
     <p class="actions">
-<!--      <a class="get-started" href="/read-notes/">-->
-<!--        Get Started-->
-<!--        <svg-->
-<!--          class="icon"-->
-<!--          xmlns="http://www.w3.org/2000/svg"-->
-<!--          width="10"-->
-<!--          height="10"-->
-<!--          viewBox="0 0 24 24"-->
-<!--        >-->
-<!--          <path-->
-<!--            d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"-->
-<!--          />-->
-<!--        </svg>-->
-<!--      </a>-->
-      <a class="setup" href="/read-notes/">Read Notes</a>
+<!--      <vue-mastery-modal />-->
+      <a class="setup" href="/read-notes/">
+        Read Notes
+        <svg
+          class="icon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="10"
+          height="10"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"
+          />
+        </svg>
+      </a>
       <a class="setup" href="/image-notes/">Image Notes</a>
-      <a class="setup" href="/work-notes/">Work Notes</a>
+      <a class="setup" href="https://www.npmjs.com/package/@a0znpm/fecli">fecli</a>
+      <a class="setup" href="/www-notes/">WWW Notes</a>
     </p>
   </section>
+
+  <!-- TODO make dynamic based on data -->
+<!--  <section id="special-sponsor">-->
+<!--    <span>Special Sponsor</span>-->
+<!--    <a href="https://www.dcloud.io/hbuilderx.html?hmsr=vue-en&hmpl=&hmcu=&hmkw=&hmci=">-->
+<!--      <picture>-->
+<!--        <source type="image/avif" srcset="/images/sponsors/hbuilder.avif" />-->
+<!--        <img-->
+<!--          alt="hbuilder logo"-->
+<!--          width="97"-->
+<!--          height="36"-->
+<!--          src="/images/sponsors/hbuilder.png"-->
+<!--        />-->
+<!--      </picture>-->
+<!--    </a>-->
+<!--    <span>Advanced IDE for Vue</span>-->
+<!--  </section>-->
+
+<!--  <section id="highlights" class="vt-box-container">-->
+<!--    <div class="vt-box">-->
+<!--      <h2>Approachable</h2>-->
+<!--      <p>-->
+<!--        Builds on top of standard HTML, CSS and JavaScript with intuitive-->
+<!--        API and world-class documentation.-->
+<!--      </p>-->
+<!--    </div>-->
+<!--    <div class="vt-box">-->
+<!--      <h2>Performant</h2>-->
+<!--      <p>-->
+<!--        Truly reactive, compiler-optimized rendering system that rarely-->
+<!--        requires manual optimization.-->
+<!--      </p>-->
+<!--    </div>-->
+<!--    <div class="vt-box">-->
+<!--      <h2>Versatile</h2>-->
+<!--      <p>-->
+<!--        A rich, incrementally adoptable ecosystem that scales between a-->
+<!--        library and a full-featured framework.-->
+<!--      </p>-->
+<!--    </div>-->
+<!--  </section>-->
+
+<!--  <section id="sponsors">-->
+<!--    <h2>Platinum Sponsors</h2>-->
+<!--    <SponsorsGroup tier="platinum" placement="landing" />-->
+<!--    <h2>Gold Sponsors</h2>-->
+<!--    <SponsorsGroup tier="gold" placement="landing" />-->
+<!--  </section>-->
+
+<!--  <NewsLetter />-->
 </template>
 
 <style scoped>
