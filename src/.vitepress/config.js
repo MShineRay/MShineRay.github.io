@@ -14,7 +14,7 @@ const nav = [
       { text: 'Image Notes', link: '/image-notes/' },
       { text: 'WWW Notes', link: '/www-notes/' },
       { text: 'fecli', link: 'https://www.npmjs.com/package/@a0znpm/fecli' },
-      { text: 'Work Notes', link: '/work-notes/' },
+      { text: 'Work Notes', link: '/work-notes/' }
     ]
   },
   // {
@@ -135,10 +135,26 @@ module.exports = (async () => {
     },
 
     lang: 'en-US',
-    title: 'ShineRay',
-    description: 'ShineRay',
+    title: 'ToBetter',
+    description: 'to do better for better',
     scrollOffset: 'header',
     head: [
+      [
+        'link',
+        {
+          href: '/css/readnotes.css',
+          rel: 'stylesheet',
+          type:'text/css'
+        }
+      ],
+      // [
+      //   'link',
+      //   {
+      //     href: '/css/weread.css',
+      //     rel: 'stylesheet',
+      //     type:'text/css'
+      //   }
+      // ],
       [
         'link',
         {
@@ -207,7 +223,7 @@ module.exports = (async () => {
     themeConfig: {
       logo: '/img/logo-share-dark.svg',
       logoDark: '/img/logo-share.svg',
-      logoText: 'ShineRay',
+      logoText: 'ToBetter',
       // algolia: {
       //   indexName: 'pro_github',
       //   appId: 'TH7FJEUQK2',
