@@ -147,14 +147,14 @@ module.exports = (async () => {
           type:'text/css'
         }
       ],
-      // [
-      //   'link',
-      //   {
-      //     href: '/css/weread.css',
-      //     rel: 'stylesheet',
-      //     type:'text/css'
-      //   }
-      // ],
+      [
+        'link',
+        {
+          href: '/css/weread.css',
+          rel: 'stylesheet',
+          type:'text/css'
+        }
+      ],
       [
         'link',
         {

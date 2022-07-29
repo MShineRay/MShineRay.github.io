@@ -77,7 +77,6 @@ export default {
 }
 </script>
 <style scoped>
-@import '../../public/css/weread.css';
-@import '../../public/css/readnotes.css';
+/*@import '/css/weread.css';*/
 </style>
 

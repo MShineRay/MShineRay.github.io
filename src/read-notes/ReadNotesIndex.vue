@@ -93,15 +93,6 @@ if(typeof initGitalk !== 'undefined'){
                 {{ item.text }}
               </h3>
             </a>
-<!--          <ul>-->
-<!--            <li v-for="h of item.headers" :key="h">-->
-<!--              <a-->
-<!--                :href="item.link + '.html'"-->
-<!--              >-->
-<!--                {{ h }}-->
-<!--              </a>-->
-<!--            </li>-->
-<!--          </ul>-->
         </div>
       </div>
     </div>
