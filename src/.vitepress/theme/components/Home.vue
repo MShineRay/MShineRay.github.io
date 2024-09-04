@@ -10,7 +10,7 @@
       <span class="accent">ToBetter</span>
     </h1>
     <p class="description">
-      to do better for better
+      For better, do better
     </p>
     <p>
 
@@ -31,7 +31,7 @@
 <!--          />-->
 <!--        </svg>-->
 <!--      </a>-->
-      <a class="setup" href="/share-link/">Share Link</a>
+<!--      <a class="setup" href="/share-link/">Share Link</a>-->
       <a class="setup" href="/read-notes/">Read Notes</a>
       <a class="setup" href="/image-notes/">Image Notes</a>
       <a class="setup" href="/work-notes/">Work Notes</a>

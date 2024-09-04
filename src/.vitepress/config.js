@@ -136,7 +136,7 @@ module.exports = (async () => {
 
     lang: 'en-US',
     title: 'ToBetter',
-    description: 'to do better for better',
+    description: 'For better, do better',
     scrollOffset: 'header',
     head: [
       [
