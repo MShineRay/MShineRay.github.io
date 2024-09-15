@@ -6,7 +6,7 @@
 <script>
 // import logCreated from "../../mixin/log-created";
 export default {
-  name: 'index',
+  name: 'bibao',
 }
 </script>
 <style scoped>
