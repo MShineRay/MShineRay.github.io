@@ -12,7 +12,7 @@ const _sfc_main$1 = defineComponent({
   }
 });
 var Home = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-5ea9e338"]]);
-const __pageData = '{"title":"Home","description":"","frontmatter":{"page":true,"title":"Home"},"relativePath":"index.md","lastUpdated":1725437500803}';
+const __pageData = '{"title":"Home","description":"","frontmatter":{"page":true,"title":"Home"},"relativePath":"index.md","lastUpdated":1726392310846}';
 const __default__ = {};
 const _sfc_main = Object.assign(__default__, {
   __name: "index",

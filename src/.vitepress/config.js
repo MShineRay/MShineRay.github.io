@@ -2,6 +2,7 @@ const getBase = require('../../src/vitepress/config/baseConfig')
 import fs from 'fs'
 const path = require('path')
 import {wxSideBarList} from '../read-notes/weread/list'
+import {frontEndList} from  '../work-notes/front-end/list'
 import zhiqunReadNotes from '../read-notes/zhiqun/list'
 // import zhiQunImgList from '../image-notes/zhiqun/list'
 
@@ -80,8 +81,8 @@ const sidebar = {
     {
       text: 'Work Notes',
       items: [
-        { text: '工作台', link: '/work-notes/',},
-      ]
+        { text: '工作笔记', link: '/work-notes/',},
+      ].concat(frontEndList)
     },
     {
       text: '埋点',
@@ -224,11 +225,11 @@ module.exports = (async () => {
       logo: '/img/logo-share-dark.svg',
       logoDark: '/img/logo-share.svg',
       logoText: 'ToBetter',
-      // algolia: {
-      //   indexName: 'pro_github',
-      //   appId: 'TH7FJEUQK2',
-      //   apiKey: 'd39b6ce586dd2d44bab6ec298b57783d'
-      // },
+      algolia: {
+        indexName: 'search',
+        appId: '0E4UM292MA',
+        apiKey: '1d5e30f5de7b1b9655cbd8fd89088ca1'
+      },
 
       // carbonAds: {
       //   code: 'CEBDT27Y',
