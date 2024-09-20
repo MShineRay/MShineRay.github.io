@@ -5,6 +5,14 @@
     "bookName": "闭包",
     "label": "js",
     "labelEN": "other",
-    "bookUrl": "/work-notes/front-end/js/bibao"
+    "bookUrl": "/work-notes/front-end/js/bibao/"
+  },
+  {
+    "bookImg": "",
+    "author": "",
+    "bookName": "微信卡片分享",
+    "label": "front-end",
+    "labelEN": "front-end",
+    "bookUrl": "/work-notes/front-end/wxshare"
   }
 ]

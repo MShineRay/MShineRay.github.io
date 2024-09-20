@@ -3,7 +3,7 @@ import {
   isVue2,
   isVue3,
   set
-} from "./chunk-5C3QJSQT.js";
+} from "./chunk-I222O5TQ.js";
 import {
   Fragment,
   TransitionGroup,
@@ -33,7 +33,6 @@ import {
   ref,
   shallowReactive,
   shallowRef,
-  toRaw,
   toRef,
   toRefs,
   unref,
@@ -43,7 +42,7 @@ import {
 } from "./chunk-CMDSIPVP.js";
 import "./chunk-PZ5AY32C.js";
 
-// node_modules/.pnpm/@vueuse+shared@11.0.3_vue@3.5.0_typescript@4.3.5_/node_modules/@vueuse/shared/index.mjs
+// node_modules/.pnpm/@vueuse+shared@10.11.1_vue@3.5.0_typescript@4.3.5_/node_modules/@vueuse/shared/index.mjs
 function computedEager(fn, options) {
   var _a;
   const result = shallowRef();
@@ -73,7 +72,7 @@ function computedWithControl(source, fn) {
     return {
       get() {
         if (dirty.value) {
-          v = get2(v);
+          v = get2();
           dirty.value = false;
         }
         track();
@@ -176,7 +175,7 @@ function createSharedComposable(composable) {
   };
   return (...args) => {
     subscribers += 1;
-    if (!scope) {
+    if (!state) {
       scope = effectScope(true);
       state = scope.run(() => composable(...args));
     }
@@ -827,10 +826,7 @@ function createUntil(r, isNot = false) {
         r,
         (v) => {
           if (condition(v) !== isNot) {
-            if (stop)
-              stop();
-            else
-              nextTick(() => stop == null ? void 0 : stop());
+            stop == null ? void 0 : stop();
             resolve(v);
           }
         },
@@ -859,10 +855,7 @@ function createUntil(r, isNot = false) {
         [r, value],
         ([v1, v2]) => {
           if (isNot !== (v1 === v2)) {
-            if (stop)
-              stop();
-            else
-              nextTick(() => stop == null ? void 0 : stop());
+            stop == null ? void 0 : stop();
             resolve(v1);
           }
         },
@@ -1089,8 +1082,8 @@ function formatDate(date, formatStr, options = {}) {
     M: () => month + 1,
     Mo: () => formatOrdinal(month + 1),
     MM: () => `${month + 1}`.padStart(2, "0"),
-    MMM: () => date.toLocaleDateString(toValue(options.locales), { month: "short" }),
-    MMMM: () => date.toLocaleDateString(toValue(options.locales), { month: "long" }),
+    MMM: () => date.toLocaleDateString(options.locales, { month: "short" }),
+    MMMM: () => date.toLocaleDateString(options.locales, { month: "long" }),
     D: () => String(days),
     Do: () => formatOrdinal(days),
     DD: () => `${days}`.padStart(2, "0"),
@@ -1108,9 +1101,9 @@ function formatDate(date, formatStr, options = {}) {
     ss: () => `${seconds}`.padStart(2, "0"),
     SSS: () => `${milliseconds}`.padStart(3, "0"),
     d: () => day,
-    dd: () => date.toLocaleDateString(toValue(options.locales), { weekday: "narrow" }),
-    ddd: () => date.toLocaleDateString(toValue(options.locales), { weekday: "short" }),
-    dddd: () => date.toLocaleDateString(toValue(options.locales), { weekday: "long" }),
+    dd: () => date.toLocaleDateString(options.locales, { weekday: "narrow" }),
+    ddd: () => date.toLocaleDateString(options.locales, { weekday: "short" }),
+    dddd: () => date.toLocaleDateString(options.locales, { weekday: "long" }),
     A: () => meridiem(hours, minutes),
     AA: () => meridiem(hours, minutes, false, true),
     a: () => meridiem(hours, minutes, true),
@@ -1546,7 +1539,7 @@ function whenever(source, cb, options) {
   return stop;
 }
 
-// node_modules/.pnpm/@vueuse+core@11.0.3_vue@3.5.0_typescript@4.3.5_/node_modules/@vueuse/core/index.mjs
+// node_modules/.pnpm/@vueuse+core@10.11.1_vue@3.5.0_typescript@4.3.5_/node_modules/@vueuse/core/index.mjs
 function computedAsync(evaluationCallback, initialState, optionsOrRef) {
   let options;
   if (isRef(optionsOrRef)) {
@@ -1996,9 +1989,7 @@ function isTypedCharValid({
 function onStartTyping(callback, options = {}) {
   const { document: document2 = defaultDocument } = options;
   const keydown = (event) => {
-    if (!isFocusedElementEditable() && isTypedCharValid(event)) {
-      callback(event);
-    }
+    !isFocusedElementEditable() && isTypedCharValid(event) && callback(event);
   };
   if (document2)
     useEventListener(document2, "keydown", keydown, { passive: true });
@@ -2070,8 +2061,8 @@ function useMutationObserver(target, callback, options = {}) {
     return observer == null ? void 0 : observer.takeRecords();
   };
   const stop = () => {
-    stopWatch();
     cleanup();
+    stopWatch();
   };
   tryOnScopeDispose(stop);
   return {
@@ -2271,8 +2262,7 @@ function useAnimate(target, keyframes, options) {
   };
   const reverse = () => {
     var _a;
-    if (!animate.value)
-      update();
+    !animate.value && update();
     try {
       (_a = animate.value) == null ? void 0 : _a.reverse();
       syncResume();
@@ -2300,12 +2290,10 @@ function useAnimate(target, keyframes, options) {
     }
   };
   watch(() => unrefElement(target), (el) => {
-    if (el)
-      update();
+    el && update();
   });
   watch(() => keyframes, (value) => {
-    if (animate.value)
-      update();
+    !animate.value && update();
     if (!unrefElement(target) && animate.value) {
       animate.value.effect = new KeyframeEffect(
         unrefElement(target),
@@ -2314,7 +2302,9 @@ function useAnimate(target, keyframes, options) {
       );
     }
   }, { deep: true });
-  tryOnMounted(() => update(true), false);
+  tryOnMounted(() => {
+    nextTick(() => update(true));
+  });
   tryOnScopeDispose(cancel);
   function update(init) {
     const el = unrefElement(target);
@@ -2417,8 +2407,7 @@ function useAsyncQueue(tasks, options) {
       }
       const done = curr(prevRes).then((currentRes) => {
         updateResult(promiseState.fulfilled, currentRes);
-        if (activeIndex.value === tasks.length - 1)
-          onFinished();
+        activeIndex.value === tasks.length - 1 && onFinished();
         return currentRes;
       });
       if (!signal)
@@ -2980,28 +2969,26 @@ function usePermission(permissionDesc, options = {}) {
     navigator = defaultNavigator
   } = options;
   const isSupported = useSupported(() => navigator && "permissions" in navigator);
-  const permissionStatus = shallowRef();
+  let permissionStatus;
   const desc = typeof permissionDesc === "string" ? { name: permissionDesc } : permissionDesc;
-  const state = shallowRef();
-  const update = () => {
-    var _a, _b;
-    state.value = (_b = (_a = permissionStatus.value) == null ? void 0 : _a.state) != null ? _b : "prompt";
+  const state = ref();
+  const onChange = () => {
+    if (permissionStatus)
+      state.value = permissionStatus.state;
   };
-  useEventListener(permissionStatus, "change", update);
   const query = createSingletonPromise(async () => {
     if (!isSupported.value)
       return;
-    if (!permissionStatus.value) {
+    if (!permissionStatus) {
       try {
-        permissionStatus.value = await navigator.permissions.query(desc);
+        permissionStatus = await navigator.permissions.query(desc);
+        useEventListener(permissionStatus, "change", onChange);
+        onChange();
       } catch (e) {
-        permissionStatus.value = void 0;
-      } finally {
-        update();
+        state.value = "prompt";
       }
     }
-    if (controls)
-      return toRaw(permissionStatus.value);
+    return permissionStatus;
   });
   query();
   if (controls) {
@@ -3227,10 +3214,8 @@ function useStorage(key, defaults2, storage, options = {}) {
   );
   if (window2 && listenToStorageChanges) {
     tryOnMounted(() => {
-      if (storage instanceof Storage)
-        useEventListener(window2, "storage", update);
-      else
-        useEventListener(window2, customStorageEventName, updateFromCustomEvent);
+      useEventListener(window2, "storage", update);
+      useEventListener(window2, customStorageEventName, updateFromCustomEvent);
       if (initOnMounted)
         update();
     });
@@ -3239,14 +3224,13 @@ function useStorage(key, defaults2, storage, options = {}) {
     update();
   function dispatchWriteEvent(oldValue, newValue) {
     if (window2) {
-      const payload = {
-        key,
-        oldValue,
-        newValue,
-        storageArea: storage
-      };
-      window2.dispatchEvent(storage instanceof Storage ? new StorageEvent("storage", payload) : new CustomEvent(customStorageEventName, {
-        detail: payload
+      window2.dispatchEvent(new CustomEvent(customStorageEventName, {
+        detail: {
+          key,
+          oldValue,
+          newValue,
+          storageArea: storage
+        }
       }));
     }
   }
@@ -3316,7 +3300,6 @@ function useStorage(key, defaults2, storage, options = {}) {
 function usePreferredDark(options) {
   return useMediaQuery("(prefers-color-scheme: dark)", options);
 }
-var CSS_DISABLE_TRANS = "*,*::before,*::after{-webkit-transition:none!important;-moz-transition:none!important;-o-transition:none!important;-ms-transition:none!important;transition:none!important}";
 function useColorMode(options = {}) {
   const {
     selector = "html",
@@ -3346,36 +3329,23 @@ function useColorMode(options = {}) {
       const el = typeof selector2 === "string" ? window2 == null ? void 0 : window2.document.querySelector(selector2) : unrefElement(selector2);
       if (!el)
         return;
-      const classesToAdd = /* @__PURE__ */ new Set();
-      const classesToRemove = /* @__PURE__ */ new Set();
-      let attributeToChange = null;
+      let style;
+      if (disableTransition) {
+        style = window2.document.createElement("style");
+        const styleString = "*,*::before,*::after{-webkit-transition:none!important;-moz-transition:none!important;-o-transition:none!important;-ms-transition:none!important;transition:none!important}";
+        style.appendChild(document.createTextNode(styleString));
+        window2.document.head.appendChild(style);
+      }
       if (attribute2 === "class") {
         const current = value.split(/\s/g);
         Object.values(modes).flatMap((i) => (i || "").split(/\s/g)).filter(Boolean).forEach((v) => {
           if (current.includes(v))
-            classesToAdd.add(v);
+            el.classList.add(v);
           else
-            classesToRemove.add(v);
+            el.classList.remove(v);
         });
       } else {
-        attributeToChange = { key: attribute2, value };
-      }
-      if (classesToAdd.size === 0 && classesToRemove.size === 0 && attributeToChange === null)
-        return;
-      let style;
-      if (disableTransition) {
-        style = window2.document.createElement("style");
-        style.appendChild(document.createTextNode(CSS_DISABLE_TRANS));
-        window2.document.head.appendChild(style);
-      }
-      for (const c of classesToAdd) {
-        el.classList.add(c);
-      }
-      for (const c of classesToRemove) {
-        el.classList.remove(c);
-      }
-      if (attributeToChange) {
-        el.setAttribute(attributeToChange.key, attributeToChange.value);
+        el.setAttribute(attribute2, value);
       }
       if (disableTransition) {
         window2.getComputedStyle(style).opacity;
@@ -3442,7 +3412,7 @@ function useConfirmDialog(revealed = ref(false)) {
   };
 }
 function useCssVar(prop, target, options = {}) {
-  const { window: window2 = defaultWindow, initialValue, observe = false } = options;
+  const { window: window2 = defaultWindow, initialValue = "", observe = false } = options;
   const variable = ref(initialValue);
   const elRef = computed(() => {
     var _a;
@@ -3452,7 +3422,7 @@ function useCssVar(prop, target, options = {}) {
     var _a;
     const key = toValue(prop);
     const el = toValue(elRef);
-    if (el && window2 && key) {
+    if (el && window2) {
       const value = (_a = window2.getComputedStyle(el).getPropertyValue(key)) == null ? void 0 : _a.trim();
       variable.value = value || initialValue;
     }
@@ -3465,24 +3435,15 @@ function useCssVar(prop, target, options = {}) {
   }
   watch(
     [elRef, () => toValue(prop)],
-    (_, old) => {
-      if (old[0] && old[1])
-        old[0].style.removeProperty(old[1]);
-      updateCssVar();
-    },
+    updateCssVar,
     { immediate: true }
   );
   watch(
     variable,
     (val) => {
       var _a;
-      const raw_prop = toValue(prop);
-      if (((_a = elRef.value) == null ? void 0 : _a.style) && raw_prop) {
-        if (val == null)
-          elRef.value.style.removeProperty(raw_prop);
-        else
-          elRef.value.style.setProperty(raw_prop, val);
-      }
+      if ((_a = elRef.value) == null ? void 0 : _a.style)
+        elRef.value.style.setProperty(toValue(prop), val);
     }
   );
   return variable;
@@ -3940,8 +3901,7 @@ function useDraggable(target, options = {}) {
     axis = "both",
     draggingElement = defaultWindow,
     containerElement,
-    handle: draggingHandle = target,
-    buttons = [0]
+    handle: draggingHandle = target
   } = options;
   const position = ref(
     (_a = toValue(initialValue)) != null ? _a : { x: 0, y: 0 }
@@ -3960,7 +3920,7 @@ function useDraggable(target, options = {}) {
   };
   const start = (e) => {
     var _a2;
-    if (!toValue(buttons).includes(e.button))
+    if (e.button !== 0)
       return;
     if (toValue(options.disabled) || !filterEvent(e))
       return;
@@ -4051,16 +4011,14 @@ function useDropZone(target, options = {}) {
       event.preventDefault();
       counter += 1;
       isOverDropZone.value = true;
-      const files2 = getFiles(event);
-      (_b = _options.onEnter) == null ? void 0 : _b.call(_options, files2, event);
+      (_b = _options.onEnter) == null ? void 0 : _b.call(_options, getFiles(event), event);
     });
     useEventListener(target, "dragover", (event) => {
       var _a;
       if (!isDataTypeIncluded)
         return;
       event.preventDefault();
-      const files2 = getFiles(event);
-      (_a = _options.onOver) == null ? void 0 : _a.call(_options, files2, event);
+      (_a = _options.onOver) == null ? void 0 : _a.call(_options, getFiles(event), event);
     });
     useEventListener(target, "dragleave", (event) => {
       var _a;
@@ -4070,16 +4028,14 @@ function useDropZone(target, options = {}) {
       counter -= 1;
       if (counter === 0)
         isOverDropZone.value = false;
-      const files2 = getFiles(event);
-      (_a = _options.onLeave) == null ? void 0 : _a.call(_options, files2, event);
+      (_a = _options.onLeave) == null ? void 0 : _a.call(_options, getFiles(event), event);
     });
     useEventListener(target, "drop", (event) => {
       var _a;
       event.preventDefault();
       counter = 0;
       isOverDropZone.value = false;
-      const files2 = getFiles(event);
-      (_a = _options.onDrop) == null ? void 0 : _a.call(_options, files2, event);
+      (_a = _options.onDrop) == null ? void 0 : _a.call(_options, getFiles(event), event);
     });
   }
   return {
@@ -4097,20 +4053,15 @@ function useResizeObserver(target, callback, options = {}) {
       observer = void 0;
     }
   };
-  const targets = computed(() => {
-    const _targets = toValue(target);
-    return Array.isArray(_targets) ? _targets.map((el) => unrefElement(el)) : [unrefElement(_targets)];
-  });
+  const targets = computed(() => Array.isArray(target) ? target.map((el) => unrefElement(el)) : [unrefElement(target)]);
   const stopWatch = watch(
     targets,
     (els) => {
       cleanup();
       if (isSupported.value && window2) {
         observer = new ResizeObserver(callback);
-        for (const _el of els) {
-          if (_el)
-            observer.observe(_el, observerOptions);
-        }
+        for (const _el of els)
+          _el && observer.observe(_el, observerOptions);
       }
     },
     { immediate: true, flush: "post" }
@@ -4130,8 +4081,7 @@ function useElementBounding(target, options = {}) {
     reset = true,
     windowResize = true,
     windowScroll = true,
-    immediate = true,
-    updateTiming = "sync"
+    immediate = true
   } = options;
   const height = ref(0);
   const bottom = ref(0);
@@ -4141,7 +4091,7 @@ function useElementBounding(target, options = {}) {
   const width = ref(0);
   const x = ref(0);
   const y = ref(0);
-  function recalculate() {
+  function update() {
     const el = unrefElement(target);
     if (!el) {
       if (reset) {
@@ -4165,12 +4115,6 @@ function useElementBounding(target, options = {}) {
     width.value = rect.width;
     x.value = rect.x;
     y.value = rect.y;
-  }
-  function update() {
-    if (updateTiming === "sync")
-      recalculate();
-    else if (updateTiming === "next-frame")
-      requestAnimationFrame(() => recalculate());
   }
   useResizeObserver(target, update);
   watch(() => unrefElement(target), (ele) => !ele && update());
@@ -4308,7 +4252,7 @@ function useIntersectionObserver(target, callback, options = {}) {
   const {
     root,
     rootMargin = "0px",
-    threshold = 0,
+    threshold = 0.1,
     window: window2 = defaultWindow,
     immediate = true
   } = options;
@@ -5669,10 +5613,7 @@ function useInfiniteScroll(element, onLoadMore, options = {}) {
     { immediate: true }
   );
   return {
-    isLoading,
-    reset() {
-      nextTick(() => checkAndLoad());
-    }
+    isLoading
   };
 }
 var defaultEvents = ["mousedown", "mouseup", "keydown", "keyup"];
@@ -5956,10 +5897,7 @@ function useMediaControls(target, options = {}) {
     const el = toValue(target);
     if (!el)
       return;
-    if (isPlaying)
-      el.play();
-    else
-      el.pause();
+    isPlaying ? el.play() : el.pause();
   });
   useEventListener(target, "timeupdate", () => ignoreCurrentTimeUpdates(() => currentTime.value = toValue(target).currentTime));
   useEventListener(target, "durationchange", () => duration.value = toValue(target).duration);
@@ -6180,7 +6118,7 @@ function useMouseInElement(target, options = {}) {
       [targetRef, x, y],
       () => {
         const el = unrefElement(targetRef);
-        if (!el || !(el instanceof HTMLElement))
+        if (!el)
           return;
         const {
           left,
@@ -7013,8 +6951,7 @@ function useScrollLock(element, initialState = false) {
     const el = resolveElement(toValue(element));
     if (!el || !isLocked.value)
       return;
-    if (isIOS)
-      stopTouchMoveListener == null ? void 0 : stopTouchMoveListener();
+    isIOS && (stopTouchMoveListener == null ? void 0 : stopTouchMoveListener());
     el.style.overflow = initialOverflow;
     elInitialOverflow.delete(el);
     isLocked.value = false;
@@ -7094,7 +7031,6 @@ function useSpeechRecognition(options = {}) {
   const {
     interimResults = true,
     continuous = true,
-    maxAlternatives = 1,
     window: window2 = defaultWindow
   } = options;
   const lang = toRef2(options.lang || "en-US");
@@ -7119,7 +7055,6 @@ function useSpeechRecognition(options = {}) {
     recognition.continuous = continuous;
     recognition.interimResults = interimResults;
     recognition.lang = toValue(lang);
-    recognition.maxAlternatives = maxAlternatives;
     recognition.onstart = () => {
       isFinal.value = false;
     };
@@ -7215,8 +7150,7 @@ function useSpeechSynthesis(text, options = {}) {
   });
   const speak = () => {
     synth.cancel();
-    if (utterance)
-      synth.speak(utterance.value);
+    utterance && synth.speak(utterance.value);
   };
   const stop = () => {
     synth.cancel();
@@ -7634,7 +7568,6 @@ function useTextareaAutosize(options) {
   const input = ref(options == null ? void 0 : options.input);
   const styleProp = (_a = options == null ? void 0 : options.styleProp) != null ? _a : "height";
   const textareaScrollHeight = ref(1);
-  const textareaOldWidth = ref(0);
   function triggerResize() {
     var _a2;
     if (!textarea.value)
@@ -7642,9 +7575,8 @@ function useTextareaAutosize(options) {
     let height = "";
     textarea.value.style[styleProp] = "1px";
     textareaScrollHeight.value = (_a2 = textarea.value) == null ? void 0 : _a2.scrollHeight;
-    const _styleTarget = toValue(options == null ? void 0 : options.styleTarget);
-    if (_styleTarget)
-      _styleTarget.style[styleProp] = `${textareaScrollHeight.value}px`;
+    if (options == null ? void 0 : options.styleTarget)
+      toValue(options.styleTarget).style[styleProp] = `${textareaScrollHeight.value}px`;
     else
       height = `${textareaScrollHeight.value}px`;
     textarea.value.style[styleProp] = height;
@@ -7654,12 +7586,7 @@ function useTextareaAutosize(options) {
     var _a2;
     return (_a2 = options == null ? void 0 : options.onResize) == null ? void 0 : _a2.call(options);
   });
-  useResizeObserver(textarea, ([{ contentRect }]) => {
-    if (textareaOldWidth.value === contentRect.width)
-      return;
-    textareaOldWidth.value = contentRect.width;
-    triggerResize();
-  });
+  useResizeObserver(textarea, () => triggerResize());
   if (options == null ? void 0 : options.watch)
     watch(options.watch, triggerResize, { immediate: true, deep: true });
   return {
@@ -8454,47 +8381,35 @@ function useWakeLock(options = {}) {
     navigator = defaultNavigator,
     document: document2 = defaultDocument
   } = options;
-  const requestedType = ref(false);
-  const sentinel = shallowRef(null);
-  const documentVisibility = useDocumentVisibility({ document: document2 });
+  let wakeLock;
   const isSupported = useSupported(() => navigator && "wakeLock" in navigator);
-  const isActive = computed(() => !!sentinel.value && documentVisibility.value === "visible");
-  if (isSupported.value) {
-    useEventListener(sentinel, "release", () => {
-      var _a, _b;
-      requestedType.value = (_b = (_a = sentinel.value) == null ? void 0 : _a.type) != null ? _b : false;
-    });
-    whenever(
-      () => documentVisibility.value === "visible" && (document2 == null ? void 0 : document2.visibilityState) === "visible" && requestedType.value,
-      (type) => {
-        requestedType.value = false;
-        forceRequest(type);
-      }
-    );
+  const isActive = ref(false);
+  async function onVisibilityChange() {
+    if (!isSupported.value || !wakeLock)
+      return;
+    if (document2 && document2.visibilityState === "visible")
+      wakeLock = await navigator.wakeLock.request("screen");
+    isActive.value = !wakeLock.released;
   }
-  async function forceRequest(type) {
-    var _a;
-    await ((_a = sentinel.value) == null ? void 0 : _a.release());
-    sentinel.value = isSupported.value ? await navigator.wakeLock.request(type) : null;
-  }
+  if (document2)
+    useEventListener(document2, "visibilitychange", onVisibilityChange, { passive: true });
   async function request(type) {
-    if (documentVisibility.value === "visible")
-      await forceRequest(type);
-    else
-      requestedType.value = type;
+    if (!isSupported.value)
+      return;
+    wakeLock = await navigator.wakeLock.request(type);
+    isActive.value = !wakeLock.released;
   }
   async function release() {
-    requestedType.value = false;
-    const s = sentinel.value;
-    sentinel.value = null;
-    await (s == null ? void 0 : s.release());
+    if (!isSupported.value || !wakeLock)
+      return;
+    await wakeLock.release();
+    isActive.value = !wakeLock.released;
+    wakeLock = null;
   }
   return {
-    sentinel,
     isSupported,
     isActive,
     request,
-    forceRequest,
     release
   };
 }
@@ -8635,7 +8550,6 @@ function useWebSocket(url, options = {}) {
     status.value = "CONNECTING";
     ws.onopen = () => {
       status.value = "OPEN";
-      retried = 0;
       onConnected == null ? void 0 : onConnected(ws);
       heartbeatResume == null ? void 0 : heartbeatResume();
       _sendBuffer();
@@ -8643,20 +8557,19 @@ function useWebSocket(url, options = {}) {
     ws.onclose = (ev) => {
       status.value = "CLOSED";
       onDisconnected == null ? void 0 : onDisconnected(ws, ev);
-      if (!explicitlyClosed && options.autoReconnect && ws === wsRef.value) {
+      if (!explicitlyClosed && options.autoReconnect) {
         const {
           retries = -1,
           delay = 1e3,
           onFailed
         } = resolveNestedOptions(options.autoReconnect);
-        if (typeof retries === "number" && (retries < 0 || retried < retries)) {
-          retried += 1;
+        retried += 1;
+        if (typeof retries === "number" && (retries < 0 || retried < retries))
           setTimeout(_init, delay);
-        } else if (typeof retries === "function" && retries()) {
+        else if (typeof retries === "function" && retries())
           setTimeout(_init, delay);
-        } else {
+        else
           onFailed == null ? void 0 : onFailed();
-        }
       }
     };
     ws.onerror = (e) => {
@@ -8666,10 +8579,9 @@ function useWebSocket(url, options = {}) {
       if (options.heartbeat) {
         resetHeartbeat();
         const {
-          message = DEFAULT_PING_MESSAGE,
-          responseMessage = message
+          message = DEFAULT_PING_MESSAGE
         } = resolveNestedOptions(options.heartbeat);
-        if (e.data === responseMessage)
+        if (e.data === message)
           return;
       }
       data.value = e.data;
@@ -8852,12 +8764,11 @@ function useWebWorkerFn(fn, options = {}) {
     return newWorker;
   };
   const callWorker = (...fnArgs) => new Promise((resolve, reject) => {
-    var _a;
     promise.value = {
       resolve,
       reject
     };
-    (_a = worker.value) == null ? void 0 : _a.postMessage([[...fnArgs]]);
+    worker.value && worker.value.postMessage([[...fnArgs]]);
     workerStatus.value = "RUNNING";
   });
   const workerFn = (...fnArgs) => {
@@ -8935,17 +8846,13 @@ function useWindowSize(options = {}) {
     initialWidth = Number.POSITIVE_INFINITY,
     initialHeight = Number.POSITIVE_INFINITY,
     listenOrientation = true,
-    includeScrollbar = true,
-    type = "inner"
+    includeScrollbar = true
   } = options;
   const width = ref(initialWidth);
   const height = ref(initialHeight);
   const update = () => {
     if (window2) {
-      if (type === "outer") {
-        width.value = window2.outerWidth;
-        height.value = window2.outerHeight;
-      } else if (includeScrollbar) {
+      if (includeScrollbar) {
         width.value = window2.innerWidth;
         height.value = window2.innerHeight;
       } else {
