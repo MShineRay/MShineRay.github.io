@@ -82,13 +82,8 @@ const sidebar = {
       text: 'Work Notes',
       items: [
         { text: '工作笔记', link: '/work-notes/',},
+        // { text: 'Log List', link: '/work-notes/log/',},
       ].concat(frontEndList)
-    },
-    {
-      text: '埋点',
-      items: [
-        { text: 'Log List', link: '/work-notes/log',},
-      ]
     },
     {
       text: '链接',
