@@ -1,5 +1,12 @@
 # CSS知识点
 
+本文收集整理于语雀博主 [CUGGZ]的原创文章 <br/>
+原文链接：
+https://www.yuque.com/cuggz/interview/evfmq3
+
+## 参考资料
+- [前端面试题之CSS篇](https://www.yuque.com/cuggz/interview/evfmq3)
+
 ## display 的 block、inline 和 inline-block 的区别
 
 ### block： 
@@ -109,7 +116,7 @@ margin-bottom:bottom;margin-left:left;执行效率会更高。
 -  （2）样式与内容分离：将 css 代码定义到外部 css 中
 
 
-## 6. 对 CSS 工程化的理解
+## 对 CSS 工程化的理解
    ### CSS 工程化是为了解决以下问题：
    - 1.宏观设计：CSS 代码如何组织、如何拆分、模块结构怎样设计？
    - 2.编码优化：怎样写出更好的 CSS？
@@ -258,6 +265,8 @@ style-loader：创建 style 标签，把 CSS 内容写入标签。<br />
 定的垂直显示顺序。下面是盒模型的层叠规则：
 
 <img src="https://imageslib.github.io/img/css/css-stacking-order.png"/>
+
+<br/>
 
 对于上图，由上到下分别是：
 - （1）背景和边框：建立当前层叠上下文元素的背景和边框。
