@@ -2,18 +2,10 @@
   {
     "img": "",
     "author": "",
-    "name": "闭包",
-    "label": "js",
-    "labelEN": "other",
-    "url": "/work-notes/front-end/js/bibao/"
-  },
-  {
-    "img": "",
-    "author": "",
-    "name": "微信卡片分享",
-    "label": "front-end",
-    "labelEN": "front-end",
-    "url": "/work-notes/front-end/wxshare"
+    "name": "js知识点",
+    "label": "js知识点",
+    "labelEN": "js",
+    "url": "/work-notes/front-end/js/knowledge-point/"
   },
   {
     "img": "",
@@ -22,5 +14,13 @@
     "label": "front-end",
     "labelEN": "front-end",
     "url": "/work-notes/front-end/css/knowledge-point/"
+  },
+  {
+    "img": "",
+    "author": "",
+    "name": "微信卡片分享",
+    "label": "front-end",
+    "labelEN": "front-end",
+    "url": "/work-notes/front-end/wxshare"
   }
 ]

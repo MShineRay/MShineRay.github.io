@@ -202,18 +202,18 @@ module.exports = (async () => {
           'utf-8'
         )
       ],
-      [
-        'script',
-        {
-          src: '/scripts/felogsdk.iife.min.js',
-        }
-      ],
-      [
-        'script',
-        {
-          src: '/scripts/felogsdk.init.js',
-        }
-      ],
+      // [
+      //   'script',
+      //   {
+      //     src: '/scripts/felogsdk.iife.min.js',
+      //   }
+      // ],
+      // [
+      //   'script',
+      //   {
+      //     src: '/scripts/felogsdk.init.js',
+      //   }
+      // ],
     ],
 
     themeConfig: {
