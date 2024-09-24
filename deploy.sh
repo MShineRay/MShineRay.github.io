@@ -6,7 +6,7 @@ set -e
 rm -rf ./docs/*
 
 # build
-npm run build
+npm run docs:build
 
 # move
 mv -f -n ./src/.vitepress/dist/* ./docs

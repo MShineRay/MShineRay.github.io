@@ -62,18 +62,18 @@ if(typeof initGitalk !== 'undefined'){
 
 <template>
   <div id="api-index">
-    <div class="header">
-      <h1>WWW List</h1>
-      <div class="api-filter">
-        <label for="api-filter">Filter</label>
-        <input
-          type="search"
-          placeholder="Enter keyword"
-          id="api-filter"
-          v-model="query"
-        />
-      </div>
-    </div>
+<!--    <div class="header">-->
+<!--      <h1>WWW List</h1>-->
+<!--      <div class="api-filter">-->
+<!--        <label for="api-filter">Filter</label>-->
+<!--        <input-->
+<!--          type="search"-->
+<!--          placeholder="Enter keyword"-->
+<!--          id="api-filter"-->
+<!--          v-model="query"-->
+<!--        />-->
+<!--      </div>-->
+<!--    </div>-->
 
     <div
       v-for="section of filtered"
