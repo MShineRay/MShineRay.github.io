@@ -52,11 +52,11 @@ function slugify(text: string): string {
   )
 }
 
-if(typeof initGitalk !== 'undefined'){
-  setTimeout(function (){
-    initGitalk("工作笔记")
-  }, 300)
-}
+// if(typeof initGitalk !== 'undefined'){
+//   setTimeout(function (){
+//     initGitalk("工作笔记")
+//   }, 300)
+// }
 </script>
 
 <template>

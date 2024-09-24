@@ -25,26 +25,15 @@
     "lint": "prettier --check --write --parser typescript \"{__tests__,docs,src,types}/**/*.ts\"",
     "lint:fail": "prettier --check --parser typescript \"{__tests__,docs,src,types}/**/*.ts\"",
     "type": "tsc --noEmit",
-    "test": "yarn lint && yarn type",
     "dev": "vitepress dev src",
     "build": "vitepress build src",
     "deploy": "sh deploy.sh",
-    "serve": "yarn build && vitepress serve src"
-  },
-  "dependencies": {
-    "@docsearch/css": "^3.0.0-alpha.41",
-    "@docsearch/js": "^3.0.0-alpha.41",
-    "@vueuse/core": "^7.3.0",
-    "body-scroll-lock": "^3.1.5",
-    "normalize.css": "^8.0.1",
-    "shiki": "^0.9.15"
+    "serve": "yarn build && vitepress serve src",
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
   },
   "devDependencies": {
-    "@types/body-scroll-lock": "^2.6.1",
-    "@types/estree": "^0.0.48",
-    "prettier": "^2.4.1",
-    "typescript": "~4.3.5",
-    "vitepress": "1.1.4",
-    "vue": "^3.2.26"
+    "vitepress": "^1.3.4"
   }
 }

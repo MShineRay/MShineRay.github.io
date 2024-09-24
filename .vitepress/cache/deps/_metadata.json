@@ -1,0 +1,58 @@
+{
+  "hash": "369c892e",
+  "configHash": "24cf8e0b",
+  "lockfileHash": "f883ddd4",
+  "browserHash": "dd0a1a0a",
+  "optimized": {
+    "vue": {
+      "src": "../../../node_modules/.pnpm/vue@3.5.0_typescript@4.3.5/node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "file": "vue.js",
+      "fileHash": "06de481e",
+      "needsInterop": false
+    },
+    "vitepress > @vue/devtools-api": {
+      "src": "../../../node_modules/.pnpm/@vue+devtools-api@7.4.5/node_modules/@vue/devtools-api/dist/index.js",
+      "file": "vitepress___@vue_devtools-api.js",
+      "fileHash": "eccb83b6",
+      "needsInterop": false
+    },
+    "vitepress > @vueuse/core": {
+      "src": "../../../node_modules/.pnpm/@vueuse+core@11.1.0_vue@3.5.0_typescript@4.3.5_/node_modules/@vueuse/core/index.mjs",
+      "file": "vitepress___@vueuse_core.js",
+      "fileHash": "73f193b3",
+      "needsInterop": false
+    },
+    "vitepress > @vueuse/integrations/useFocusTrap": {
+      "src": "../../../node_modules/.pnpm/@vueuse+integrations@11.1.0_focus-trap@7.6.0_vue@3.5.0_typescript@4.3.5_/node_modules/@vueuse/integrations/useFocusTrap.mjs",
+      "file": "vitepress___@vueuse_integrations_useFocusTrap.js",
+      "fileHash": "7bd3deab",
+      "needsInterop": false
+    },
+    "vitepress > mark.js/src/vanilla.js": {
+      "src": "../../../node_modules/.pnpm/mark.js@8.11.1/node_modules/mark.js/src/vanilla.js",
+      "file": "vitepress___mark__js_src_vanilla__js.js",
+      "fileHash": "2402ddb6",
+      "needsInterop": false
+    },
+    "vitepress > minisearch": {
+      "src": "../../../node_modules/.pnpm/minisearch@7.1.0/node_modules/minisearch/dist/es/index.js",
+      "file": "vitepress___minisearch.js",
+      "fileHash": "df429a60",
+      "needsInterop": false
+    },
+    "@theme/index": {
+      "src": "../../../node_modules/.pnpm/vitepress@1.3.4_@algolia+client-search@4.24.0_postcss@8.4.44_search-insights@2.17.1_typescript@4.3.5/node_modules/vitepress/dist/client/theme-default/index.js",
+      "file": "@theme_index.js",
+      "fileHash": "9570383f",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-34KCNFWC": {
+      "file": "chunk-34KCNFWC.js"
+    },
+    "chunk-TOZ5F35T": {
+      "file": "chunk-TOZ5F35T.js"
+    }
+  }
+}

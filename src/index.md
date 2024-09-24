@@ -1,10 +1,11 @@
 ---
 page: true
 title: Home
+layout: home
 ---
 
 <script setup>
-import Home from '@theme/components/Home.vue'
+import Home from './Home.vue'
 </script>
 
 <Home />
