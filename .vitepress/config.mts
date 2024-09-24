@@ -117,7 +117,6 @@ const sidebar = {
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: '/src/',
   lang: 'en-US',
   title: 'ToBetter',
   description: 'For better, do better',
@@ -247,4 +246,6 @@ export default defineConfig({
     },
   },
   srcDir: './src',
+  assetsDir: './docs',
+  outDir: './docs',
 })
