@@ -247,5 +247,5 @@ export default defineConfig({
   },
   // srcDir: './src',
   // assetsDir: './docs',
-  // outDir: './docs',
+  outDir: '../docs',
 })
