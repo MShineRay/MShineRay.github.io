@@ -9,7 +9,7 @@ rm -rf ./docs/*
 npm run docs:build
 
 # move
-#mv -f -n ./src/.vitepress/dist/* ./docs
+mv -f -n ./src/.vitepress/dist/* ./docs
 
 # navigate into the build output directory
 cd ./docs
