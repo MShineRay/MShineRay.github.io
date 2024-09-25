@@ -153,13 +153,13 @@ export default defineConfig({
         rel: 'icon'
       }
     ],
-    [
-      'meta',
-      {
-        name: 'app-build-time',
-        value: new Date().getTime()
-      }
-    ],
+    // [
+    //   'meta',
+    //   {
+    //     name: 'app-build-time',
+    //     value: new Date().getTime()
+    //   }
+    // ],
     [
       'script',
       {
