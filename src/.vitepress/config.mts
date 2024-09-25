@@ -3,7 +3,9 @@ import {wxSideBarList} from '../read-notes/weread/list.js'
 import {frontEndList} from  '../work-notes/front-end/list.js'
 import zhiqunReadNotes from '../read-notes/zhiqun/list.js'
 // import zhiQunImgList from '../image-notes/zhiqun/list'
+// @ts-ignore
 import fs from 'fs'
+// @ts-ignore
 import path from 'path'
 const nav = [
   {
@@ -116,6 +118,8 @@ const sidebar = {
 }
 
 // https://vitepress.dev/reference/site-config
+// @ts-ignore
+// @ts-ignore
 export default defineConfig({
   lang: 'en-US',
   title: 'ToBetter',
@@ -153,13 +157,13 @@ export default defineConfig({
         rel: 'icon'
       }
     ],
-    // [
-    //   'meta',
-    //   {
-    //     name: 'app-build-time',
-    //     value: new Date().getTime()
-    //   }
-    // ],
+    [
+      'meta',
+      {
+        name: 'app-build-time',
+        value: ''+new Date().getTime()
+      }
+    ],
     [
       'script',
       {
@@ -228,8 +232,8 @@ export default defineConfig({
     nav,
     sidebar,
 
-    editLink: { // TODO repo不支持替换，解决方式：基于@vue/theme 新搭建主题
-      repo: 'MShineRay/MShineRay.github.io',
+    editLink: {
+      pattern: 'https://github.com/MShineRay/MShineRay.github.io/edit/main/src/:path',
       text: 'Edit this page on GitHub'
     },
     socialLinks: [
@@ -237,12 +241,12 @@ export default defineConfig({
     ],
 
     footer: {
-      license: {
-        text: 'MIT License',
-        link: 'https://opensource.org/licenses/MIT'
-      },
       copyright: `Copyright © 2022-now MShineRay`
     },
+  },
+  license: {
+    text: 'MIT License',
+    link: 'https://opensource.org/licenses/MIT'
   },
   // srcDir: './src',
   // assetsDir: './docs',
