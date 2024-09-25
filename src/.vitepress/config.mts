@@ -209,10 +209,9 @@ export default defineConfig({
     //   }
     // ],
   ],
+  appearance: false, // 屏蔽深色模式
 
   themeConfig: {
-
-
     logo: '/img/logo-share-dark.svg',
     logoDark: '/img/logo-share.svg',
     logoText: 'ToBetter',
