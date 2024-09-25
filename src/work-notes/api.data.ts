@@ -2,7 +2,7 @@
 // a file ending with data.(j|t)s will be evaluated in Node.js
 // import wereadJSON from './log/list.json'
 import fronEndJSON from './front-end/list.json'
-const allJson = [/*...wereadJSON,*/...fronEndJSON]
+const allJson = [/*...wereadJSON,*/ ...fronEndJSON]
 export interface APIGroup {
   text: string
   items: {
@@ -27,14 +27,13 @@ export default {
         link: group.url
       })
     })
-    result = result
-      .concat([
-        {
-          text: '读书',
-          type: '/read-notes/weread/',
-          items: imgList
-        }
-      ])
+    result = result.concat([
+      {
+        text: '读书',
+        type: '/read-notes/weread/',
+        items: imgList
+      }
+    ])
     return result
   }
 }
