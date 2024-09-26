@@ -59,5 +59,22 @@
         "link": "https://github.com/ElemeFE/element"
       }
     ]
+  },
+  {
+    "text": "其他",
+    "items": [
+      {
+        "text": "vitepress",
+        "link": "https://vitepress.dev/zh/guide/what-is-vitepress",
+        "label": "前端",
+        "labelEN": "fe"
+      },
+      {
+        "text": "npmjs",
+        "link": "https://www.npmjs.com/",
+        "label": "前端",
+        "labelEN": "fe"
+      }
+    ]
   }
 ]
