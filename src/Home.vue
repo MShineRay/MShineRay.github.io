@@ -84,6 +84,7 @@ html:not(.dark) .accent,
   font-weight: 500;
   border-radius: 8px;
   transition: background-color 0.5s, color 0.5s;
+  text-decoration: none;
 }
 
 .actions .get-started {

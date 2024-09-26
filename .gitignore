@@ -44,3 +44,6 @@ out
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+.vitepress/cache
+.vitepress/dist

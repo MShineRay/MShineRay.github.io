@@ -162,6 +162,7 @@ h3 {
   line-height: 2;
   color: var(--vt-c-text-code);
   transition: color 0.5s;
+  text-decoration: none;
 }
 
 .dark .api-groups a {
