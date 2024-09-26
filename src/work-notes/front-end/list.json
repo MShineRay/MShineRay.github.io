@@ -10,10 +10,26 @@
   {
     "img": "",
     "author": "",
+    "name": "js web API",
+    "label": "front-end",
+    "labelEN": "front-end",
+    "url": "/work-notes/front-end/js/web-api/"
+  },
+  {
+    "img": "",
+    "author": "",
     "name": "css知识点",
     "label": "front-end",
     "labelEN": "front-end",
     "url": "/work-notes/front-end/css/knowledge-point/"
+  },
+  {
+    "img": "",
+    "author": "",
+    "name": "css特效",
+    "label": "front-end",
+    "labelEN": "front-end",
+    "url": "/work-notes/front-end/css/special-effects/"
   },
   {
     "img": "",
