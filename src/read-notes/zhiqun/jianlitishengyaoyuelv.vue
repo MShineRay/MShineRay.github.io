@@ -3,17 +3,6 @@
     <h1 class="title">简历提升面试邀约率</h1>
     <div class="wr_macOS wr_Desktop wr_page_reader wr_whiteTheme">
       <div class="sectionListItem">
-        <div class="sectionListItem_title"></div>
-        <div class="sectionListItem_content noteItem_content clickable">
-          <span class="icon"></span>
-          <div>
-            <div class="text">
-              石沉大海emo了...简历投出去，根本没几家靠谱的公司理我，咋办呀？
-              <br>
-              ✅想让简历提升面试邀约率？通过3个产品思维「用户思维+设计思维+迭代思维」对应分析你的简历，查漏补缺继续优化，面试邀约🆙🆙！
-            </div>
-          </div>
-        </div>
         <div class="sectionListItem_content noteItem_content clickable">
           <span class="icon"></span>
           <div>
