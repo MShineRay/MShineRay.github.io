@@ -2,41 +2,52 @@
   {
     "img": "",
     "author": "",
-    "name": "js知识点",
-    "label": "js知识点",
+    "name": "js相关",
+    "label": "js相关",
     "labelEN": "js",
-    "url": "/work-notes/front-end/js/knowledge-point/"
+    "url": "/work-notes/front-end/js/knowledge-point/",
+    "items": [
+      {
+        "text": "js知识点",
+        "link": "/work-notes/front-end/js/knowledge-point/"
+      },
+      {
+        "text": "js web API",
+        "link": "/work-notes/front-end/js/web-api/"
+      }
+    ]
   },
   {
     "img": "",
     "author": "",
-    "name": "js web API",
+    "name": "css相关",
     "label": "front-end",
     "labelEN": "front-end",
-    "url": "/work-notes/front-end/js/web-api/"
+    "url": "/work-notes/front-end/css/knowledge-point/",
+    "items": [
+      {
+        "img": "",
+        "author": "",
+        "text": "css知识点",
+        "link": "/work-notes/front-end/css/knowledge-point/"
+      },
+      {
+        "text": "css特效",
+        "link": "/work-notes/front-end/css/special-effects/"
+      }
+    ]
   },
   {
     "img": "",
     "author": "",
-    "name": "css知识点",
+    "name": "微信相关",
     "label": "front-end",
     "labelEN": "front-end",
-    "url": "/work-notes/front-end/css/knowledge-point/"
-  },
-  {
-    "img": "",
-    "author": "",
-    "name": "css特效",
-    "label": "front-end",
-    "labelEN": "front-end",
-    "url": "/work-notes/front-end/css/special-effects/"
-  },
-  {
-    "img": "",
-    "author": "",
-    "name": "微信卡片分享",
-    "label": "front-end",
-    "labelEN": "front-end",
-    "url": "/work-notes/front-end/wxshare"
+    "items": [
+      {
+        "text": "微信卡片分享",
+        "link": "/work-notes/front-end/wx/wxshare/"
+      }
+    ]
   }
 ]

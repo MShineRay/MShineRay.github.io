@@ -94,14 +94,6 @@ navigator.connection.addEventListener("change", (e) => {
 - [dragend_event MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/HTMLElement/dragend_event)
 - [dragenter_event MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/HTMLElement/dragenter_event)
 
-## css选择器 ::first-letter
-### 应用场景
-- 改变段落文案首个字母单词样式
-### 示例代码
-
-### 参考资料
-- [::first-letter MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/::first-letter)
-
 
 ## Audio API
 
@@ -115,35 +107,27 @@ navigator.connection.addEventListener("change", (e) => {
 - [音频与视频处理 MDN](https://developer.mozilla.org/zh-CN/docs/Web/Media/Audio_and_video_manipulation)
 
 
-## z
+## Clipboard
 
 ### 应用场景
-- 表单输入框获取焦点后，改变父级div背景色
+- 复制
+- 剪切板
+- 富文本-图片粘贴
+
 ### 示例代码
 
 ### 参考资料
-- [:focus-within MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-within)
+- [Clipboard MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/Clipboard)
+- [clipboard.js github](https://github.com/zenorocha/clipboard.js)
+- [FileReader](#filereader)
 
-
-## css选择器 ::selection
+## FileReader
 
 ### 应用场景
-- 改选中后文本的样式
+- 文件读取
 ### 示例代码
 
 ### 参考资料
-- [::selection MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/::selection)
-
-
-
-
-## flex + margin
-
-### 应用场景
-- 
-### 示例代码
-
-### 参考资料
-- [::selection MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/::selection)
+- [FileReader MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/FileReader)
 
 
