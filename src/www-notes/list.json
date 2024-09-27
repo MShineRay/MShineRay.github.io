@@ -74,6 +74,12 @@
         "link": "https://www.npmjs.com/",
         "label": "前端",
         "labelEN": "fe"
+      },
+      {
+        "text": "sass文档",
+        "link": "https://sass.nodejs.cn/documentation",
+        "label": "前端",
+        "labelEN": "fe"
       }
     ]
   }

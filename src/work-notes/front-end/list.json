@@ -2,6 +2,20 @@
   {
     "img": "",
     "author": "",
+    "name": "canvas",
+    "label": "前端相关",
+    "labelEN": "canvas",
+    "url": "/work-notes/front-end/canvas/",
+    "items": [
+      {
+        "text": "canvas相关",
+        "link": "/work-notes/front-end/canvas/"
+      }
+    ]
+  },
+  {
+    "img": "",
+    "author": "",
     "name": "js相关",
     "label": "js相关",
     "labelEN": "js",
@@ -14,6 +28,10 @@
       {
         "text": "js web API",
         "link": "/work-notes/front-end/js/web-api/"
+      },
+      {
+        "text": "typescript",
+        "link": "/work-notes/front-end/js/ts/"
       }
     ]
   },
