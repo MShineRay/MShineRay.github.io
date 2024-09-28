@@ -61,6 +61,65 @@
     ]
   },
   {
+    "text": "常用工具",
+    "items": [
+      {
+        "text": "webstorm 前端开发",
+        "link": "https://www.jetbrains.com.cn/webstorm/promo/?utm_source=baidu&utm_medium=cpc&utm_campaign=cn-bai-br-webstorm-ph-pc&utm_content=webstorm-pure&utm_term=webstorm",
+        "label": "工具",
+        "labelEN": "tools"
+      },
+      {
+        "text": "SwitchHosts host管理",
+        "link": "https://note.youdao.com/s/YUlz2FuP",
+        "label": "工具",
+        "labelEN": "tools"
+      },
+      {
+        "text": "beyond compare文件对比",
+        "link": "https://www.beyondcomparepro.com/download",
+        "label": "工具",
+        "labelEN": "tools"
+      },
+      {
+        "text": "sourcetree git管理",
+        "link": "https://www.sourcetreeapp.com/",
+        "label": "工具",
+        "labelEN": "tools"
+      },
+      {
+        "text": "postman 接口请求",
+        "link": "https://www.postman.com/",
+        "label": "工具",
+        "labelEN": "tools"
+      },
+      {
+        "text": "tinify 图片压缩",
+        "link": "https://tinify.cn/",
+        "label": "工具",
+        "labelEN": "tools"
+      },
+      {
+        "text": "微信开发者工具",
+        "link": "https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html",
+        "label": "工具",
+        "labelEN": "tools"
+      },
+      {
+        "text": "xmind 思维导图",
+        "link": "https://xmind.cn/",
+        "label": "工具",
+        "labelEN": "tools"
+      },
+      {
+        "text": "processon 在线流程图",
+        "link": "https://www.processon.com/",
+        "label": "工具",
+        "labelEN": "tools"
+      }
+    ]
+  },
+  {
     "text": "其他",
     "items": [
       {
@@ -78,6 +137,12 @@
       {
         "text": "sass文档",
         "link": "https://sass.nodejs.cn/documentation",
+        "label": "前端",
+        "labelEN": "fe"
+      },
+      {
+        "text": "域名公共后缀",
+        "link": "https://publicsuffix.org/list/",
         "label": "前端",
         "labelEN": "fe"
       }
