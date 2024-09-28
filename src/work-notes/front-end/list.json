@@ -32,6 +32,10 @@
       {
         "text": "typescript",
         "link": "/work-notes/front-end/js/ts/"
+      },
+      {
+        "text": "promise",
+        "link": "/work-notes/front-end/js/promise/"
       }
     ]
   },
