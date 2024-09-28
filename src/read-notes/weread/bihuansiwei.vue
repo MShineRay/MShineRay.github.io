@@ -51,7 +51,7 @@
         <div class="sectionListItem_content noteItem_content clickable">
           <span class="icon"></span>
           <div>
-            <div class="text">，如凡事为公司考虑，而不是替客户出谋划策。</div>
+            <div class="text">如凡事为公司考虑，而不是替客户出谋划策。</div>
           </div>
         </div>
       </div>

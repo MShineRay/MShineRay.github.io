@@ -361,8 +361,8 @@
       </div>
     </div>
     <footer class="footer">
-      <img src="/img/weread/pingjunfen/qr.png" alt="qr" />
       <p>扫码阅读本书</p>
+      <img src="/img/weread/pingjunfen/qr.png" alt="qr" />
     </footer>
   </div>
 </template>
