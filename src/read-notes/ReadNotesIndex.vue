@@ -140,8 +140,10 @@ h3 {
   letter-spacing: -0.01em;
   color: var(--vt-c-green);
   font-size: 18px;
-  margin-bottom: 1em;
+  // margin-bottom: 1em;
   transition: color 0.5s;
+  margin: 0;
+  line-height: 1.2;
 }
 
 .api-section {

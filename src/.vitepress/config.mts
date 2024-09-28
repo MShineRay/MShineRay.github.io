@@ -85,7 +85,7 @@ const sidebar = {
     {
       text: 'Work Notes',
       items: [
-        { text: '工作笔记', link: '/work-notes/',},
+        // { text: '工作笔记', link: '/work-notes/',},
         { text: 'AIGC', link: '/work-notes/aigc/',},
         { text: 'charles', link: '/work-notes/charles/',},
         { text: 'Quick App', link: '/work-notes/quick-app/',},
