@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <title>Title</title>
+</head>
+<body>
+<style>
+  .box {
+    border: 5px solid rebeccapurple;
+    background-color: lightgray;
+    padding: 40px;
+    margin: 40px;
+    width: 300px;
+    height: 150px;
+    box-sizing: content-box;
+  }
+
+  .box.alternate {
+    box-sizing: border-box;
+  }
+</style>
+<code>
+  .box {
+  border: 5px solid rebeccapurple;
+  background-color: lightgray;
+  padding: 40px;
+  margin: 40px;
+  width: 300px;
+  height: 150px;
+  box-sizing: content-box;
+  }
+
+  .box.alternate {
+    box-sizing: border-box;
+  }
+</code>
+<hr/>
+
+<p>
+  box-sizing: content-box;
+</p>
+<p>
+  盒子宽度(390)=css宽度(300px)+左右内边距(80px)+左右边框宽度(10px)<br/>
+  盒子真实内容宽度(210)=css宽度(300px)<br/>
+  boxDom.clientWidth(380) = 盒子宽度(390)-左右边框宽度(10px)<br/>
+  boxDom.offsetWidth(390) = 盒子宽度(390)
+</p>
+<div id='box' class="box">I use the standard box model.</div>
+<p id='boxText'></p>
+<hr/>
+
+<p>box-sizing: border-box;</p>
+<p>
+  盒子宽度(300)=css宽度(300px)<br/>
+  盒子真实内容宽度(210) = css宽度(300px)-左右内边距(80px)-左右边框宽度(10px)<br/>
+  boxDom.clientWidth(380) = 盒子宽度(390)-左右边框宽度(10px)<br/>
+  boxDom.offsetWidth(300) = 盒子宽度(300)
+</p>
+<div id='alternate' class="box alternate">I use the alternate box model.</div>
+<p id='alternateText'></p>
+
+<script>
+  const box = document.getElementById('box');
+  const alternate = document.getElementById('alternate');
+  const boxText = document.getElementById('boxText');
+  const alternateText = document.getElementById('alternateText');
+  console.log(box.clientWidth,box.outerWidth,box.offsetWidth);
+  boxText.innerText = `clientWidth: ${box.clientWidth}\noffsetWidth: ${box.offsetWidth}\nouterWidth: ${box.outerWidth}\ninnerWidth: ${box.innerWidth}`;
+  alternateText.innerText = `clientWidth: ${alternate.clientWidth}\noffsetWidth: ${alternate.offsetWidth}\nouterWidth: ${alternate.outerWidth}\ninnerWidth: ${alternate.innerWidth}`;
+
+</script>
+</body>
+</html>

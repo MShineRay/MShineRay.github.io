@@ -1,11 +1,22 @@
 # CSS知识点
 
-本文收集整理于语雀博主 [CUGGZ]的原创文章 <br/>
-原文链接：
-https://www.yuque.com/cuggz/interview/evfmq3
-
-## 参考资料
-- [前端面试题之CSS篇](https://www.yuque.com/cuggz/interview/evfmq3)
+## [盒模型](https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Building_blocks/The_box_model)
+- [box-sizing demo](/css/box-sizing.html)
+- [常规流布局](https://developer.mozilla.org/zh-CN/docs/Learn/CSS/CSS_layout/Normal_Flow)
+- [常规流布局](https://developer.mozilla.org/zh-CN/docs/Learn/CSS/CSS_layout/Normal_Flow)
+- [外边距折叠](https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_box_model/Mastering_margin_collapsing)
+  - 外边距折叠是指在使用外边距创建空间时，如果没有获得预期的空间，就会发生外边距折叠。
+    - 根据外边距相接触的两个元素是正边距还是负边距，结果会有所不同：
+      - 两个正外边距将合并为一个外边距。其大小等于最大的单个外边距。
+      - 两个负外边距会折叠，并使用最小（离零最远）的值。
+      - 如果其中一个外边距为负值，其值将从总值中减去。
+- [offsetWidth MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/HTMLElement/offsetWidth)
+- [clientWidth MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/Element/clientWidth)
+- [innerWidth MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/innerWidth)
+- [outerWidth MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/outerWidth)
+- [浏览器开发者工具 MDN](https://developer.mozilla.org/zh-CN/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools)
+  - [chrome 开发者工具](https://developer.chrome.com/docs/devtools/overview?hl=zh-cn)
+    - [lighthouse](https://developer.chrome.com/docs/devtools/lighthouse?hl=zh-cn)
 
 ## display 的 block、inline 和 inline-block 的区别
 
@@ -279,3 +290,11 @@ style-loader：创建 style 标签，把 CSS 内容写入标签。<br />
 
 注意: 当定位元素 z-index:auto，生成盒在当前层叠上下文中的层
 级为 0，不会建立新的层叠上下文，除非是根元素。
+
+
+## 参考资料
+- [MDN](https://developer.mozilla.org/)
+- [前端面试题之CSS篇](https://www.yuque.com/cuggz/interview/evfmq3)
+- 本文收集整理于语雀博主 [CUGGZ]的原创文章 <br/>
+  原文链接：https://www.yuque.com/cuggz/interview/evfmq3
+
