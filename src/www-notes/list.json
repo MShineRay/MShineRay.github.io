@@ -57,6 +57,10 @@
       {
         "text": "element 2x",
         "link": "https://github.com/ElemeFE/element"
+      },
+      {
+        "text": "depcheck 检查依赖",
+        "link": "https://www.npmjs.com/package/depcheck"
       }
     ]
   },
@@ -143,6 +147,12 @@
       {
         "text": "域名公共后缀",
         "link": "https://publicsuffix.org/list/",
+        "label": "前端",
+        "labelEN": "fe"
+      },
+      {
+        "text": "",
+        "link": "https://element-plus.gitee.io/zh-CN/component/button.html",
         "label": "前端",
         "labelEN": "fe"
       }

@@ -1,12 +1,18 @@
 # JS知识点
 
-本文收集整理于语雀博主 [CUGGZ]的原创文章 <br/>
-原文链接：
-https://www.yuque.com/cuggz/interview/vgbphi
 
 ## 参考资料
 - [前端面试题之JavaScript篇](https://www.yuque.com/cuggz/interview/vgbphi)
 
+## [动态语言](https://zh.wikipedia.org/wiki/%E5%8A%A8%E6%80%81%E8%AF%AD%E8%A8%80)
+- [强弱类型](https://zh.wikipedia.org/wiki/%E5%BC%B7%E5%BC%B1%E5%9E%8B%E5%88%A5)
+- [类型系统](https://zh.wikipedia.org/wiki/%E9%A1%9E%E5%9E%8B%E7%B3%BB%E7%B5%B1#%E9%9D%9C%E6%85%8B%E5%92%8C%E5%8B%95%E6%85%8B%E6%AA%A2%E6%9F%A5)
+
+## ==
+- [相等(==) MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Equality)
+- [原始值强制转换(对象转原始类型) MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Data_structures)
+- [严格相等（===） MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Strict_equality)
+- [一元加(+) MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Unary_plus)
 
 ## 浏览器自动播放策略
 
