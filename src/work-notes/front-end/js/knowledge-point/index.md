@@ -4,6 +4,35 @@
 ## 参考资料
 - [前端面试题之JavaScript篇](https://www.yuque.com/cuggz/interview/vgbphi)
 
+## [parseInt](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/parseInt)
+在使用 parseInt 时，一定要指定一个 radix
+如果输入的 string 以 "0"（0）开头，radix 被假定为 8（八进制）或 10（十进制）。具体选择哪一个 radix 取决于实现。ECMAScript 5 澄清了应该使用 10 (十进制)，但不是所有的浏览器都支持。
+~~~js
+function filterInt (value) {
+  if (/^(\-|\+)?([0-9]+|Infinity)$/.test(value)) return Number(value);
+  return NaN;
+};
+~~~
+
+## 用位运算实现权限组合
+~~~js
+const READ = 0b1; // 1: 0001
+const WRITE = 0b10; // 2: 0010
+const UPDATE = 0b100; // 4: 0100
+const DELETE = 0b1000; // 8: 1000
+
+const r = 11;
+
+if(r & READ) { // 位运算
+  console.log("有权限")
+}else {
+  console.log("无权限")
+}
+~~~
+
+### 参考资料
+- [表达式与运算符](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Expressions_and_operators)
+
 ## 零宽字符
 
 ### 应用场景
