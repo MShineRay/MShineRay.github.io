@@ -61,6 +61,10 @@
       {
         "text": "depcheck 检查依赖",
         "link": "https://www.npmjs.com/package/depcheck"
+      },
+      {
+        "text": "GSAP JavaScript 动画库",
+        "link": "https://github.com/greensock/GSAP"
       }
     ]
   },
@@ -155,6 +159,10 @@
         "link": "https://element-plus.gitee.io/zh-CN/component/button.html",
         "label": "前端",
         "labelEN": "fe"
+      },
+      {
+        "text": "p5.js 在线编程工具",
+        "link": "https://p5js.org/zh-Hans/"
       }
     ]
   }

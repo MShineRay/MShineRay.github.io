@@ -4,6 +4,22 @@
 ## 参考资料
 - [前端面试题之JavaScript篇](https://www.yuque.com/cuggz/interview/vgbphi)
 
+## 私有字段
+
+~~~js
+class Person {
+  #abc;// 私有字段
+  constructor(abc) {
+    this.#abc = abc;
+  }
+  getAbc() {
+    return this.#abc;
+  }
+  #method() {// 私有方法
+  }
+}
+~~~
+
 ## [parseInt](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/parseInt)
 在使用 parseInt 时，一定要指定一个 radix
 如果输入的 string 以 "0"（0）开头，radix 被假定为 8（八进制）或 10（十进制）。具体选择哪一个 radix 取决于实现。ECMAScript 5 澄清了应该使用 10 (十进制)，但不是所有的浏览器都支持。

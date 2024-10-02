@@ -1,6 +1,122 @@
 # promise
 
+## MyPromise
 
+```js
+class MyPromise {
+  #status = 'pending'
+  #result = undefined
+  #handle = []
+  constructor(executor){
+    const resolve = (data)=>{
+      this.#changeState('fullfilled', data)
+    }
+    
+    const reject = (data) =>{
+      this.#changeState('rejected', data)
+    }
+    try{
+      // 无法捕获异步错误
+      executor(resolve, reject)
+    }catch(e){
+      reject(e)
+    }
+  }
+
+  #changeState(state, result){
+    if(this.#status !== 'pending') return;
+    this.#status = state;
+    this.#result = result;
+    this.#run()
+    
+  }
+  
+  #isPromiseLike(value) {
+    return false
+  }
+  
+  #runMicroTask(func) {
+    setTimeout(func,0)
+  }
+  
+  #runOne(callback, resolve, reject) {
+    if(typeof callback !== 'function') {
+      const settled = this.#state === 'fullfilled' ? resolve : reject
+      settled(this.#result);
+      return
+    }
+    
+    try {
+      const data = callback(this.#result);
+      if(data instanceof  MyPromise) {
+        result.then(reslove, reject);
+      }else {
+        resolve(data)
+      }
+    }catch(e) {
+      reject(e)
+    }
+  }
+  
+  #run(){
+    if(this.#status === 'pending') return;
+    
+    while(this.#handle.length){
+      const {onFullfilled, onRejected, resolve, reject} = this.#handle.shift()}
+      if(this.#status === 'fullfilled') {
+        if(typeof onFullfilled === 'function') {
+          try {
+            const data = onFullfilled(this.#result)
+            resolve(data)
+          }catch (e) {
+            reject(e)
+          }
+        }else{
+          // 穿透
+          resolve(this.#result)
+        }
+      }else {
+        if(typeof onRejected === 'function') {
+          try {
+            onRejected(this.#result)
+          }catch (e) {
+            reject(e)
+          }
+        }else {
+          // 穿透
+          reject(this.#result)
+        }
+      }
+    }
+  }
+  
+  then(onFullfilled, onRejected){
+   
+    return new MyPromise((resolve, reject)=>{
+      this.#handle.push({
+        onFullfilled,
+        onRejected,
+        resolve,
+        reject
+      })
+      this.#run()
+    })
+  }
+}
+
+var pA = new MyPromise((resolve, reject)=>{
+  resolve('foo');
+  reject('bar ');
+})
+
+pA.then((result)=>{
+  console.log(result)
+},(reason)=>{
+  console.log(reason)
+})
+```
+
+## Promises/A+规范
 由实现者制定，面向实现者的完善、可互操作的 JavaScript 承诺开放标准。 
 
 承诺表示异步操作的最终结果。 与许诺交互的主要方式是通过其 then 方法，该方法注册回调以接收许诺的最终值或许诺无法实现的原因。 

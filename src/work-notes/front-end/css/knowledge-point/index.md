@@ -21,6 +21,20 @@
   - [chrome 开发者工具](https://developer.chrome.com/docs/devtools/overview?hl=zh-cn)
     - [lighthouse](https://developer.chrome.com/docs/devtools/lighthouse?hl=zh-cn)
 
+## 保持图片清晰度
+
+- [img srcset MDN](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/img)
+- [image-set MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/image/image-set)
+
+## 视差滚动
+
+
+## 故障风格图片
+- background-blend-mode
+- mix-blend-mode
+- [CSS 故障艺术](https://segmentfault.com/a/1190000021730935)
+- [纯CSS实现故障风格图片【渡一教育】](https://www.bilibili.com/video/BV1ySWGehER3)
+
 ## display 的 block、inline 和 inline-block 的区别
 
 ### block： 
