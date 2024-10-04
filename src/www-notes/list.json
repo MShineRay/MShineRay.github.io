@@ -29,6 +29,31 @@
     ]
   },
   {
+    "text": "打包工具",
+    "items": [
+      {
+        "text": "rspack",
+        "link": "https://rspack.dev/zh"
+      },
+      {
+        "text": "rolldown",
+        "link": "https://rolldown.rs/guide/"
+      },
+      {
+        "text": "webpack",
+        "link": "https://www.webpackjs.com/guides/getting-started"
+      },
+      {
+        "text": "vite",
+        "link": "https://vitejs.cn/"
+      },
+      {
+        "text": "rollup",
+        "link": "https://www.rollupjs.com/"
+      }
+    ]
+  },
+  {
     "text": "埋点相关",
     "items": [
       {
