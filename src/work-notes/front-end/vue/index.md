@@ -1,5 +1,6 @@
 # vue 
 
+## [Object.freeze](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze)
 
 ## 观察 observe
 观察的方式就是深度遍历每一个属性，把每一个属性的读取和赋值变成函数

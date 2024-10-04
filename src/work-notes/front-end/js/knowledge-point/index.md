@@ -1,5 +1,7 @@
 # JS知识点
 
+## [AbortController](https://developer.mozilla.org/zh-CN/docs/Web/API/AbortController/AbortController)
+- fetch 取消请求
 
 ## 参考资料
 - [前端面试题之JavaScript篇](https://www.yuque.com/cuggz/interview/vgbphi)
