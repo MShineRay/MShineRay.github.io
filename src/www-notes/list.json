@@ -180,10 +180,8 @@
         "labelEN": "fe"
       },
       {
-        "text": "",
-        "link": "https://element-plus.gitee.io/zh-CN/component/button.html",
-        "label": "前端",
-        "labelEN": "fe"
+        "text": "vite-plugin-inspect 检查 Vite 插件的中间状态。 可用于调试和编写插件。",
+        "link": "https://github.com/antfu-collective/vite-plugin-inspect"
       },
       {
         "text": "p5.js 在线编程工具",

@@ -2,7 +2,10 @@
 
 ## [视觉格式化模型 MDN](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Visual_formatting_model)
  - [布局和包含块 MDN](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Containing_block)
-
+ - [BFC block formatting context](https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Block_formatting_context)
+   - 防止外边距重叠
+ - [IFC inline formatting context](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Inline_formatting_context)
+   - 空白折叠问题
 ## [盒模型](https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Building_blocks/The_box_model)
 - [box-sizing demo](/css/box-sizing.html)
 - [常规流布局](https://developer.mozilla.org/zh-CN/docs/Learn/CSS/CSS_layout/Normal_Flow)
