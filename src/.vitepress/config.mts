@@ -90,6 +90,7 @@ const sidebar = {
         { text: 'charles', link: '/work-notes/charles/',},
         { text: 'Quick App', link: '/work-notes/quick-app/',},
         { text: 'rich text', link: '/work-notes/rich-text/',},
+        { text: 'svelte', link: '/work-notes/svelte/',},
         { text: 'web3', link: '/work-notes/web3/',},
       ].concat(frontEndList)
     },
