@@ -147,6 +147,9 @@ h3 {
 
 .api-section {
   margin-bottom: 64px;
+  h3 {
+    margin: 0
+  }
 }
 
 .api-groups a {
