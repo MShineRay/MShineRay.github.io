@@ -1,5 +1,12 @@
 # JS知识点
 
+## [Map](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Map)
+
+## [WeakMap](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/WeakMap)
+
+## [Set](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Set/Set)
+
+
 ## [AbortController](https://developer.mozilla.org/zh-CN/docs/Web/API/AbortController/AbortController)
 - fetch 取消请求
 
