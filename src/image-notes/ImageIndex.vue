@@ -182,6 +182,9 @@ h3 {
   border-radius: 8px;
   padding: 28px 32px;
   transition: background-color 0.5s;
+  h3{
+    margin-top: 0;
+  }
 }
 
 .header {
