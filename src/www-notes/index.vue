@@ -22,7 +22,7 @@ const filtered = computed(() => {
       const matchedGroups = section.items
         .map((item) => {
           // group title match
-          if (matches(item.text)) {
+          if (matches(item.text) || matches(item.desc||'')) {
             return item
           }
         })
