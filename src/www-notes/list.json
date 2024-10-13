@@ -175,6 +175,10 @@
       {
         "text": "又快又好自助建站",
         "link": "https://www.ykyh.com/"
+      },
+      {
+        "text": "halo建站",
+        "link": "https://www.halo.run/"
       }
     ]
   },
@@ -218,6 +222,11 @@
         "text": "mitt (event bus)",
         "link": "https://www.npmjs.com/package/mitt",
         "desc": "Tiny (~200b) functional event emitter / pubsub."
+      },
+      {
+        "text": "katex",
+        "desc": "数学排版库",
+        "link": "https://katex.org/"
       }
     ]
   }
