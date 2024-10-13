@@ -1,8 +1,8 @@
 const fs = require('fs')
 const path = require('path')
 const cheerio = require('cheerio')
-const pinyin = require('pinyin')
-const wereadConfig = require('./weread.config.js')
+const {pinyin} = require('pinyin')
+const wereadConfig = require('./weread.config.cjs')
 function zhToPinyin(zh) {
   return pinyin(zh, {
     style: pinyin.STYLE_NORMAL,

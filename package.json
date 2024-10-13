@@ -23,7 +23,8 @@
     "deploy": "sh deploy.sh",
     "docs:dev": "vitepress dev src --open",
     "docs:build": "vitepress build src",
-    "docs:preview": "vitepress preview src --port 4174"
+    "docs:preview": "vitepress preview src --port 4174",
+    "parse:wx": "node ./weread.cjs"
   },
   "devDependencies": {
     "cheerio": "^1.0.0",
