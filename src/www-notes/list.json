@@ -88,7 +88,8 @@
         "link": "https://www.npmjs.com/package/depcheck"
       },
       {
-        "text": "GSAP JavaScript 动画库",
+        "text": "GSAP",
+        "desc": "JavaScript 动画库",
         "link": "https://github.com/greensock/GSAP"
       }
     ]
@@ -180,12 +181,18 @@
         "labelEN": "fe"
       },
       {
-        "text": "vite-plugin-inspect 检查 Vite 插件的中间状态。 可用于调试和编写插件。",
-        "link": "https://github.com/antfu-collective/vite-plugin-inspect"
+        "text": "vite-plugin-inspect",
+        "link": "https://github.com/antfu-collective/vite-plugin-inspect",
+        "desc":"检查 Vite 插件的中间状态。 可用于调试和编写插件"
       },
       {
         "text": "p5.js 在线编程工具",
         "link": "https://p5js.org/zh-Hans/"
+      },
+      {
+        "text": "mitt (event bus)",
+        "link": "https://www.npmjs.com/package/mitt",
+        "desc": "Tiny (~200b) functional event emitter / pubsub."
       }
     ]
   }

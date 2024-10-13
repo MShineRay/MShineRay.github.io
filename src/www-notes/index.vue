@@ -96,10 +96,12 @@ if(typeof initGitalk !== 'undefined'){
 <!--            </a>-->
           <ul>
             <li>
+              <h3 v-if="item.desc">{{item.text}}</h3>
               <a
                 :href="item.link"
               >
-                {{ item.text }}
+                <span v-if='item.desc'>{{ item.desc }}</span>
+                <span v-else>{{ item.text }}</span>
               </a>
             </li>
           </ul>
@@ -163,6 +165,7 @@ h3 {
   line-height: 2;
   color: var(--vt-c-text-code);
   transition: color 0.5s;
+  text-decoration: none;
 }
 
 .dark .api-groups a {
