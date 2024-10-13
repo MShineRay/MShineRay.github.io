@@ -154,6 +154,31 @@
     ]
   },
   {
+    "text": "建站",
+    "items": [
+      {
+        "text": "wordpress",
+        "link": "https://wordpress.org/"
+      },
+      {
+        "text": "Shopify",
+        "link": "https://www.shopify.com/"
+      },
+      {
+        "text": "wix",
+        "link": "https://www.wix.com"
+      },
+      {
+        "text": "Strikingly",
+        "link": "https://cn.strikingly.com/"
+      },
+      {
+        "text": "又快又好自助建站",
+        "link": "https://www.ykyh.com/"
+      }
+    ]
+  },
+  {
     "text": "其他",
     "items": [
       {
