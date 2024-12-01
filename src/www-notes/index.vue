@@ -99,6 +99,7 @@ if(typeof initGitalk !== 'undefined'){
               <h3 v-if="item.desc">{{item.text}}</h3>
               <a
                 :href="item.link"
+                target="_top"
               >
                 <span v-if='item.desc'>{{ item.desc }}</span>
                 <span v-else>{{ item.text }}</span>

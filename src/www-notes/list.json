@@ -266,6 +266,25 @@
       {
         "text": "开源项目变现渠道 tea",
         "link": "https://docs.tea.xyz/"
+      },
+      {
+        "text": "Graphviz",
+        "link": "https://www.graphviz.org/"
+      },
+      {
+        "text": "mermaid",
+        "link": "https://mermaid.js.org/",
+        "desc": "甘特图、流程图、时序图、看板、流程图、类图"
+      },
+      {
+        "text": "editorjs",
+        "link": "https://editorjs.io/",
+        "desc": "富文本编辑"
+      },
+      {
+        "text": "editor.html",
+        "link": "/editor.html",
+        "desc": "富文本编辑"
       }
     ]
   }

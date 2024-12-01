@@ -1,4 +1,4 @@
-// node_modules/.pnpm/@vue+devtools-shared@7.4.6/node_modules/@vue/devtools-shared/dist/index.js
+// node_modules/.pnpm/@vue+devtools-shared@7.6.4/node_modules/@vue/devtools-shared/dist/index.js
 var __create = Object.create;
 var __defProp = Object.defineProperty;
 var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
@@ -28,7 +28,7 @@ var __toESM = (mod, isNodeMode, target2) => (target2 = mod != null ? __create(__
   mod
 ));
 var init_esm_shims = __esm({
-  "../../node_modules/.pnpm/tsup@8.3.0_@microsoft+api-extractor@7.43.0_@types+node@20.16.5__@swc+core@1.5.29_jiti@1.21.6__ldnw4a7r4ccknnz6q542psuydy/node_modules/tsup/assets/esm_shims.js"() {
+  "../../node_modules/.pnpm/tsup@8.3.5_@microsoft+api-extractor@7.43.0_@types+node@22.9.0__@swc+core@1.5.29_jiti@2.0.0_po_lnt5yfvawfblpk67opvcdwbq7u/node_modules/tsup/assets/esm_shims.js"() {
     "use strict";
   }
 });
@@ -227,7 +227,8 @@ var isBrowser = typeof navigator !== "undefined";
 var target = typeof window !== "undefined" ? window : typeof globalThis !== "undefined" ? globalThis : typeof global !== "undefined" ? global : {};
 var isInChromePanel = typeof target.chrome !== "undefined" && !!target.chrome.devtools;
 var isInIframe = isBrowser && target.self !== target.top;
-var isInElectron = typeof navigator !== "undefined" && navigator.userAgent.toLowerCase().includes("electron");
+var _a;
+var isInElectron = typeof navigator !== "undefined" && ((_a = navigator.userAgent) == null ? void 0 : _a.toLowerCase().includes("electron"));
 var isNuxtApp = typeof window !== "undefined" && !!window.__NUXT__;
 init_esm_shims();
 var import_rfdc = __toESM(require_rfdc(), 1);
@@ -239,7 +240,10 @@ function classify(str) {
   return str && `${str}`.replace(classifyRE, toUpper);
 }
 function basename(filename, ext) {
-  const normalizedFilename = filename.replace(/^[a-z]:/i, "").replace(/\\/g, "/");
+  let normalizedFilename = filename.replace(/^[a-z]:/i, "").replace(/\\/g, "/");
+  if (normalizedFilename.endsWith(`index${ext}`)) {
+    normalizedFilename = normalizedFilename.replace(`/index${ext}`, ext);
+  }
   const lastSlashIndex = normalizedFilename.lastIndexOf("/");
   const baseNameWithExt = normalizedFilename.substring(lastSlashIndex + 1);
   if (ext) {
@@ -516,11 +520,11 @@ function createHooks() {
   return new Hookable();
 }
 
-// node_modules/.pnpm/birpc@0.2.17/node_modules/birpc/dist/index.mjs
+// node_modules/.pnpm/birpc@0.2.19/node_modules/birpc/dist/index.mjs
 var { clearTimeout: clearTimeout2, setTimeout: setTimeout2 } = globalThis;
 var random = Math.random.bind(Math);
 
-// node_modules/.pnpm/@vue+devtools-kit@7.4.6/node_modules/@vue/devtools-kit/dist/index.js
+// node_modules/.pnpm/@vue+devtools-kit@7.6.4/node_modules/@vue/devtools-kit/dist/index.js
 var __create2 = Object.create;
 var __defProp2 = Object.defineProperty;
 var __getOwnPropDesc2 = Object.getOwnPropertyDescriptor;
@@ -550,7 +554,7 @@ var __toESM2 = (mod, isNodeMode, target22) => (target22 = mod != null ? __create
   mod
 ));
 var init_esm_shims2 = __esm2({
-  "../../node_modules/.pnpm/tsup@8.3.0_@microsoft+api-extractor@7.43.0_@types+node@20.16.5__@swc+core@1.5.29_jiti@1.21.6__ldnw4a7r4ccknnz6q542psuydy/node_modules/tsup/assets/esm_shims.js"() {
+  "../../node_modules/.pnpm/tsup@8.3.5_@microsoft+api-extractor@7.43.0_@types+node@22.9.0__@swc+core@1.5.29_jiti@2.0.0_po_lnt5yfvawfblpk67opvcdwbq7u/node_modules/tsup/assets/esm_shims.js"() {
     "use strict";
   }
 });
@@ -2126,7 +2130,12 @@ function toRaw(observed) {
 var Fragment = Symbol.for("v-fgt");
 init_esm_shims2();
 function getComponentTypeName(options) {
-  return options.name || options._componentTag || options.__VUE_DEVTOOLS_COMPONENT_GUSSED_NAME__ || options.__name;
+  var _a25;
+  const name = options.name || options._componentTag || options.__VUE_DEVTOOLS_COMPONENT_GUSSED_NAME__ || options.__name;
+  if (name === "index" && ((_a25 = options.__file) == null ? void 0 : _a25.endsWith("index.vue"))) {
+    return "";
+  }
+  return name;
 }
 function getComponentFileName(options) {
   const file = options.__file;
@@ -2157,9 +2166,13 @@ async function getComponentId(options) {
   }
 }
 function isFragment(instance) {
-  var _a25;
+  var _a25, _b25;
   const subTreeType = (_a25 = instance.subTree) == null ? void 0 : _a25.type;
-  return subTreeType === Fragment;
+  const appRecord = getAppRecord(instance);
+  if (appRecord) {
+    return ((_b25 = appRecord == null ? void 0 : appRecord.types) == null ? void 0 : _b25.Fragment) === subTreeType;
+  }
+  return false;
 }
 function getInstanceName(instance) {
   var _a25, _b25, _c;
@@ -2504,6 +2517,8 @@ function update(options) {
 }
 function highlight(instance) {
   const bounds = getComponentBoundingRect(instance);
+  if (!bounds.width && !bounds.height)
+    return;
   const name = getInstanceName(instance);
   const container = getContainerElement();
   container ? update({ bounds, name }) : create({ bounds, name });
@@ -2611,9 +2626,9 @@ function scrollToComponent(options) {
   }
 }
 init_esm_shims2();
-var _a;
+var _a2;
 var _b;
-(_b = (_a = target).__VUE_DEVTOOLS_COMPONENT_INSPECTOR_ENABLED__) != null ? _b : _a.__VUE_DEVTOOLS_COMPONENT_INSPECTOR_ENABLED__ = true;
+(_b = (_a2 = target).__VUE_DEVTOOLS_COMPONENT_INSPECTOR_ENABLED__) != null ? _b : _a2.__VUE_DEVTOOLS_COMPONENT_INSPECTOR_ENABLED__ = true;
 function waitForInspectorInit(cb) {
   let total = 0;
   const timer = setInterval(() => {
@@ -2653,17 +2668,41 @@ function getComponentInspector() {
 init_esm_shims2();
 init_esm_shims2();
 init_esm_shims2();
+var TIMELINE_LAYERS_STATE_STORAGE_ID = "__VUE_DEVTOOLS_KIT_TIMELINE_LAYERS_STATE__";
+function getTimelineLayersStateFromStorage() {
+  if (!isBrowser || typeof localStorage === "undefined" || localStorage === null) {
+    return {
+      recordingState: false,
+      mouseEventEnabled: false,
+      keyboardEventEnabled: false,
+      componentEventEnabled: false,
+      performanceEventEnabled: false,
+      selected: ""
+    };
+  }
+  const state = localStorage.getItem(TIMELINE_LAYERS_STATE_STORAGE_ID);
+  return state ? JSON.parse(state) : {
+    recordingState: false,
+    mouseEventEnabled: false,
+    keyboardEventEnabled: false,
+    componentEventEnabled: false,
+    performanceEventEnabled: false,
+    selected: ""
+  };
+}
 init_esm_shims2();
 init_esm_shims2();
-var _a2;
+init_esm_shims2();
+var _a22;
 var _b2;
-(_b2 = (_a2 = target).__VUE_DEVTOOLS_KIT_TIMELINE_LAYERS) != null ? _b2 : _a2.__VUE_DEVTOOLS_KIT_TIMELINE_LAYERS = [];
+(_b2 = (_a22 = target).__VUE_DEVTOOLS_KIT_TIMELINE_LAYERS) != null ? _b2 : _a22.__VUE_DEVTOOLS_KIT_TIMELINE_LAYERS = [];
 var devtoolsTimelineLayers = new Proxy(target.__VUE_DEVTOOLS_KIT_TIMELINE_LAYERS, {
   get(target22, prop, receiver) {
     return Reflect.get(target22, prop, receiver);
   }
 });
 function addTimelineLayer(options, descriptor) {
+  devtoolsState.timelineLayersState[descriptor.id] = false;
   devtoolsTimelineLayers.push({
     ...options,
     descriptorId: descriptor.id,
@@ -2682,9 +2721,12 @@ var callInspectorUpdatedHook = debounce(() => {
   devtoolsContext.hooks.callHook("sendInspectorToClient", getActiveInspectors());
 });
 function addInspector(inspector, descriptor) {
+  var _a25, _b25;
   devtoolsInspector.push({
     options: inspector,
     descriptor,
+    treeFilterPlaceholder: (_a25 = inspector.treeFilterPlaceholder) != null ? _a25 : "Search tree...",
+    stateFilterPlaceholder: (_b25 = inspector.stateFilterPlaceholder) != null ? _b25 : "Search state...",
     treeFilter: "",
     selectedNodeId: "",
     appRecord: getAppRecord(descriptor.app)
@@ -2752,9 +2794,9 @@ function createDevToolsCtxHooks() {
   hooks2.hook("addInspector", ({ inspector, plugin }) => {
     addInspector(inspector, plugin.descriptor);
   });
-  hooks2.hook("sendInspectorTree", async ({ inspectorId, plugin }) => {
+  const debounceSendInspectorTree = debounce(async ({ inspectorId, plugin }) => {
     var _a25;
-    if (!inspectorId || !((_a25 = plugin == null ? void 0 : plugin.descriptor) == null ? void 0 : _a25.app))
+    if (!inspectorId || !((_a25 = plugin == null ? void 0 : plugin.descriptor) == null ? void 0 : _a25.app) || devtoolsState.highPerfModeEnabled)
       return;
     const inspector = getInspector(inspectorId, plugin.descriptor.app);
     const _payload = {
@@ -2783,10 +2825,11 @@ function createDevToolsCtxHooks() {
       "sendInspectorTreeToClient"
       /* SEND_INSPECTOR_TREE_TO_CLIENT */
     );
-  });
-  hooks2.hook("sendInspectorState", async ({ inspectorId, plugin }) => {
+  }, 120);
+  hooks2.hook("sendInspectorTree", debounceSendInspectorTree);
+  const debounceSendInspectorState = debounce(async ({ inspectorId, plugin }) => {
     var _a25;
-    if (!inspectorId || !((_a25 = plugin == null ? void 0 : plugin.descriptor) == null ? void 0 : _a25.app))
+    if (!inspectorId || !((_a25 = plugin == null ? void 0 : plugin.descriptor) == null ? void 0 : _a25.app) || devtoolsState.highPerfModeEnabled)
       return;
     const inspector = getInspector(inspectorId, plugin.descriptor.app);
     const _payload = {
@@ -2821,7 +2864,8 @@ function createDevToolsCtxHooks() {
       "sendInspectorStateToClient"
       /* SEND_INSPECTOR_STATE_TO_CLIENT */
     );
-  });
+  }, 120);
+  hooks2.hook("sendInspectorState", debounceSendInspectorState);
   hooks2.hook("customInspectorSelectNode", ({ inspectorId, nodeId, plugin }) => {
     const inspector = getInspector(inspectorId, plugin.descriptor.app);
     if (!inspector)
@@ -2832,6 +2876,10 @@ function createDevToolsCtxHooks() {
     addTimelineLayer(options, plugin.descriptor);
   });
   hooks2.hook("timelineEventAdded", ({ options, plugin }) => {
+    var _a25;
+    const internalLayerIds = ["performance", "component-event", "keyboard", "mouse"];
+    if (devtoolsState.highPerfModeEnabled || !((_a25 = devtoolsState.timelineLayersState) == null ? void 0 : _a25[plugin.descriptor.id]) && !internalLayerIds.includes(options.layerId))
+      return;
     hooks2.callHookWith(
       async (callbacks) => {
         await Promise.all(callbacks.map((cb) => cb(options)));
@@ -2893,7 +2941,9 @@ function initStateFactory() {
     tabs: [],
     commands: [],
     highPerfModeEnabled: true,
-    devtoolsClientDetected: {}
+    devtoolsClientDetected: {},
+    perfUniqueGroupId: 0,
+    timelineLayersState: getTimelineLayersStateFromStorage()
   };
 }
 var _a9;
@@ -3140,6 +3190,9 @@ var on = {
   componentAdded(fn) {
     return devtoolsHooks.hook("component:added", fn);
   },
+  componentEmit(fn) {
+    return devtoolsHooks.hook("component:emit", fn);
+  },
   componentUpdated(fn) {
     return devtoolsHooks.hook("component:updated", fn);
   },
@@ -3148,6 +3201,12 @@ var on = {
   },
   setupDevtoolsPlugin(fn) {
     devtoolsHooks.hook("devtools-plugin:setup", fn);
+  },
+  perfStart(fn) {
+    return devtoolsHooks.hook("perf:start", fn);
+  },
+  perfEnd(fn) {
+    return devtoolsHooks.hook("perf:end", fn);
   }
 };
 var hook = {
@@ -3199,6 +3258,9 @@ var DevToolsV6PluginAPI = class {
   // component inspector
   notifyComponentUpdate(instance) {
     var _a25;
+    if (devtoolsState.highPerfModeEnabled) {
+      return;
+    }
     const inspector = getActiveInspectors().find((i) => i.packageName === this.plugin.descriptor.packageName);
     if (inspector == null ? void 0 : inspector.id) {
       if (instance) {
@@ -3226,22 +3288,37 @@ var DevToolsV6PluginAPI = class {
     }
   }
   sendInspectorTree(inspectorId) {
+    if (devtoolsState.highPerfModeEnabled) {
+      return;
+    }
     this.hooks.callHook("sendInspectorTree", { inspectorId, plugin: this.plugin });
   }
   sendInspectorState(inspectorId) {
+    if (devtoolsState.highPerfModeEnabled) {
+      return;
+    }
     this.hooks.callHook("sendInspectorState", { inspectorId, plugin: this.plugin });
   }
   selectInspectorNode(inspectorId, nodeId) {
     this.hooks.callHook("customInspectorSelectNode", { inspectorId, nodeId, plugin: this.plugin });
   }
+  visitComponentTree(payload) {
+    return this.hooks.callHook("visitComponentTree", payload);
+  }
   // timeline
   now() {
+    if (devtoolsState.highPerfModeEnabled) {
+      return 0;
+    }
     return Date.now();
   }
   addTimelineLayer(options) {
     this.hooks.callHook("timelineLayerAdded", { options, plugin: this.plugin });
   }
   addTimelineEvent(options) {
+    if (devtoolsState.highPerfModeEnabled) {
+      return;
+    }
     this.hooks.callHook("timelineEventAdded", { options, plugin: this.plugin });
   }
   // settings
@@ -3293,6 +3370,8 @@ var reversedTokenMap = Object.entries(tokenMap).reduce((acc, [key, value]) => {
 init_esm_shims2();
 init_esm_shims2();
 init_esm_shims2();
+init_esm_shims2();
+init_esm_shims2();
 var _a12;
 var _b12;
 (_b12 = (_a12 = target).__VUE_DEVTOOLS_KIT__REGISTERED_PLUGIN_APPS__) != null ? _b12 : _a12.__VUE_DEVTOOLS_KIT__REGISTERED_PLUGIN_APPS__ = /* @__PURE__ */ new Set();
@@ -3318,7 +3397,7 @@ function callDevToolsPluginSetupFn(plugin, app) {
   setupFn(api);
 }
 function registerDevToolsPlugin(app) {
-  if (target.__VUE_DEVTOOLS_KIT__REGISTERED_PLUGIN_APPS__.has(app))
+  if (target.__VUE_DEVTOOLS_KIT__REGISTERED_PLUGIN_APPS__.has(app) || devtoolsState.highPerfModeEnabled)
     return;
   target.__VUE_DEVTOOLS_KIT__REGISTERED_PLUGIN_APPS__.add(app);
   devtoolsPluginBuffer.forEach((plugin) => {
@@ -3405,6 +3484,8 @@ function normalizeRouterInfo(appRecord, activeAppRecord2) {
     if (((_a25 = activeAppRecord2.value) == null ? void 0 : _a25.app) !== appRecord.app)
       return;
     init();
+    if (devtoolsState.highPerfModeEnabled)
+      return;
     devtoolsContext.hooks.callHook("routerInfoUpdated", { state: target[ROUTER_INFO_KEY] });
   }, 200));
 }
@@ -3579,6 +3660,9 @@ function onDevToolsClientConnected(fn) {
 init_esm_shims2();
 function toggleHighPerfMode(state) {
   devtoolsState.highPerfModeEnabled = state != null ? state : !devtoolsState.highPerfModeEnabled;
+  if (!state && activeAppRecord.value) {
+    registerDevToolsPlugin(activeAppRecord.value.app);
+  }
 }
 init_esm_shims2();
 init_esm_shims2();
@@ -4399,9 +4483,9 @@ var _b20;
 var _a21;
 var _b21;
 (_b21 = (_a21 = target).__VUE_DEVTOOLS_KIT_RPC_SERVER__) != null ? _b21 : _a21.__VUE_DEVTOOLS_KIT_RPC_SERVER__ = null;
-var _a22;
+var _a222;
 var _b22;
-(_b22 = (_a22 = target).__VUE_DEVTOOLS_KIT_VITE_RPC_CLIENT__) != null ? _b22 : _a22.__VUE_DEVTOOLS_KIT_VITE_RPC_CLIENT__ = null;
+(_b22 = (_a222 = target).__VUE_DEVTOOLS_KIT_VITE_RPC_CLIENT__) != null ? _b22 : _a222.__VUE_DEVTOOLS_KIT_VITE_RPC_CLIENT__ = null;
 var _a23;
 var _b23;
 (_b23 = (_a23 = target).__VUE_DEVTOOLS_KIT_VITE_RPC_SERVER__) != null ? _b23 : _a23.__VUE_DEVTOOLS_KIT_VITE_RPC_SERVER__ = null;
