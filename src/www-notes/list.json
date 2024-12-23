@@ -285,6 +285,14 @@
         "text": "editor.html",
         "link": "/editor.html",
         "desc": "富文本编辑"
+      },
+      {
+        "text": "pnpm中文官网",
+        "link": "https://pnpm.io/zh/"
+      },
+      {
+        "text": "npmjs 官网",
+        "link": "https://www.npmjs.com/"
       }
     ]
   }
