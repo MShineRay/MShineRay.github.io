@@ -327,6 +327,22 @@
       {
         "text": "npmjs 官网",
         "link": "https://www.npmjs.com/"
+      },
+      {
+        "text": "剪辑、调色、特效和音频后期制作",
+        "link": "https://www.blackmagicdesign.com/cn/products/davinciresolve"
+      },
+      {
+        "text": "trello项目管理",
+        "link": "https://trello.com/zh-Hans"
+      },
+      {
+        "text": "clickup项目管理",
+        "link": "https://clickup.com/"
+      },
+      {
+        "text": "runwayml文生视频",
+        "link": "https://runwayml.com/?level=0"
       }
     ]
   }
